@@ -1,5 +1,55 @@
 .side-menu{
     grid-area: sideBar;
-    width: 100%;
-    background-color: #8B5D33;
+    background-color: #f9f9f965;
+    border-right: 5px solid rgb(0,0,0,0.5);
+    transition: all 0.5s ease-in-out;
+}
+.side-list{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 0;
+    list-style: none;
+    margin: none;
+}
+.side-list-item{
+    display: flex;
+    align-items: center;
+    margin: none;
+    padding: 1rem;
+    font-weight: bold; 
+}
+.side-list-item:hover{
+    background-color:#ddd ;
+    cursor: pointer;
+}
+.side-list img{
+    height: 20px;
+    margin-right: 0.5rem;
+}
+
+@media(max-width:800px){
+    .side-menu{
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(-100%);
+    }
+
+    .show{
+        background:  linear-gradient(to right, white 40%, rgba(0,0,0,0.5) 41%);
+        grid-column: 1/ -1;
+        grid-row: 2 / -1; 
+        z-index: 99;
+        width: 100svw;
+        border: none;
+        
+        transform: translateX(0);
+        transition: transform 0.3s ease-in-out;
+        
+    }
+    .side-list-item:hover{
+        background:linear-gradient(to right, #ddd 40%, rgba(0,0,0,0)    41%);
+
+        cursor: pointer;
+    }
+
 }

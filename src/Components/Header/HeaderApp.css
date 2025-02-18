@@ -14,7 +14,8 @@ header{
     background-color: var(--main-backgroundColor);
     position: static;
 }
-h1{
+
+h2{
     margin: 1rem;
     text-align: center;
 }
@@ -24,5 +25,10 @@ h1{
         display: none;
     }
 }
+@media(max-width:800px){
+.panel-btn{
+    z-index: 100;
+}
 
+}
 

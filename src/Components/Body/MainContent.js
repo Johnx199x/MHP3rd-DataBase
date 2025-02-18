@@ -1,9 +1,10 @@
 import React from 'react'
 import "./MainContent.css"
-export const MainContent = () => {
+
+export const MainContent = ({content}) => {
   return (
     <div className='main-container'>
-      <h2>Content</h2>
+      <h2>{content}</h2>
       <div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sunt debitis tempora porro magnam ut doloribus soluta, eveniet ipsa atque perspiciatis commodi, saepe, culpa numquam vero blanditiis ipsum voluptatem maiores.</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sunt debitis tempora porro magnam ut doloribus soluta, eveniet ipsa atque perspiciatis commodi, saepe, culpa numquam vero blanditiis ipsum voluptatem maiores.</p>

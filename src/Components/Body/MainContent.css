@@ -1,4 +1,5 @@
 .main-container{
     grid-area: MainContent;
     overflow: scroll;
+    padding: 1rem;
 }
