@@ -1,0 +1,38 @@
+.search-container{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+#search-input {
+    border: 3px solid ;
+    border-radius: 1.5rem;
+    border-right: none;
+    border-top: none;
+    
+    border-color: #8B5D33;
+}
+#search-icon{
+    cursor: pointer;
+    width: 25px;
+}
+
+#search-input {
+    padding: .5em;
+    border-radius: .25em;
+    border: none;
+}
+
+/* Ajustes iniciales */
+#search-input {
+    width: calc(100% - .5em);
+}
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width:500px) {
+    #search-input {
+        
+        width: calc(100% - .2em); /* Ajuste del ancho en pantallas pequeñas */
+    }
+}

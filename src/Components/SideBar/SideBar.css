@@ -1,0 +1,5 @@
+.side-menu{
+    grid-area: sideBar;
+    width: 100%;
+    background-color: #8B5D33;
+}

@@ -1,0 +1,4 @@
+.main-container{
+    grid-area: MainContent;
+    overflow: scroll;
+}

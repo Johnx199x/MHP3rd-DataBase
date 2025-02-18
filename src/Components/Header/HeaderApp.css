@@ -1,0 +1,28 @@
+:root{
+    --main-backgroundColor: #A52A2A;
+}
+
+
+
+header{
+    overflow: hidden;
+    width: 100vw;
+    grid-area: Header;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-backgroundColor);
+    position: static;
+}
+h1{
+    margin: 1rem;
+    text-align: center;
+}
+
+@media(min-width:800px){
+    .panel-btn{
+        display: none;
+    }
+}
+
+
