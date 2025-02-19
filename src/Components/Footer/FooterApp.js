@@ -3,6 +3,8 @@ import "./FooterApp.css"
 
 export const FooterApp = () => {
   return (
-    <footer>Footer</footer>
+    <footer>
+      <h4>Made with ❤️ and ☕</h4>
+    </footer>
   )
 }

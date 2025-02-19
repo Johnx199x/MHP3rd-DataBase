@@ -1,5 +1,10 @@
 footer{
-    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     grid-area: Footer;
-    background-color: #4A6B3D;
+    background-color: var(--main-text-color);
+    color: var(--main-interactive-color);
 }

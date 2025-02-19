@@ -1,6 +1,6 @@
 .side-menu{
     grid-area: sideBar;
-    background-color: #f9f9f965;
+    background-color: var(--second-background-color);
     border-right: 5px solid rgb(0,0,0,0.5);
     transition: all 0.5s ease-in-out;
 }
@@ -35,7 +35,7 @@
     }
 
     .show{
-        background:  linear-gradient(to right, white 40%, rgba(0,0,0,0.5) 41%);
+        background:  linear-gradient(to right, var(--second-background-color) 40%, rgba(0,0,0,0.5) 41%);
         grid-column: 1/ -1;
         grid-row: 2 / -1; 
         z-index: 99;
