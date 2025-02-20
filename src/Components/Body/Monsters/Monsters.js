@@ -97,7 +97,7 @@ export const Monsters = () => {
             })
             return(
                 <>
-                    {elements.map((e)=> e)}
+                    {elements.map((e,index)=> <span key={index}>{e}</span>  )}
                 </>
             )
         }
@@ -105,7 +105,7 @@ export const Monsters = () => {
         
         return(
             <div className='monster-description'>
-                <p><span className='monster-info-tags'>Hunters Notes:</span><br />{props.info ===""|| props.info ===null ? "Unfortunately, there are no hunter notes available on this monster; its origins and abilities remain a complete mystery" : props.info}</p>
+                <p><span className='monster-info-tags'>Hunters Notes:</span><br />{props.info ===""|| props.info ===null ? "Unfortunately, there are no hunter notes available on this monster; its origins remain a complete mystery" : props.info}</p>
                 <p><span className='monster-info-tags'>Monster type: </span>{props.type}</p>
                 <p><span className='monster-info-tags'>Danger: </span>{monsterDanger()}</p>
                 <p><span className='monster-info-tags'>Monster element: </span>{props.element===undefined ? "None" : monsterElement(props.element)}</p>

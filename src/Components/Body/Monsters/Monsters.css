@@ -1,4 +1,5 @@
 
+
 .monsters-figure{
     margin: 0;
     display: flex;
@@ -29,16 +30,17 @@
 }
 
 .monster-description{
+    overflow: hidden;
     opacity: 0;
     visibility: hidden;
-    height: 0;
+    max-height: 0;
 
     transition: all 0.5s ease-in, background-color 1.5s ease-in ;
-    transform: translateY(-30%);
+    transform: translateY(-1%);
 }
 .monster-description.show-description{
     visibility: visible;
-    height: auto;
+    max-height: 1000px;
     opacity: 1;
     transform: translateX(0);
     background-color: #ddd;
