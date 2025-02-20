@@ -46,6 +46,7 @@ export const Monsters = () => {
                             image: ele.games[0].image,
                             info: ele.games[0].info,
                             danger:ele.games[0].danger,
+                            ailments:ele.ailments,
                             isLarge: ele.isLarge,
                             element:ele.elements,
                             weakness:ele.weakness,
@@ -74,16 +75,42 @@ export const Monsters = () => {
     }
     const MonstersDescription = (props) =>{
         
-        
+        const monsterDanger=()=>{
+            let dangerStar = "★";
+            let monsterDanger = "";
+            for(let i =0; i< props.danger;i++) monsterDanger+=dangerStar;  
+            return monsterDanger;
+        }
+        const monsterElement = (arrEle)=>{  
+            let elements= []
+            arrEle.forEach((e)=>{
+                
+                switch(e){
+                    case "Fire": elements.push(<img src={require("../../../Assets/icons/Element/Status-Fire.webp")}  alt='fire_element_img'></img>);  break;
+                    case "Thunder": elements.push(<img src={require("../../../Assets/icons/Element/Status-Thunder.webp")} alt='thunder_element_img'></img>);break;
+                    case "Water": elements.push(<img src={require("../../../Assets/icons/Element/Status-Water.webp")} alt='water_element_img'></img>);break;
+                    case "Ice": elements.push(<img src={require("../../../Assets/icons/Element/Status-Ice.webp")} alt='ice_element_img'></img>);break;
+                    case "Dragon": elements.push(<img src={require("../../../Assets/icons/Element/Status-Draco.webp")} alt='draco_element_img'></img>);break;
+                    case "Poison": elements.push(<img src={require("../../../Assets/icons/Element/Status-Poison.webp")} alt='poison_element_img'></img>);break;
+                    default: elements.push(e);
+            }
+            })
+            return(
+                <>
+                    {elements.map((e)=> e)}
+                </>
+            )
+        }
         
         
         return(
             <div className='monster-description'>
                 <p><span className='monster-info-tags'>Hunters Notes:</span><br />{props.info ===""|| props.info ===null ? "Unfortunately, there are no hunter notes available on this monster; its origins and abilities remain a complete mystery" : props.info}</p>
                 <p><span className='monster-info-tags'>Monster type: </span>{props.type}</p>
-                <p><span className='monster-info-tags'>Danger: </span>{props.danger}</p>
-                <p><span className='monster-info-tags'>Monster element: </span>{props.element===undefined ? "None" : props.element}</p>
-                <p><span className='monster-info-tags'>Monster weakness: </span>{props.weakness}</p>
+                <p><span className='monster-info-tags'>Danger: </span>{monsterDanger()}</p>
+                <p><span className='monster-info-tags'>Monster element: </span>{props.element===undefined ? "None" : monsterElement(props.element)}</p>
+                <p><span className="monster-info-tags">Special Attack Status:</span>{props.ailments=== undefined?"None ": props.ailments.join(", ")}</p>
+                <p><span className='monster-info-tags'>Monster weakness: </span>{props.weakness===undefined?"None weakness discovered":monsterElement(props.weakness)}</p>
             </div>
         )
     }
@@ -97,10 +124,14 @@ export const Monsters = () => {
                     type={props.type}
                     danger={props.danger}
                     element={props.element}
-                    weakness={props.weakness} />
+                    weakness={props.weakness}
+                    ailments={props.ailments} />
             </div>
         )
     }
+
+
+
     return (
     <div className='monsters-container'>
         {monsters.length === 0 
@@ -116,6 +147,7 @@ export const Monsters = () => {
                     isLarge={ele.isLarge}
                     element={ele.element}
                     weakness={ele.weakness}
+                    ailments={ele.ailments}
                     />
             )
         }
