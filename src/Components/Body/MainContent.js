@@ -7,7 +7,7 @@ import {Misions} from "./Misions/Misions"
 import {Ubications} from "./Ubications/Ubications"
 
 
-export const MainContent = ({content}) => {
+export default function MainContent({content}){
 
   const Select =(conte)=>{
       switch(conte){
