@@ -3,8 +3,20 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    text-align: center;
     width: 100%;
     grid-area: Footer;
     background-color: var(--main-text-color);
     color: var(--main-interactive-color);
+}
+.githHub-contact{
+    padding: 0.1rem 0.5rem;
+    
+    text-decoration: none;
+    color:rgba(0, 255, 255, 0.837);
+    transition: all 0.5s ease-in-out;
+}
+.githHub-contact:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: aqua;
 }
