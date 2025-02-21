@@ -54,3 +54,8 @@
 .monster-info-tags{
     font-weight: 700;
 }
+.monster-list{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}

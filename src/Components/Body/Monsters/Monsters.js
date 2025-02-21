@@ -33,9 +33,13 @@ export const Monsters = () => {
     }
 
     const [monsters, setMonsters] = useState([]);
+
     const dataMonster =  data.monsters;
     useEffect(()=>{
-        const getMonsters = (data)=>{
+
+
+        const getMonsters = (data)=>{ 
+        const newMonsters =[];
 
             data.forEach((ele) =>{
                 if(ele.games[0].game === "Monster Hunter 3 Ultimate"){ 
@@ -51,11 +55,15 @@ export const Monsters = () => {
                             element:ele.elements,
                             weakness:ele.weakness,
                         }
-                    setMonsters((monsters)=>[...monsters,monster])
+                        newMonsters.push(monster)      
             }
-                    })
-        }
+                    });
+        setMonsters(newMonsters);
+        };
         getMonsters(dataMonster);
+
+        
+
     },[dataMonster])
 
     const MonsterIcon =(props)=>{
@@ -117,7 +125,7 @@ export const Monsters = () => {
 
     const MonsterInfo=(props)=>{
         return(
-            <div className='monster-info'>
+            <div className='monster-info search-item'>
                 <MonsterIcon  name = {props.name} img={props.img}  />
                 <MonstersDescription 
                     info={props.info} 
@@ -134,11 +142,13 @@ export const Monsters = () => {
 
     return (
     <div className='monsters-container'>
+        <ul className='monster-list'>
         {monsters.length === 0 
             ? <h3>Cargando...</h3>
             :monsters.map((ele,index)=> 
+                <li key={index}>
                 <MonsterInfo 
-                    key={index} 
+                    
                     name = {ele.name} 
                     img={ele.image}
                     type={ele.type}
@@ -149,8 +159,11 @@ export const Monsters = () => {
                     weakness={ele.weakness}
                     ailments={ele.ailments}
                     />
+                    </li>
             )
+
         }
+        </ul>
         
     </div>
     )
