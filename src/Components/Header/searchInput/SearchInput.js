@@ -1,30 +1,41 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import React from 'react'
 import "./SearchInput.css"
-import searchIcon from "../../../Assets/icons/search-icon.png"
 
 export const SearchInput = () => {
         const [searchValue, setSearchValue] = useState("");
+
+        
+
+
         const handleChange=(e)=>{
             setSearchValue(e.target.value)
         };
-        const handleSearch=()=>{
-            //metodo para buscar los elementos que se encuentren en el value del input
-            console.log(searchValue);
-        };
         
+        useEffect(() => {
+            const $searchItems = document.querySelectorAll(".search-item");
+            searchValue !== "" 
+                ? document.querySelector(".search-container").classList.add("search-notEmpty")
+                : document.querySelector(".search-container").classList.remove("search-notEmpty")
+                $searchItems.forEach(el => {
+                    el.children[0].children[1].textContent.toLowerCase().includes(searchValue.toLowerCase() )
+                        ? el.classList.remove("hide")
+                        : el.classList.add("hide")
+                });    
+        }, [searchValue])
         
         return(
-            <div className="search-container"> 
+            <form action="" className="search-container"> 
             <input 
             type="search" 
             name="search" 
-            id="search-input"
-            placeholder="buscar..."
+            className="search-input"
+            placeholder="Search..."
             onChange={handleChange}
+            
             />
-                <img src={searchIcon} alt="search-icon" id="search-icon" onClick={handleSearch}/>
-            </div>
+            <i class="fa fa-search"></i>
+            </form>
         )
         
 }
