@@ -17,6 +17,11 @@ export const Monsters = () => {
         weakness:[],
     }*/
     
+    const [largueMonsters, setLargueMonsters] = useState([]);
+    const [smallMonsters, setSmallMonsters] = useState([]);
+    const dataMonster =  data.monsters;
+    const [monsterType,setMonstertype] = useState(["small"]);
+
 
     const handleClick=(e)=>{
         let $monsterArrow = e.currentTarget.children[2]
@@ -32,15 +37,13 @@ export const Monsters = () => {
             :$monsterDescr.classList.add("show-description")            
     }
 
-    const [monsters, setMonsters] = useState([]);
-
-    const dataMonster =  data.monsters;
+    
     useEffect(()=>{
 
 
         const getMonsters = (data)=>{ 
-        const newMonsters =[];
-
+        const largueMonster =[];
+        const smallMonster = [];
             data.forEach((ele) =>{
                 if(ele.games[0].game === "Monster Hunter 3 Ultimate"){ 
                         let monster= {
@@ -55,15 +58,15 @@ export const Monsters = () => {
                             element:ele.elements,
                             weakness:ele.weakness,
                         }
-                        newMonsters.push(monster)      
+                    ele.isLarge 
+                        ?largueMonster.push(monster) 
+                        :smallMonster.push(monster)     
             }
                     });
-        setMonsters(newMonsters);
+        setLargueMonsters(largueMonster);
+        setSmallMonsters(smallMonster);
         };
         getMonsters(dataMonster);
-
-        
-
     },[dataMonster])
 
     const MonsterIcon =(props)=>{
@@ -174,14 +177,35 @@ export const Monsters = () => {
         )
     }
 
-
+    let monsterTypeShow = ""
+        monsterType==="largue"
+            ?monsterTypeShow = largueMonsters
+            :monsterTypeShow = smallMonsters
+    
 
     return (
     <div className='monsters-container'>
+        <nav>
+            <ul className='monster-type-select '>
+                <li className="selected-monster-type" onClick={(e)=>{
+                    setMonstertype("small")
+                    e.target.classList.add("selected-monster-type")
+                
+                    e.target.nextElementSibling.classList.contains("selected-monster-type") && e.target.nextElementSibling.classList.remove("selected-monster-type")
+                    }}>Small</li>
+                <li onClick={(e)=>{
+                    setMonstertype("largue")
+                    e.target.classList.add("selected-monster-type")
+                    e.target.previousElementSibling.classList.contains("selected-monster-type") && e.target.previousElementSibling.classList.remove("selected-monster-type")
+                }}>Largue</li>
+            </ul>
+        </nav>
+
         <ul className='monster-list'>
-        {monsters.length === 0 
+        {
+            monsterTypeShow.length === 0 
             ? <h3>Cargando...</h3>
-            :monsters.map((ele,index)=> 
+            :monsterTypeShow.map((ele,index)=> 
                 <li key={index}>
                 <MonsterInfo 
                     
