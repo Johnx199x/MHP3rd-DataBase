@@ -132,8 +132,8 @@ export const MonstersDescription = (props) =>{
             <div><span className="monster-info-tags">Special Attack Status:</span>{props.ailments=== undefined?"None ": monsterSpecialAttack(props.ailments)}</div>
             <div><span className='monster-info-tags'>Monster weakness: </span>{props.weakness===undefined?"None weakness discovered":monsterElement(props.weakness,  )}</div>
             <div><span className='monster-info-tags'>Monster drops:</span>
-                {props.dropsLowRank===undefined?"":monsterDrops(props.dropsLowRank,"Low Rank",props.name)}
-                {props.dropsHighRank===undefined?"":monsterDrops(props.dropsHighRank,"High Rank",props.name)}
+                {props.dropsLowRank===undefined?"":monsterDrops(props.dropsLowRank,"Low Rank",props.name,props.isLarge)}
+                {props.dropsHighRank===undefined?"":monsterDrops(props.dropsHighRank,"High Rank",props.name, props.isLarge)}
                 
                 </div>
         </div>

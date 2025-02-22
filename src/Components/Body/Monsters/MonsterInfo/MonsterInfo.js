@@ -58,7 +58,8 @@ export const MonsterInfo = (props) => {
                 weakness={props.weakness}
                 ailments={props.ailments}
                 dropsLowRank={props.dropsLowRank}
-                dropsHighRank={props.dropsHighRAnk} 
+                dropsHighRank={props.dropsHighRAnk}
+                isLarge={props.isLarge} 
                 />
         </div>
 
