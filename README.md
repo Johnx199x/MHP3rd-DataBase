@@ -1,6 +1,8 @@
 # Monster Hunter Portable 3rd Data-Base
 
-Monsters-DataBase---->[DataBase used](https://github.com/CrimsonNynja/monster-hunter-DB).
+> Monsters-DataBase---->[DataBase used](https://github.com/CrimsonNynja/monster-hunter-DB).
+
+> Monsters-Loot-Data---->[Small Monsters](https://monsterhunter.fandom.com/wiki/MH3:_Small_Monster_Carve_List) , [Largue Monsters](https://monsterhunter.fandom.com/wiki/MH3:_Monster_Carves_%26_Rewards).  
 
 ### Description
 
@@ -19,3 +21,5 @@ At this time, the application contains only data related to the monsters of MHP3
 * Search for monsters by name
 
 * Details on  weaknesses, and resistances of monsters
+
+* Monster loot and drop rates
