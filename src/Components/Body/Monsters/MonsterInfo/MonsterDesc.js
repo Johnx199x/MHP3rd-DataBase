@@ -64,20 +64,45 @@ export const MonstersDescription = (props) =>{
             </>
         )
     }
-    const monsterDrops=(arrEle, dropsRank)=>{
-        let drops = arrEle
-    return(
+    const monsterDrops=(arrEle, dropsRank, jehn, isLarge)=>{
+        let drops = arrEle;
+        return(
 
         <table className='monster-drops-table'>
             <caption className='monster-drops-table-caption'>{dropsRank}</caption>
             <thead>
+                {isLarge
+                    ?(jehn!=="Jhen Mohran"
+                        ?(
                 <tr>
                     <th className='monster-drops-table-header'>Item name</th>
-                    <th className='monster-drops-table-header'>Body Carves(x3)</th>
+                    <th className='monster-drops-table-header'>Body Carves</th>
                     <th className='monster-drops-table-header'>Capture Reward</th>
                     <th className='monster-drops-table-header'>Wound Rewards</th>
                     <th className='monster-drops-table-header'>Shiny Drops</th>
+                    {drops[0] !== undefined &&(
+                        drops[0].length > 5 && <th className='monster-drops-table-header'>Tail Carves</th>)}
+                    {drops[0] !== undefined&&(
+                        drops[0].length >6 &&  
+                            <th className='monster-drops-table-header'>Head Carves(x1)</th>)}
                 </tr>
+                        )
+                        :(
+                <tr>
+                    <th className='monster-drops-table-header'>Item name</th>
+                    <th className='monster-drops-table-header'>Body Carves(x8)</th>
+                    <th className='monster-drops-table-header'>Wound Reward</th>
+                    <th className='monster-drops-table-header'>Inside Mouth Carves</th>
+                </tr>
+                        ))
+                    :(
+                        <tr>
+                            <th className='monster-drops-table-header'>Item name</th>
+                            <th className='monster-drops-table-header'>Monster Reward</th>
+                        </tr>
+                    )
+                }
+                
             </thead>
             <tbody>
                 { 
@@ -86,7 +111,7 @@ export const MonstersDescription = (props) =>{
                     <tr key={index} className='monster-drops-table-row'>    
                         {
                         element.map((ele,inde)=>( 
-                            <td className="monster-drops-table-item" key={inde}>{inde===0 ? ele : `${ele}%`}</td>
+                            <td className="monster-drops-table-item" key={inde}>{inde===0||ele==="-" ? ele : `${ele}%`}</td>
                         ))
                         }
                     </tr>
@@ -107,8 +132,8 @@ export const MonstersDescription = (props) =>{
             <div><span className="monster-info-tags">Special Attack Status:</span>{props.ailments=== undefined?"None ": monsterSpecialAttack(props.ailments)}</div>
             <div><span className='monster-info-tags'>Monster weakness: </span>{props.weakness===undefined?"None weakness discovered":monsterElement(props.weakness,  )}</div>
             <div><span className='monster-info-tags'>Monster drops:</span>
-                {props.dropsLowRank===undefined?"no Drops":monsterDrops(props.dropsLowRank,"Low Rank")}
-                {props.dropsHighRank===undefined?"no Drops":monsterDrops(props.dropsHighRank,"High Rank")}
+                {props.dropsLowRank===undefined?"":monsterDrops(props.dropsLowRank,"Low Rank",props.name)}
+                {props.dropsHighRank===undefined?"":monsterDrops(props.dropsHighRank,"High Rank",props.name)}
                 
                 </div>
         </div>

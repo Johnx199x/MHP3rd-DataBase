@@ -34,13 +34,23 @@ export const MonsterInfo = (props) => {
             
         )
     }
-    
+    /*
+        "drops":{ 
+            "lowRank":[ 
+            
+            ],
+            "highRank":[
+            
+            ]
+        }, 
+*/
 
 
     return (
         <div className='monster-info search-item'>
             <MonsterIcon  name = {props.name} img={props.img}  />
             <MonstersDescription 
+                name={props.name}
                 info={props.info} 
                 type={props.type}
                 danger={props.danger}
