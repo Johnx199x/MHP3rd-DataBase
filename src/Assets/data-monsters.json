@@ -336,55 +336,8 @@
                 "info": "Bear-like monsters found in warm, damp environments. Can often be found catching fish from rivers."
               }
             ]
-          },{
-            "_id": {
-              "$oid": "5e15604e8a80af35ce52d73b"
-            },
-            "name": "Azure Rathalos",
-            "type": "Flying Wyvern",
-            "isLarge": true,
-            "elements": [
-              "Fire"
-            ],
-            "ailments": [
-              "Fireblight",
-              "Stun",
-              "Poison"
-            ],
-            "weakness": [
-              "Dragon",
-              "Ice"
-            ],
-            "games": [
-              {
-                "game": "Monster Hunter Portable 3rd",
-                "image": "MH3U-Azure_Rathalos_Icon.png",
-                "info": "An azure-colored subspecies of Rathalos. More mobile than their standard cousin, they locate prey from the air and quickly swoop in for the kill. Once these master hunters select a target, there is little hope of escape.",
-                "danger": "4"
-              },
-              {
-                "game": "Monster Hunter 4 Ultimate",
-                "image": "MH4U-Azure_Rathalos_Icon.png",
-                "info": "An azure-colored subspecies of Rathalos. More mobile than their standard cousin, they locate prey from the air and quickly swoop in for the kill. Once these master hunters select a target, there is little hope of escape.",
-                "danger": "5"
-              },
-              {
-                "game": "Monster Hunter World",
-                "image": "MHW-Azure_Rathalos_Icon.png",
-                "info": "An azure-colored subspecies of Rathalos. More mobile than their standard cousins, they locate prey from the air and quickly swoop in for the kill."
-              },
-              {
-                "game": "Monster Hunter Stories",
-                "image": "MH4U-Azure_Rathalos_Icon.png",
-                "info": "A Rathalos subspecies. More mobile than its cousin, it attacks with a matchless speed and ferocity."
-              },
-              {
-                "game": "Monster Hunter Stories 2",
-                "image": "MHST2-Azure_Rathalos_Icon.png",
-                "info": "A Rathalos subspecies. More mobile than its cousin, it attacks with matchless speed and ferocity."
-              }
-            ]
-          },{
+          },
+          {
             "_id": {
               "$oid": "5dfda7319dabf81e7717ceaa"
             },
@@ -1259,6 +1212,31 @@
             "name": "Great Jaggi",
             "type": "Bird Wyvern",
             "isLarge": true,
+            "drops":{ 
+              
+              "lowRank":[    
+                ["Great Jaggi Hide",43,36,0,0],
+                ["Great Jaggi Claw",30,18,0,0],
+                ["Screamer",19,46,65,0],
+                ["Jaggi Scale",8,0,0,42],
+                ["Wyvern Tear",0,0,0,58],
+                ["King's Frill",0,0,35,0]
+            ],
+            
+              "highRank":[
+                ["Jaggi Hide+",35,0,0,42],
+                ["Bird Wyvern Claw",28,35,10],
+                ["Great Jaggi Hide",20,17,0,0],
+                ["Great Jaggi Claw",17,35,0,0],
+                ["Screamer",44,20,0,0],
+                ["King's Frill",0,0,70,0],
+                ["Bird Wyvern Gem",0,0,10,0],
+                ["Wyvern Tear",0,0,0,58]
+
+              ]
+
+            },
+              
             "weakness": [
               "Fire"
             ],

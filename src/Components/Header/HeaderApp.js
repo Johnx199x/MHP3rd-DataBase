@@ -28,7 +28,7 @@ const handleClick=(e)=>{
                 <span className="hamburger-inner"></span>
                 </span>
             </button>
-            <h2>MH3rd Data-Base</h2>
+            <h2>MHP3RD Data-Base</h2>
             <SearchInput />
         </header>
     )

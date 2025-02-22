@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import data from "../../../Assets/data-monsters.json"
 import "./Monsters.css"
-import { MonsterInfo } from './MonsterInfo'
+import { MonsterInfo } from './MonsterInfo/MonsterInfo'
 
 
 export const Monsters = () => {
@@ -30,7 +30,9 @@ export const Monsters = () => {
         const smallMonster = [];
         
             data.forEach((ele) =>{
-                        let monster= {
+                let monster;
+                ele.drops ?
+                        monster= {
                             id: ele._id.$oid,
                             name: ele.name,
                             type:ele.type,
@@ -41,10 +43,29 @@ export const Monsters = () => {
                             isLarge: ele.isLarge,
                             element:ele.elements,
                             weakness:ele.weakness,
+                            dropsLowRank:ele.drops.lowRank,
+                            dropsHighRAnk:ele.drops.highRank
+                        
+                        
+                    } 
+                        : monster= {
+                            id: ele._id.$oid,
+                            name: ele.name,
+                            type:ele.type,
+                            image: ele.games[0].image,
+                            info: ele.games[0].info,
+                            danger:ele.games[0].danger,
+                            ailments:ele.ailments,
+                            isLarge: ele.isLarge,
+                            element:ele.elements,
+                            weakness:ele.weakness,
+                        
                         }
+
                     ele.isLarge 
                         ?largueMonster.push(monster) 
-                        :smallMonster.push(monster)     
+                        :smallMonster.push(monster) 
+                
             }
                     );
         setLargueMonsters(largueMonster);
@@ -93,6 +114,8 @@ export const Monsters = () => {
                     element={ele.element}
                     weakness={ele.weakness}
                     ailments={ele.ailments}
+                    dropsLowRank={ele.dropsLowRank}
+                    dropsHighRAnk={ele.dropsHighRAnk}
                     />
                     </li>
             )
