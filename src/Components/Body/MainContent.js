@@ -5,6 +5,7 @@ import { Items } from './Items/Items'
 import {Options} from "./Options/Options"
 import {Misions} from "./Misions/Misions"
 import {Ubications} from "./Ubications/Ubications"
+import { About } from './About/About'
 
 
 export default function MainContent({content}){
@@ -15,7 +16,8 @@ export default function MainContent({content}){
         case "Items": return <Items />;
         case "Misions": return <Misions/>; 
         case "Ubications":return <Ubications/>; 
-        case "Options": return <Options/>; 
+        case "Options": return <Options/>;
+        case "About This Project": return <About/>;
         default:return <Monsters />; 
       }
   }

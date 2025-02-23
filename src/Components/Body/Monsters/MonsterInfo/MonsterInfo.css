@@ -62,9 +62,13 @@
     padding: 0;
 }
 .monster-drops{
+    padding: 0;
     padding-top: 0;
     padding-bottom: 0;
     
+}
+.monster-drops :not(:first-child){
+    padding:0 1.5rem;
 }
 
 .monster-drops-collapse{

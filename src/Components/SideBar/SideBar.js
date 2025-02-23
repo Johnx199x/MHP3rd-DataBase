@@ -26,8 +26,9 @@ const handleClick = (newZone)=>{
       <li className='side-list-item'  onClick={()=>handleClick("Items")}>Items</li>
       <li className='side-list-item'  onClick={()=>handleClick("Ubications")}>Ubications</li>
       <br />
-      <hr />
+      <br />
       <li className='side-list-item' onClick={()=>handleClick("Options")}><img src={optionIcon} alt="option-icon" />Options</li>
+      <li className='side-list-item' onClick={()=>handleClick("About This Project")}>About This Project</li>
       
     </ul>
     </div>
