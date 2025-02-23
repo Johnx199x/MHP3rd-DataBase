@@ -1,7 +1,23 @@
 import React from 'react'
 
 export const MonstersDescription = (props) =>{
+    let up = ">";    
+
+    const handleClick=(e)=>{
+        console.log(e.currentTarget.nextElementSibling)
+            let $monsterArrow = e.currentTarget.children[1]
+    
+            $monsterArrow.classList.contains("rotate")
+                ?$monsterArrow.classList.remove("rotate")
+                :$monsterArrow.classList.add("rotate")
+    
+            let $monsterDrops = e.currentTarget.nextElementSibling;
+    
+            $monsterDrops.classList.contains("show-description")
+                ?$monsterDrops.classList.remove("show-description")
+                :$monsterDrops.classList.add("show-description")            
         
+    }
     const monsterDanger=()=>{
         let dangerStar = "★";
         let monsterDanger = "";
@@ -44,7 +60,7 @@ export const MonstersDescription = (props) =>{
                 break;
                 case "Stun": elements.push(<img src={require("../../../../Assets/icons/StatusEffect/Status-Stun.webp")} alt='Stun-status_img' title='Stun-Status'></img>);break;
                 case "Paralysis": elements.push(<img src={require("../../../../Assets/icons/StatusEffect/Status-Paralysis.webp")} alt='Paralysis-status_img' title='Paralysis-Status'></img>);break;
-                case "Life drain": elements.push(<img src={require("../../../../Assets/icons/StatusEffect/StatusEffect-Leeched.webp")} alt="Life-Drain-status_img" title='Life Drain'></img>);break;
+                case "Life Drain": elements.push(<img src={require("../../../../Assets/icons/StatusEffect/StatusEffect-Leeched.webp")} alt="Life-Drain-status_img" title='Life Drain'></img>);break;
                 case "Sleep": elements.push(<img src={require("../../../../Assets/icons/StatusEffect/Status-Sleep.webp")} alt='Slee[-status_img' title='Slepp-Status'></img>);break;
                 case "Defence Down": elements.push(<img src={require("../../../../Assets/icons/StatusEffect/StatusEffect-DefenseDow.webp")} alt='Defense-Down-status_img' title='Loose defence'></img>);break;
                 case "Muddy": elements.push(<img src={require("../../../../Assets/icons/StatusEffect/Status_Effect-Webbed_MH4_Icon.webp")} alt='Webbed-status_img' title=''></img>);break;
@@ -131,11 +147,17 @@ export const MonstersDescription = (props) =>{
             <div><span className='monster-info-tags'>Monster element: </span>{props.element===undefined ? "None" : monsterElement(props.element)}</div>
             <div><span className="monster-info-tags">Special Attack Status:</span>{props.ailments=== undefined?"None ": monsterSpecialAttack(props.ailments)}</div>
             <div><span className='monster-info-tags'>Monster weakness: </span>{props.weakness===undefined?"None weakness discovered":monsterElement(props.weakness,  )}</div>
-            <div><span className='monster-info-tags'>Monster drops:</span>
-                {props.dropsLowRank===undefined?"":monsterDrops(props.dropsLowRank,"Low Rank",props.name,props.isLarge)}
-                {props.dropsHighRank===undefined?"":monsterDrops(props.dropsHighRank,"High Rank",props.name, props.isLarge)}
-                
+            <div className='monster-drops'>
+                <div className="monster-drops-collapse" onClick={handleClick}>
+                    <span className='monster-info-tags'>Monster drops </span> 
+                    <span className='monsters-arrow'>{up}</span>
                 </div>
+                <div className='monster-drops-container'>
+                    {props.dropsLowRank===undefined?"":monsterDrops(props.dropsLowRank,"Low Rank",props.name,props.isLarge)}
+                    {props.dropsHighRank===undefined?"":monsterDrops(props.dropsHighRank,"High Rank",props.name, props.isLarge)}
+                </div>
+            </div>   
+                
         </div>
     )
 }

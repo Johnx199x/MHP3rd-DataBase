@@ -20,6 +20,7 @@
 
 .monsters-arrow{
     margin-left: auto;
+    font-weight: 700;
     transition: transform 0.5s ease-in-out;
     transform: rotate(-90deg);
 }
@@ -38,7 +39,7 @@
 }
 .monster-description.show-description{
     visibility: visible;
-    max-height: 2000px;
+    max-height: 5000px;
     opacity: 1;
     transform: translateX(0);
     background-color: #ddd;
@@ -60,6 +61,45 @@
     margin:0;
     padding: 0;
 }
+.monster-drops{
+    padding-top: 0;
+    padding-bottom: 0;
+    
+}
+
+.monster-drops-collapse{
+    display: flex;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    
+}
+
+.monster-drops-collapse:hover{
+    cursor: pointer;
+    background-color: var(--second-background-color);
+}
+
+
+.monster-drops-container{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-1%);
+}
+.monster-drops-container.show-description{
+    padding-bottom: 1rem;
+}
+.monster-drops-container.show-description{
+    visibility: visible;
+    max-height: 2000px;
+    opacity: 1;
+    transform: translateX(0);
+    
+}
 
 .monster-drops-table{
     margin: 0 auto;
@@ -75,3 +115,4 @@
     padding: 0.8rem;
     text-align: center;
 }
+

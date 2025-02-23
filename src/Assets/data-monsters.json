@@ -3148,17 +3148,17 @@
             "isLarge": false,
             "drops":{ 
             "lowRank":[ 
-              ["Monster Bone M", 10, 0, 0, 0, 5],
-              ["Raw Meat", 20, 0, 0, 0, 30],
-              ["Slagtoth Hide", 25, 0, 0, 0, 20],
-              ["Slagtoth Oil", 45, 0, 0, 0, 45]
+              ["Monster Bone M", 10],
+              ["Raw Meat", 20],
+              ["Slagtoth Hide", 25],
+              ["Slagtoth Oil", 45]
             ],
             "highRank":[
-              ["Monster Bone+", 5, 0, 0, 0, 0],
-              ["Raw Meat", 15, 0, 0, 0, 0],
-              ["Slagtoth Hide+", 30, 0, 0, 0, 0],
-              ["Slagtoth Hide", 10, 0, 0, 0, 0],
-              ["Slagtoth Oil", 40, 0, 0, 0, 0]
+              ["Monster Bone+", 5],
+              ["Raw Meat", 15],
+              ["Slagtoth Hide+", 30],
+              ["Slagtoth Hide", 10],
+              ["Slagtoth Oil", 40]
             ]
         }, 
             "weakness": [
