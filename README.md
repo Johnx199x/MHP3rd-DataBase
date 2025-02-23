@@ -1,9 +1,17 @@
 # Monster Hunter Portable 3rd Data-Base
 
-> Monsters-DataBase---->[DataBase used](https://github.com/CrimsonNynja/monster-hunter-DB).
+>#### Data used:
+>> Monsters-DataBase---->[DataBase used](https://github.com/CrimsonNynja/monster-hunter-DB).
+>>
+>> Monsters-Loot-Data:
+    >>> [Monsters Drops ](https://gamefaqs.gamespot.com/psp/991479-monster-hunter-portable-3rd/faqs/61490)
+    >>>
+    >>>[Some Small Monsters Drops](https://monsterhunter.fandom.com/wiki/MH3:_Small_Monster_Carve_List)
+    >>>
+    >>>[Some Largue Monsters Drops ](https://monsterhunter.fandom.com/wiki/MH3:_Monster_Carves_%26_Rewards)
 
-> Monsters-Loot-Data---->[Small Monsters](https://monsterhunter.fandom.com/wiki/MH3:_Small_Monster_Carve_List) , [Largue Monsters](https://monsterhunter.fandom.com/wiki/MH3:_Monster_Carves_%26_Rewards).  
-
+    
+ 
 ### Description
 
 This is a developing database application for Monster Hunter Portable 3rd(MHP3rd). Currently, the main focus is to provide detailed information about the monsters in the game.
