@@ -7,6 +7,37 @@
             "name": "Agnaktor",
             "type": "Leviathan",
             "isLarge": true,
+            "drops":{ 
+            "lowRank":[ 
+              ["Agnaktor Shell", 40, 0, "Face-31", 0, 0],
+              ["Agnaktor Hide", 27, 32, "Shoulder-58", 0, 0],
+              ["Agnaktor Scale", 20, 20, "Claws-37% Shoulder-33% Fin-18", 20, 0],
+              ["Agnaktor Claw", 8, 12, "Claws-54", 0, 0],
+              ["Firestone", 5, 9, "Claws-9% Shoulder-9", 8, 8],
+              ["Agnaktor Tail", 0, 0, 0, 0, 65],
+              ["Agnaktor Fin", 0, 27, "Fin-50", 0, 27],
+              ["Agnaktor Beak", 0, 0, "Face-64", 0, 0],
+              ["Monster Bone L", 0, 0, "Face-5", 0, 0],
+              ["Wyvern Tear", 0, 0, 0, 72, 0]
+            ],
+            "highRank":[
+              ["Agnaktor Carapace", 38, 0, "Face-52", 0, 0],
+              ["Agnaktor Hide+", 25, 30, "Shoulder-46", 0, 0],
+              ["Agnaktor Scale", 20, 18, "Claws-19% Shoulder-26% Fin-15", 20, 0],
+              ["Agnaktor Claw+", 9, 12, "Claws-51", 0, 0],
+              ["Firecell Stone", 5, 7, "Claws-12% Shoulder-10", 0, 10],
+              ["Firestone", 3, 0, 0, 8, 0],
+              ["Agnaktor Tail", 0, 0, 0, 0, 65],
+              ["Agnaktor Fin+", 0, 24, "Fin-49", 0, 25],
+              ["Agnaktor Beak", 0, 0, "Face-42", 0, 0],
+              ["Wyvern Stone", 0, 3, "Face-6", 0, 0],
+              ["Agnaktor Fin", 0, 6, "Fin-32", 0, 0],
+              ["Agnaktor Hide", 0, 0, "Shoulder-18", 0, 0],
+              ["Agnaktor Claw", 0, 0, "Claws-18", 0, 0],
+              ["Wyvern Tear", 0, 0, 0, 72, 0]
+            ]
+        }, 
+        
             "subSpecies": [
               "Glacial Agnaktor"
             ],
@@ -52,6 +83,21 @@
             "name": "Akantor",
             "type": "Flying Wyvern",
             "isLarge": true,
+            "drops":{ 
+            
+            "highRank":[
+              ["Akantor Scale", 38, 0, "Head-18% Stomach-56", 0, 20],
+              ["Akantor Shell", 35, 0, "Stomach-28% Back-20% Front Legs-10", 12, 0],
+              ["Akantor Claw", 10, 0, "Front Legs-80% Front Legs-10", 0, 0],
+              ["Akantor Fang", 5, 0, "Head-78", 0, 0],
+              ["Akantor Gem", 2, 0, "Head-4% Stomach-6", 0, 0],
+              ["Firecell Stone", 10, 0, "Stomach-10", 8, 0],
+              ["Akantor Tail", 0, 0, 0, 0, 80],
+              ["Akantor Spike", 0, 0, "Back-80", 5, 0],
+              ["Wyvern Sobs", 0, 0, 0, 75, 0]
+
+            ]
+        }, 
             "elements": [
               "Fire",
               "Dragon"
@@ -227,6 +273,18 @@
             "name": "Amatsu",
             "type": "Elder Dragon",
             "isLarge": true,
+            "drops":{ 
+              "highRank":[
+                ["Amatsu Carapace", 34, 0, "Wing-5", 0, 10],
+                ["Amatsu Webbing", 17, 0, "Dorsal Fins-80% Dorsal Fins-5% Wing-25", 0, 15],
+                ["Amatsu Claw", 5, 0, "Wing-70", 0, 0],
+                ["Amatsu Chestplate", 30, 0, 0, 0, 0],
+                ["Divine Dragongem", 12, 0, "Head-4% Dorsal Fins-2", 0, 0],
+                ["Storm Vesicle", 2, 0, "Head-16% Dorsal Fins-13", 0, 0],
+                ["Amatsu Tail", 0, 0, 0, 0, 75],
+                ["Amatsu Horn", 0, 0, "Head-80", 0, 0]
+            ]
+        }, 
             "elements": [
               "Water"
             ],
@@ -258,7 +316,21 @@
             "name": "Anteka",
             "type": "Herbivore",
             "isLarge": false,
-            
+            "drops":{ 
+              "lowRank":[ 
+                ["Raw Meat", 15],
+                ["Warm Pelt", 30],
+                ["Anteka Antlers", 45],
+                ["White Liver", 10]
+              ],
+              "highRank":[
+                ["Raw Meat", 10],
+                ["High Quality Pelt", 30],
+                ["Warm Pelt", 15],
+                ["Anteka Antlers", 35],
+                ["White Liver", 10]
+              ]
+          }, 
             "weakness": [
               "Fire",
               "Water",
@@ -349,6 +421,28 @@
             "name": "Arzuros",
             "type": "Fanged Beast",
             "isLarge": true,
+            "drops":{ 
+              "lowRank":[
+                ["Arzuros Pelt", 65, 10, 0, 25, 55],
+                ["Arzuros Carapace", 25, 45, 0, 0, 12],
+                ["Giant Bone", 10, 25, 0, 0, 0],
+                ["Arzuros Brace", 0, 20, "Front Legs-70", 0, 0],
+                ["Beast Tear", 0, 0, 0, 75, 0],
+                ["Honey", 0, 0, 0, 100, 0]
+                ],
+              "highRank":[
+                ["Arzuros Pelt+", 60, 10, 0, 25, 0],
+                ["Arzuros Pelt", 10, 0, 0, 0, 0],
+                ["Arzuros Carapace+", 20, 40, 0, 0, 0],
+                ["Arzuros Carapace", 0, 10, 0, 0, 0],
+                ["Stout Bone", 10, 0, 0, 0, 0],
+                ["Arzuros Brace+", 0, 20, "Front Legs-65", 0, 0],
+                ["Arzuros Brace", 0, 0, "Front Legs-10", 0, 0],
+                ["Beast Tear", 0, 0, 0, 38, 0],
+                ["Beast Sobs", 0, 0, 0, 37, 0]
+              ]
+              
+          },  
             "subSpecies": [
               "Redhelm Arzuros",
               "Apex Arzuros"
@@ -446,6 +540,19 @@
             "name": "Baleful Gigginox",
             "type": "Flying Wyvern",
             "isLarge": true,
+            "drops":{ 
+              "highRank":[
+                ["ElectricGiggi Hide", 38, 0, "Head-38% Body-38% Tail-38", 0],
+                ["Uncanny Hide+", 7, 20, "Head-12% Body-12% Tail-22", 0],
+                ["Thunder Sac", 10, 30, "Body-22% Tail-28", 0],
+                ["Pale Extract", 15, 15, "Head-25% Body-28", 17],
+                ["ElectricGiggi Claw", 20, 25, 0, 0],
+                ["Fearsome Maw", 10, 7, "Head-25", 8],
+                ["Wyvern Stone", 0, 3, "Tail-4", 0],
+                ["Wyvern Tear", 0, 0, 0, 38],
+                ["Wyvern Sobs", 0, 0, 0, 37]
+              ]
+        }, 
             "elements": [
               "Thunder"
             ],
@@ -717,6 +824,22 @@
             "name": "Black Diablos",
             "type": "Flying Wyvern",
             "isLarge": true,
+            "drops":{ 
+              
+              "highRank":[
+                ["Diablos Fang", 30, 15, 0, 0, 0],
+                ["Black Diablos Shell", 63, 24, 0, 0, 28],
+                ["Black Diablos Ridge", 7, 15, 0, 25, 0],
+                ["Diablos Tailcase", 0, 20, 0, 0, 50],
+                ["Diablos Marrow", 0, 14, 0, 0, 12],
+                ["Diablos BrnStm", 0, 8, 0, 0, 6],
+                ["Wyvern Stone", 0, 4, 0, 0, 4],
+                ["Twisted Horn", 0, 0, "Head-75", 0, 0],
+                ["Black Diablos Horn", 0, 0, "Head-25", 0, 0],
+                ["Wyvern Tear", 0, 0, 0, 38, 0],
+                ["Wyvern Sobs", 0, 0, 0, 37, 0]
+              ]
+          }, 
             "ailments": [
               "Stun"
             ],
@@ -759,6 +882,25 @@
             "name": "Bulldrome",
             "type": "Fanged Beast",
             "isLarge": true,
+            "drops":{ 
+            "lowRank":[ 
+              ["Bulldrome Hide", 50, 60, 0, 20],
+              ["Bullfango Pelt", 5, 0, 0, 0],
+              ["Bulldrome Tusk", 15, 0, 0, 5],
+              ["Giant Bone", 30, 25, 0, 0],
+              ["Beast Tear", 0, 0, 0, 75]
+            ],
+            "highRank":[
+              ["Bulldrome Hide+", 40, 60, 0, 20],
+              ["Bulldrome Hide", 10, 0, 0, 0],
+              ["Bullfango Pelt+", 8, 0, 0, 0],
+              ["Bulldrome Tusk", 17, 0, 0, 5],
+              ["Stout Bone", 25, 25, 0, 0],
+              ["Beast Tear", 0, 0, 0, 38],
+              ["Beast Sobs", 0, 0, 0, 37]
+
+            ]
+        }, 
             "weakness": [
               "Thunder"
             ],
@@ -787,6 +929,21 @@
             "name": "Bullfango",
             "type": "Fanged Beast",
             "isLarge": false,
+            "drops":{ 
+            "lowRank":[ 
+              ["Raw Meat", 26],
+              ["Bullfango Pelt", 59],
+              ["Bullfango Pelt+", 5],
+              ["Bone", 10]
+            ],
+            "highRank":[
+              ["Raw Meat", 30],
+              ["Bullfango Pelt", 30],
+              ["Bullfango Pelt+", 15],
+              ["Giant Bone", 10],
+              ["Bone", 15]
+            ]
+        }, 
             "weakness": [
               "Fire",
               "Thunder"
@@ -827,6 +984,20 @@
             "name": "Brute Tigrex",
             "type": "Flying Wyvern",
             "isLarge": true,
+            "drops":{ 
+            
+            "highRank":[
+              ["Brute Tigrex Scale", 38, 20, "Head-0% Tail-40", 20, 0],
+              ["Brute Tigrex Shell", 27, 38, "Head-20", 0, 0],
+              ["Brute Tigrex Claw", 30, 0, "Front Legs-100", 5, 0],
+              ["Tigrex Scalp", 0, 0, "Head-20", 0, 0],
+              ["Tigrex Agito", 5, 5, "Head-8", 0, 0],
+              ["Tigrex Tail", 0, 10, 0, 0, 60],
+              ["Brute Tigrex Fang", 0, 27, "Head-52", 0, 0],
+              ["Wyvern Tear", 0, 0, 0, 38, 0],
+              ["Wyvern Sobs", 0, 0, 0, 37, 0]
+            ]
+        }, 
             "weakness": [
               "Water"
             ],
@@ -866,6 +1037,22 @@
             "name": "Crimson Qurupeco",
             "type": "Bird Wyvern",
             "isLarge": true,
+            "drops":{ 
+            
+            "highRank":[
+              ["Crimson Qurupeco Scale", 40, 10, 0, 15],
+              ["Crimson Qurupeco Wing", 32, 24, "Wings-27", 0],
+              ["Vivid Feather", 16, 10, "Wings-10", 10],
+              ["Wonderful Beak", 2, 9, "Head-55", 0],
+              ["Monster Bone+", 10, 0, 0, 0],
+              ["Sparkstone", 0, 25, "Wings-60", 0],
+              ["Screamer", 0, 20, "Head-25", 0],
+              ["Strange Beak", 0, 0, "Head-20", 0],
+              ["Wyvern Stone", 0, 2, "Wings-3", 0],
+              ["Wyvern Tear", 0, 0, 0, 38],
+              ["Wyvern Sobs", 0, 0, 0, 37]
+            ]
+        }, 
             "elements": [
               "Thunder"
             ],
@@ -1101,6 +1288,31 @@
             "name": "Duramboros",
             "type": "Brute Wyvern",
             "isLarge": true,
+            "drops":{ 
+              "lowRank":[ 
+                ["Duramboros Shell", 46, 24, "Horns-25% Squishy Hump-13", 0, 16],
+                ["Duramboros Moss", 40, 40, "Squishy Hump-27", 20, 0],
+                ["Duramboros Cob", 10, 24, "Squishy Hump-60", 5, 0],
+                ["Duramboros Tail Bone", 4, 6, "Tail-3% Tail (Mining)-6", 0, 0],
+                ["Duramboros Tail", 0, 0, 0, 0, 81],
+                ["Duramboros Horn", 0, 10, "Horns-75", 0, 0],
+                ["Wyvern Tear", 0, 0, 0, 75, 0]
+              ],
+              "highRank":[
+                ["Duramboros Carapace", 42, 18, "Horns-20% Squishy Hump-12", 0, 10],
+                ["Duramboros Shell", 6, 10, "Horns-20% Squishy Hump-0", 0, 10],
+                ["Duramboros Thick Moss", 34, 38, "Squishy Hump-26", 18, 0],
+                ["Duramboros Cob", 10, 10, "Squishy Hump-40% Squishy Hump-22", 7, 0],
+                ["Duramboros Tail Bone", 5, 7, "Tail-5% Tail (Mining)-8", 0, 5],
+                ["Duramboros Sacrum", 3, 5, "Tail-2% Tail (Mining)-4", 0, 0],
+                ["Duramboros Tail+", 0, 0, 0, 0, 77],
+                ["Duramboros Tail", 0, 0, 0, 0, 6],
+                ["Duramboros Horn+", 0, 12, "Horns-70", 0, 0],
+                ["Duramboros Horn", 0, 0, "Horns-10", 0, 0],
+                ["Wyvern Tear", 0, 0, 0, 38, 0],
+                ["Wyvern Sobs", 0, 0, 0, 37, 0]
+              ]
+          }, 
             "subSpecies": [
               "Rust Duramboros"
             ],
@@ -1197,6 +1409,18 @@
             "name": "Gargwa",
             "type": "Bird Wyvern",
             "isLarge": false,
+            "drops":{ 
+            "lowRank":[ 
+              ["Monster Bone S", 15],
+              ["Raw Meat", 70],
+              ["Gargwa Feather", 15]
+            ],
+            "highRank":[
+              ["Monster Bone S", 5],
+              ["Raw Meat", 70],
+              ["Gargwa Feather", 25]
+            ]
+        }, 
             "weakness": [
               "Water",
               "Fire",
@@ -1327,35 +1551,22 @@
             "type": "Leviathan",
             "isLarge": true,
             "drops":{ 
-            "lowRank":[ 
-              ["Agnaktor Shell", 40, 0, "Face-31", 0, 0],
-              ["Agnaktor Hide", 27, 32, "Shoulder-58", 0, 0],
-              ["Agnaktor Scale", 20, 20, "Claws-37% Shoulder-33% Fin-18", 20, 0],
-              ["Agnaktor Claw", 8, 12, "Claws-54", 0, 0],
-              ["Firestone", 5, 9, "Claws-9% Shoulder-9", 8, 8],
-              ["Agnaktor Tail", 0, 0, 0, 0, 65],
-              ["Agnaktor Fin", 0, 27, "Fin-50", 0, 27],
-              ["Agnaktor Beak", 0, 0, "Face-64", 0, 0],
-              ["Monster Bone L", 0, 0, "Face-5", 0, 0],
-              ["Wyvern Tear", 0, 0, 0, 72, 0]
-            ],
-            "highRank":[
-              ["Agnaktor Carapace", 38, 0, "Face-52", 0, 0],
-              ["Agnaktor Hide+", 25, 30, "Shoulder-46", 0, 0],
-              ["Agnaktor Scale", 20, 18, "Claws-19% Shoulder-26% Fin-15", 20, 0],
-              ["Agnaktor Claw+", 9, 12, "Claws-51", 0, 0],
-              ["Firecell Stone", 5, 7, "Claws-12% Shoulder-10", 0, 10],
-              ["Firestone", 3, 0, 0, 8, 0],
-              ["Agnaktor Tail", 0, 0, 0, 0, 65],
-              ["Agnaktor Fin+", 0, 24, "Fin-49", 0, 25],
-              ["Agnaktor Beak", 0, 0, "Face-42", 0, 0],
-              ["Wyvern Stone", 0, 3, "Face-6", 0, 0],
-              ["Agnaktor Fin", 0, 6, "Fin-32", 0, 0],
-              ["Agnaktor Hide", 0, 0, "Shoulder-18", 0, 0],
-              ["Agnaktor Claw", 0, 0, "Claws-18", 0, 0],
-              ["Wyvern Tear", 0, 0, 0, 72, 0]
-            ]
-        }, 
+              "highRank":[
+                ["Glacial Agnaktor Shl", 40, 0, "Head-30", 10, 0],
+                ["Glacial Agnaktor Hide", 20, 30, "Dorsal Fin-35", 0, 0],
+                ["Glacial Agnaktor Claw", 8, 10, "Legs-52% Legs-28", 0, 0],
+                ["Moist Chest Shell", 27, 12, 0, 0, 0],
+                ["Gracium", 5, 11, "Legs-12", 15, 0],
+                ["Glacial Agnaktor Tail", 0, 0, 0, 0, 65],
+                ["Glacial Agnaktor Fin", 0, 24, "Dorsal Fin-61", 0, 27],
+                ["Glacial Agnaktor Beak", 0, 10, "Head-64", 0, 0],
+                ["Isisium", 0, 0, "Legs-8", 0, 0],
+                ["Wyvern Stone", 0, 3, "Head-6% Dorsal Fin-4", 0, 0],
+                ["Wyvern Tear", 0, 0, 0, 38, 0],
+                ["Wyvern Sobs", 0, 0, 0, 37, 0]
+
+              ]
+          }, 
             "elements": [
               "Ice",
               "Water"
@@ -1394,6 +1605,23 @@
             "name": "Gold Rathian",
             "type": "Flying Wyvern",
             "isLarge": true,
+            "drops":{ 
+              "highRank":[
+                ["Gold Rathian Scale", 43, 22, "Head-25% Wings-15", 11, 45],
+                ["Gold Rathian Shell", 29, 30, "Head-50", 0, 30],
+                ["Inferno Sac", 8, 10, 0, 0, 0],
+                ["Gold Rathn Spike", 10, 0, 0, 0, 10],
+                ["Rath Fluid", 10, 20, "Head-15", 10, 0],
+                ["Rathian Plate", 0, 4, "Head-6", 0, 10],
+                ["Rathian Ruby", 0, 7, "Head-4", 4, 5],
+                ["Rath Talon", 0, 0, "Wings-60", 0, 0],
+                ["Wyvern Claw", 0, 0, "Wings-15", 0, 0],
+                ["Rathian Webbing", 0, 0, "Wings-10", 0, 0],
+                ["Wyvern Tear", 0, 0, 0, 38, 0],
+                ["Wyvern Sobs", 0, 0, 0, 37, 0],
+                ["Rath Medulla", 0, 7, 0, 0, 0]
+            ]
+        }, 
             "elements": [
               "Fire"
             ],
@@ -1572,6 +1800,28 @@
             "name": "Great Wroggi",
             "type": "Bird Wyvern",
             "isLarge": true,
+            "drops":{ 
+              "lowRank":[ 
+                ["Great Wroggi Shell", 27, 40, 0, 0, 15],
+                ["Great Wroggi Hide", 40, 20, 0, 0, 30],
+                ["Wroggi Scale", 8, 0, 0, 25, 20],
+                ["Poison Sac", 25, 40, 0, 0, 20],
+                ["King's Beak", 0, 0, "Head-50", 0, 0],
+                ["Poison Sac", 0, 0, "Head-50", 0, 0],
+                ["Wyvern Tear", 0, 0, 0, 75, 0]
+              ],
+              "highRank":[
+                ["Great Wroggi Shell+", 20, 35, 0, 0, 0],
+                ["Great Wroggi Shell", 7, 0, 0, 0, 0],
+                ["Great Wroggi Hide+", 40, 15, 0, 23, 0],
+                ["Great Wroggi Hide", 8, 0, 0, 0, 0],
+                ["Toxin Sac", 25, 38, 0, 0, 0],
+                ["King's Beak", 0, 0, "Head-60", 0, 0],
+                ["BirdWyvern Stone", 0, 4, "Head-10", 2, 0],
+                ["Wyvern Tear", 0, 0, 0, 50, 0],
+                ["Wyvern Sobs", 0, 0, 0, 25, 0]
+              ]
+          }, 
             "ailments": [
               "Poison"
             ],
@@ -1600,6 +1850,22 @@
             "name": "Green Nargacuga",
             "type": "Flying Wyvern",
             "isLarge": true,
+            "drops":{ 
+            
+            "highRank":[
+              ["GreenNarga Scale", 45, 18, "Head-26", 25, 0],
+              ["Green Narga Pelt", 28, 45, "Wings-15% Tail-22", 0, 20],
+              ["GreenNarga Wing", 10, 0, "Wings-60% Wings-25", 0, 0],
+              ["GreenNarga Fang", 15, 21, "Head-66", 0, 0],
+              ["Narga Brain Stem", 2, 4, "Head-8% Tail-8", 0, 8],
+              ["Nargacuga Tail", 0, 12, 0, 0, 52],
+              ["Narga Tail Spike", 0, 0, "Tail-60", 0, 10],
+              ["Nargacuga Marrow", 0, 0, 0, 0, 10],
+              ["Wyvern Tear", 0, 0, 0, 38, 0],
+              ["Wyvern Sobs", 0, 0, 0, 37, 0]
+            ]
+        }, 
+
             "ailments": [
               "Stun"
             ],
@@ -1634,6 +1900,20 @@
             "name": "Jade Barroth",
             "type": "Brute Wyvern",
             "isLarge": true,
+            "drops":{ 
+            
+              "highRank":[
+                ["Jade Barroth Shell", 44, 5, "Arms-35", 0, 0],
+                ["Jade Barroth Ridge", 28, 27, 0, 10, 27],
+                ["Jade Barroth Claw", 18, 0, "Arms-65", 0, 0],
+                ["Jade Barroth Scalp", 10, 30, 0, 0, 0],
+                ["Jade Barroth Tail", 0, 25, 0, 0, 70],
+                ["Frzn Mucous Ball", 0, 10, 0, 15, 0],
+                ["Wyvern Stone", 0, 3, 0, 0, 3],
+                ["Wyvern Tear", 0, 0, 0, 38, 0],
+                ["Wyvern Sobs", 0, 0, 0, 37, 0]
+            ]
+        }, 
             "elements": [
               "Ice"
             ],
@@ -1910,6 +2190,29 @@
             "name": "Lagombi",
             "type": "Fanged Beast",
             "isLarge": true,
+            "drops":{ 
+            "lowRank":[ 
+              ["Lagombi Pelt", 50, 10, 0, 15, 60],
+              ["Lagombi Plastron", 30, 40, 0, 10, 0],
+              ["Lagombi Claw", 15, 30, 0, 0, 0],
+              ["Giant Bone", 5, 20, 0, 0, 5],
+              ["Lagombi Ear", 0, 0, "Head-75", 0, 50],
+              ["Beast Tear", 0, 0, 0, 75, 0]
+            ],
+            "highRank":[
+              ["Lagombi Pelt+", 45, 10, 0, 25, 0],
+              ["Lagombi Pelt", 10, 0, 0, 0, 0],
+              ["Lagombi Plastron+", 28, 35, 0, 0, 0],
+              ["Lagombi Plastron", 0, 8, 0, 0, 0],
+              ["Lagombi Claw+", 12, 25, 0, 0, 0],
+              ["Lagombi Claw", 5, 5, 0, 0, 0],
+              ["Stout Bone", 5, 17, 0, 0, 0],
+              ["Lagombi Ear+", 0, 0, "Head-70", 0, 0],
+              ["Lagombi Ear", 0, 0, "Head-10", 0, 0],
+              ["Beast Tear", 0, 0, 0, 38, 0],
+              ["Beast Sobs", 0, 0, 0, 37, 0]
+            ]
+        }, 
             "subSpecies": [
               "Snowbaron Lagombi"
             ],
@@ -1960,7 +2263,7 @@
               }
             ]
           },
-       {
+      {
             "_id": {
               "$oid": "5e1583ba8a80af35ce52d77b"
             },
@@ -2079,6 +2382,34 @@
             "name": "Nargacuga",
             "type": "Flying Wyvern",
             "isLarge": true,
+            "drops":{ 
+            "lowRank":[ 
+              ["Nargacuga Scale", 45, 18, 0, 25, 60],
+              ["Nargacuga Pelt", 25, 40, 0, 0, 40],
+              ["Nargacuga Wing", 10, 0, 0, 0, 0],
+              ["Nargacuga Fang", 15, 23, 0, 0, 0],
+              ["Nargacuga Tail", 0, 15, 0, 0, 82],
+              ["Narga Tail Spike", 0, 0, "Tail-75", 0, 10],
+              ["Nargacuga Marrow", 0, 4, "Tail-8", 0, 8],
+              ["Wyvern Tear", 0, 0, 0, 75, 0]
+            ],
+            "highRank":[
+              ["Nargacuga Scale+", 40, 18, "Head-20% Wings-0", 25, 0],
+              ["Nargacuga Scale", 10, 0, 0, 0, 0],
+              ["Nargacuga Pelt+", 28, 35, "Wings-12% Tail-17", 0, 0],
+              ["Nargacuga Pelt", 0, 10, 0, 0, 0],
+              ["Nargacuga Wing+", 8, 0, "Wings-60% Wings-20", 0, 0],
+              ["Nargacuga Wing", 0, 0, "Wings-8", 0, 0],
+              ["Nargacuga Fang+", 12, 21, "Head-65", 0, 0],
+              ["Nargacuga Fang", 0, 0, "Head-7", 0, 0],
+              ["Narga Brain Stem", 2, 4, "Head-8% Tail-8", 0, 0],
+              ["Nargacuga Tail", 0, 12, 0, 0, 72],
+              ["Narga Tail Spike", 0, 0, "Tail-65", 0, 10],
+              ["Nargacuga Marrow", 0, 0, "Tail-10", 0, 10],
+              ["Wyvern Tear", 0, 0, 0, 38, 0],
+              ["Wyvern Sobs", 0, 0, 0, 37, 0]
+            ]
+        }, 
             "subSpecies": [
               "Green Nargacuga",
               "Lucent Nargacuga",
@@ -2134,6 +2465,28 @@
             "name": "Nibelsnarf",
             "type": "Leviathan",
             "isLarge": true,
+            "drops":{ 
+              "lowRank":[ 
+                ["Nibelsnarf Shell", 50, 0, "Gills-20", 0, 40],
+                ["Nibelsnarf Hide", 30, 45, "Legs-30", 0, 28],
+                ["Nibelsnarf Scalp", 5, 7, "Gills-10", 0, 0],
+                ["Shiny Fluid", 15, 25, "Gills-70", 25, 12],
+                ["Nibelsnarf Claw", 0, 23, "Legs-70", 0, 0],
+                ["Wyvern Tear", 0, 0, 0, 75, 0]
+              ],
+              "highRank":[
+                ["Nibelsnarf Carapace", 48, 0, "Gills-15", 0, 0],
+                ["Nibelsnarf Hide+", 25, 42, "Legs-25", 0, 0],
+                ["Nibelsnarf Hide", 5, 0, 0, 0, 0],
+                ["Nibelsnarf Scalp", 10, 10, "Gills-15", 0, 0],
+                ["Glossy Fluid", 12, 20, "Gills-65", 20, 0],
+                ["Shiny Fluid", 0, 5, 0, 5, 0],
+                ["Nibelsnarf Claw+", 0, 23, "Legs-65", 0, 0],
+                ["Nibelsnarf Claw", 0, 0, "Legs-10", 0, 0],
+                ["Wyvern Tear", 0, 0, 0, 38, 0],
+                ["Wyvern Sobs", 0, 0, 0, 37, 0]
+              ]
+          }, 
             "ailments": [
               "Waterblight"
             ],
@@ -2156,55 +2509,7 @@
               }
             ]
           },
-       {
-            "_id": {
-              "$oid": "5e1436ca8a80af35ce52d6ff"
-            },
-            "name": "Pink Rathian",
-            "type": "Flying Wyvern",
-            "isLarge": true,
-            "elements": [
-              "Fire"
-            ],
-            "ailments": [
-              "Fireblight",
-              "Poison",
-              "Noxious Poison"
-            ],
-            "weakness": [
-              "Dragon",
-              "Thunder"
-            ],
-            "games": [
-              {
-                "game": "Monster Hunter Portable 3rd",
-                "image": "MH3U-Pink_Rathian_Icon.png",
-                "info": "A subspecies of Rathian with vibrant pink scales. Pink Rathian wield their toxic tails more skillfully than normal Rathian, using a wide variety of attacks to weaken their prey before eventually moving in for the kill.",
-                "danger": "4"
-              },
-              {
-                "game": "Monster Hunter 4 Ultimate",
-                "image": "MH4U-Pink_Rathian_Icon.png",
-                "info": "A subspecies of Rathian with vibrant pink scales. Pink Rathian wield their toxic tails more skillfully than normal Rathian, using a wide variety of attacks to weaken their prey before eventually moving in for the kill.",
-                "danger": "5"
-              },
-              {
-                "game": "Monster Hunter World",
-                "image": "MHW-Pink_Rathian_Icon.png",
-                "info": "A subspecies with vibrant pink scales. Pink Rathians wield their toxic tails more deftly than normal Rathians, weakening prey with poison before moving in for the kill."
-              },
-              {
-                "game": "Monster Hunter Stories",
-                "image": "MH4U-Pink_Rathian_Icon.png",
-                "info": "A vivid, pink-scaled Rathian subspecies. Its tail attacks are far more powerful than those of a regular Rathian."
-              },
-              {
-                "game": "Monster Hunter Stories 2",
-                "image": "MHST2-Pink_Rathian_Icon.png",
-                "info": "A vivid, pink-scaled Rathian subspecies. Its tail attacks are far more powerful than those of a regular Rathian."
-              }
-            ]
-          }, {
+        {
             "_id": {
               "$oid": "5e14546a8a80af35ce52d71f"
             },
@@ -2213,15 +2518,19 @@
             "isLarge": false,
             "drops":{ 
               "lowRank":[ 
-                ["Raw Meat", 40],
-                ["Warm Pelt", 35],
-                ["Popo Tongue", 25]
+                ["Raw Meat", 30],
+                ["Bone", 20],
+                ["Giant Bone", 5],
+                ["Popo Tongue", 45]  
+              
             ],
               "highRank":[
-                ["High-quality Pelt", 35],
                 ["Raw Meat", 25],
-                ["Popo Tongue", 25],
-                ["Warm Pelt", 15]
+                ["Bone", 8],
+                ["Giant Bone", 20],
+                ["Stout Bone", 2],
+                ["Popo Tongue", 45]
+                
             ]
         }, 
             "weakness": [
@@ -2275,6 +2584,21 @@
             "name": "Purple Ludroth",
             "type": "Leviathan",
             "isLarge": true,
+            "drops":{ 
+            
+            "highRank":[
+              ["Purple Ludroth Hide", 25, 32, "Sponge-70", 0, 0],
+              ["Purple Ludroth Scl", 30, 0, "Head-40% Sponge-10", 10, 42],
+              ["Purple Ludroth Claw", 20, 0, 0, 0, 0],
+              ["Aqueous Sac", 10, 22, 0, 0, 0],
+              ["Power Extract", 15, 15, "Sponge-20", 15, 0],
+              ["R.Ludroth Tail", 0, 0, 0, 0, 55],
+              ["R.Ludroth Chest+", 0, 18, "Head-60", 0, 0],
+              ["Wyvern Stone", 0, 3, "Tail-3", 0, 0],
+              ["Wyvern Tear", 0, 0, 0, 38, 0],
+              ["Wyvern Sobs", 0, 0, 0, 37, 0]
+            ]
+        }, 
             "ailments": [
               "Poison",
               "Noxious Poison"
@@ -2698,6 +3022,20 @@
             "name": "Sand Barioth",
             "type": "Flying Wyvern",
             "isLarge": true,
+            "drops":{ 
+            
+                "highRank":[
+                  ["Sand Barioth Pelt", 20, 34, "Wings-26", 0, 0],
+                  ["Sand Barioth Shell", 43, 0, "Head-30", 0, 25],
+                  ["Ultramarine Tusks", 12, 20, "Head-50", 0, 0],
+                  ["Pleural Membrane", 25, 26, "Head-20", 25, 0],
+                  ["Sand Barioth Tail", 0, 0, 0, 0, 75],
+                  ["Sand Barioth Claw", 0, 16, "Wings-74", 0, 0],
+                  ["Wyvern Stone", 0, 4, 0, 0, 0],
+                  ["Wyvern Tear", 0, 0, 0, 38, 0],
+                  ["Wyvern Sobs", 0, 0, 0, 37, 0]
+            ]
+        }, 
             "weakness": [
               "Ice",
               "Thunder"
@@ -2729,6 +3067,24 @@
             "name": "Silver Rathalos",
             "type": "Flying Wyvern",
             "isLarge": true,
+            "drops":{ 
+            
+              "highRank":[
+                ["Silver Rathalos Scale", 43, 25, "Head-50% Wings-15", 12, 15],
+                ["Silver Rathalos Shell", 30, 40, "Head-25", 0, 8],
+                ["Inferno Sac", 12, 0, 0, 0, 0],
+                ["Rath Medulla", 3, 0, 0, 0, 0],
+                ["Rath Fluid", 12, 18, "Head-15", 10, 0],
+                ["Silver Rathalos Tail", 0, 10, 0, 0, 60],
+                ["Rathalos Plate", 0, 0, "Head-6", 0, 12],
+                ["Rathalos Ruby", 0, 7, "Head-4", 3, 5],
+                ["Rath Talon", 0, 0, "Wings-60", 0, 0],
+                ["Wyvern Claw", 0, 0, "Wings-15", 0, 0],
+                ["Rathalos Webbing", 0, 0, "Wings-10", 0, 0],
+                ["Wyvern Tear", 0, 0, 0, 38, 0],
+                ["Wyvern Sobs", 0, 0, 0, 37, 0]
+            ]
+        }, 
             "elements": [
               "Fire"
             ],
@@ -2790,6 +3146,21 @@
             "name": "Slagtoth",
             "type": "Herbivore",
             "isLarge": false,
+            "drops":{ 
+            "lowRank":[ 
+              ["Monster Bone M", 10, 0, 0, 0, 5],
+              ["Raw Meat", 20, 0, 0, 0, 30],
+              ["Slagtoth Hide", 25, 0, 0, 0, 20],
+              ["Slagtoth Oil", 45, 0, 0, 0, 45]
+            ],
+            "highRank":[
+              ["Monster Bone+", 5, 0, 0, 0, 0],
+              ["Raw Meat", 15, 0, 0, 0, 0],
+              ["Slagtoth Hide+", 30, 0, 0, 0, 0],
+              ["Slagtoth Hide", 10, 0, 0, 0, 0],
+              ["Slagtoth Oil", 40, 0, 0, 0, 0]
+            ]
+        }, 
             "weakness": [
               "Thunder",
               "Ice"
@@ -2837,6 +3208,19 @@
             "name": "Steel Uragaan",
             "type": "Brute Wyvern",
             "isLarge": true,
+            "drops":{ 
+              "highRank":[
+                ["Steel Uragaan Scale+", 42, 20, "Tail-58% Tail-58", 0, 0],
+                ["Steel Uragaan Cpc", 28, 25, "Head-20", 0, 0],
+                ["Steel Uragn Jaw", 10, 20, "Head-65", 0, 0],
+                ["Steel Uragn Scute", 12, 12, "Head-12% Tail-24", 0, 0],
+                ["Uragaan Marrow", 8, 10, "Tail-10", 8, 0],
+                ["Uragaan Ruby", 0, 3, "Head-3% Tail-5", 4, 0],
+                ["Lava Chunk", 0, 10, "Tail-8", 13, 0],
+                ["Wyvern Tear", 0, 0, 0, 38, 0],
+                ["Wyvern Sobs", 0, 0, 0, 37, 0]
+              ]
+          }, 
             "elements": [
               "Fire"
             ],
@@ -2865,6 +3249,31 @@
             "name": "Tigrex",
             "type": "Flying Wyvern",
             "isLarge": true,
+            "drops":{ 
+            "lowRank":[ 
+              ["Tigrex Scale", 40, 22, 0, 20, 60],
+              ["Tigrex Shell", 20, 36, "Head-38", 0, 40],
+              ["Tigrex Claw", 37, 0, "Front Legs-80", 5, 0],
+              ["Tigrex Scalp", 3, 5, "Head-12", 0, 0],
+              ["Tigrex Tail", 0, 12, 0, 0, 80],
+              ["Tigrex Fang", 0, 25, "Head-50", 0, 0],
+              ["Wyvern Tear", 0, 0, 0, 75, 0]
+            ],
+            "highRank":[
+              ["Tigrex Scale+", 35, 20, 0, 20, 40],
+              ["Tigrex Scale", 8, 22, 0, 0, 0],
+              ["Tigrex Carapace", 17, 30, "Head-17", 0, 0],
+              ["Tigrex Claw+", 30, 0, "Front Legs-80", 5, 0],
+              ["Tigrex Claw", 0, 0, "Front Legs-20", 5, 0],
+              ["Tigrex Agito", 3, 7, "Head-8", 0, 0],
+              ["Tigrex Scalp", 7, 8, "Head-15", 0, 0],
+              ["Tigrex Tail", 0, 8, 0, 0, 60],
+              ["Tigrex Fang+", 0, 25, "Head-45", 0, 0],
+              ["Tigrex Fang", 0, 0, "Head-15", 0, 0],
+              ["Wyvern Tear", 0, 0, 0, 38, 0],
+              ["Wyvern Sobs", 0, 0, 0, 37, 0]
+            ]
+        }, 
             "subSpecies": [
               "Brute Tigrex",
               "Molten Tigrex",
@@ -2917,6 +3326,19 @@
             "name": "Ukanlos",
             "type": "Flying Wyvern",
             "isLarge": true,
+            "drops":{ 
+            
+            "highRank":[  
+              ["Ukanlos Shell", 40, 0, "Stomach-24% Back-15% Front Legs-10", 12, 10],
+              ["Ukanlos Scale", 28, 0, "Stomach-70", 0, 0],
+              ["Ukanlos Tail", 10, 0, 0, 0, 90],
+              ["Ukanlos Fin", 12, 0, "Back-50% Back-35", 5, 0],
+              ["Ukanlos Jaw", 8, 0, "Head-85", 0, 0],
+              ["Ukanlos Gem", 2, 0, "Head-4% Stomach-6", 0, 0],
+              ["Gracium", 0, 0, 0, 8, 0],
+              ["Wyvern Sobs", 0, 0, 0, 75, 0]
+            ]
+        }, 
             "elements": [
               "Ice"
             ],
@@ -3079,6 +3501,29 @@
             "name": "Volvidon",
             "type": "Fanged Beast",
             "isLarge": true,
+            "drops":{ 
+            "lowRank":[ 
+              ["Volvidon Shell", 35, 50, 0, 0, 35],
+              ["Volvidon Claw", 20, 10, 0, 0, 10],
+              ["Volvidon Scute", 10, 0, 0, 10, 0],
+              ["Paralysis Sac", 35, 40, 0, 15, 25],
+              ["King's Beak", 0, 0, "Lower Shell-50", 0, 0],
+              ["Poison Sac", 0, 0, "Lower Shell-50", 0, 0],
+              ["Beast Tear", 0, 0, 0, 75, 0]
+            ],
+            "highRank":[
+              ["Volvidon Shell+", 30, 42, 0, 0, 0],
+              ["Volvidon Claw+", 20, 10, 0, 0, 0],
+              ["Volvidon Claw", 8, 0, 0, 0, 0],
+              ["Volvidon Scute", 12, 0, 0, 10, 0],
+              ["Immobile Sac", 30, 38, 0, 15, 0],
+              ["King's Beak", 0, 0, "Lower Shell-60", 0, 0],
+              ["Toxin Sac", 0, 0, "Lower Shell-30", 0, 0],
+              ["BirdWyvern Stone", 0, 0, "Lower Shell-10", 0, 0],
+              ["Beast Tear", 0, 0, 0, 38, 0],
+              ["Beast Sobs", 0, 0, 0, 37, 0]
+            ]
+        }, 
             "ailments": [
               "Paralysis",
               "Soiled"
@@ -3114,6 +3559,20 @@
             "name": "Wroggi",
             "type": "Bird Wyvern",
             "isLarge": false,
+            "drops":{ 
+            "lowRank":[ 
+              ["Wroggi Fang", 40],
+              ["Wroggi Hide", 29],
+              ["Wroggi Scale", 23],
+              ["Monster Bone S", 8]
+            ],
+            "highRank":[
+              ["Wroggi Fang", 38],
+              ["Wroggi Hide", 7],
+              ["Wroggi Scale+", 35],
+              ["Bird Wyvern Bone", 20]
+            ]
+        }, 
             "ailments": [
               "Poison"
             ],
@@ -3141,6 +3600,37 @@
             "name": "Zinogre",
             "type": "Fanged Wyvern",
             "isLarge": true,
+            "drops":{ 
+            "lowRank":[ 
+              ["Zinogre Shell", 40, 10, "Head-17", 8, 20],
+              ["Zinogre Fur", 20, 30, 0, 0, 20],
+              ["Zinogre Claw", 15, 20, "Front Legs-70% Front Legs-20", 0, 0],
+              ["Zinogre Conductor", 20, 30, "Front Legs-10", 0, 0],
+              ["Zinogre Plate", 5, 2, "Head-3", 2, 2],
+              ["Zinogre Tail", 0, 0, 0, 0, 70],
+              ["Zinogre Horn", 0, 0, "Head-80", 0, 0],
+              ["Super Thunderbug", 0, 8, 0, 15, 0],
+              ["Wyvern Tear", 0, 0, 0, 75, 0]
+            ],
+            "highRank":[
+              ["Zinogre Carapace", 38, 10, "Head-9", 8, 18],
+              ["Zinogre Fur+", 18, 28, 0, 0, 0],
+              ["Zinogre Fur", 8, 0, 0, 0, 0],
+              ["Zinogre Claw+", 15, 20, "Front Legs-67% Front Legs-15", 0, 0],
+              ["Zinogre Claw", 15, 0, "Front Legs-10", 0, 0],
+              ["Zinogre Conductor+", 12, 28, "Front Legs-8", 0, 0],
+              ["Zinogre Conductor", 6, 0, 0, 0, 0],
+              ["Zinogre Gem", 3, 2, "Head-3", 2, 2],
+              ["Zinogre Tail", 0, 0, 0, 0, 62],
+              ["Zinogre Plate", 0, 4, "Head-8", 0, 10],
+              ["Zinogre Shell", 0, 10, 0, 0, 8],
+              ["Zinogre Horn+", 0, 0, "Head-70", 0, 0],
+              ["Zinogre Horn", 0, 0, "Head-10", 0, 0],
+              ["Super Thunderbug", 0, 8, 0, 15, 0],
+              ["Wyvern Tear", 0, 0, 0, 38, 0],
+              ["Wyvern Sobs", 0, 0, 0, 37, 0]
+            ]
+        }, 
             "subSpecies": [
               "Stygian Zinogre",
               "Thunderlord Zinogre",
