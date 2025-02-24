@@ -37,6 +37,9 @@
     transition: all 0.5s ease-in, background-color 1s ease-in ;
     transform: translateY(-1%);
 }
+.monster-description-notes{
+    font-family: 'Roboto', sans-serif;
+}
 .monster-description.show-description{
     visibility: visible;
     max-height: 5000px;
@@ -71,7 +74,9 @@
     padding:0 1.5rem;
 }
 
+
 .monster-drops-collapse{
+    padding: 0 1rem;
     display: flex;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
@@ -87,7 +92,7 @@
 .monster-drops-container{
     display: flex;
     flex-wrap: wrap;
-    overflow: hidden;
+    overflow: scroll;
     opacity: 0;
     visibility: hidden;
     max-height: 0;
@@ -116,7 +121,7 @@
 }
 
 .monster-drops-table-item , .monster-drops-table-header{
-    padding: 0.8rem;
+    padding: 0.8rem 0;
     text-align: center;
 }
 

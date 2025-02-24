@@ -127,7 +127,7 @@ export const MonstersDescription = (props) =>{
                     <tr key={index} className='monster-drops-table-row'>    
                         {
                         element.map((ele,inde)=>( 
-                            <td className="monster-drops-table-item" key={inde}>{inde===0||ele==="-" ? ele : `${ele}%`}</td>
+                            <td className="monster-drops-table-item" key={inde}>{inde===0||ele==="-" ? ele :(ele=== 0 ?"-": `${ele}%`)}</td>
                         ))
                         }
                     </tr>
@@ -141,7 +141,7 @@ export const MonstersDescription = (props) =>{
     
     return(
         <div className='monster-description'>
-            <p><span className='monster-info-tags'>Hunters Notes:</span><br />{props.info ===""|| props.info ===null ? "Unfortunately, there are no hunter notes available on this monster; its origins remain a complete mystery" : props.info}</p>
+            <p className='monster-description-notes'><span className='monster-info-tags'>Hunters Notes:</span><br />{props.info ===""|| props.info ===null ? "Unfortunately, there are no hunter notes available on this monster; its origins remain a complete mystery" : props.info}</p>
             <p><span className='monster-info-tags'>Monster type: </span>{props.type}</p>
             <p><span className='monster-info-tags'>Danger: </span>{monsterDanger()}</p>
             <div><span className='monster-info-tags'>Monster element: </span>{props.element===undefined ? "None" : monsterElement(props.element)}</div>
