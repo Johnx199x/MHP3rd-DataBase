@@ -9,13 +9,13 @@ export const HeaderApp = () => {
     const $themeBtn = useRef(null)
     const $sideBtn = useRef(null)
 
-    const [theme, setTheme] = useState("lightTheme")
+    const [theme, setTheme] = useState(localStorage.getItem("theme")||localStorage.setItem("theme",'lightTheme'))
     const changeTheme=(theme)=>{
         setTheme(theme)
     }
     
     const handleClickTheme = ()=>{
-        <Theme theme={theme} changeTheme={changeTheme} /> 
+        <Theme theme={theme}/> 
         theme==="lightTheme"?changeTheme("darkTheme"):changeTheme("lightTheme");
 
     }

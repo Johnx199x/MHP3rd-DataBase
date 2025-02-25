@@ -7,15 +7,13 @@ export const Theme = ({theme}) => {
         if(theme === "lightTheme"){
                 $body.classList.contains("darkTheme")&& ($body.classList.toggle("darkTheme"));
                 $body.classList.add("lightTheme");
-                localStorage.setItem("theme", "darkTheme");
+                localStorage.setItem("theme", "lightTheme");
 
         }
             else{ 
                 $body.classList.contains("lightTheme")&& ($body.classList.toggle("lightTheme"));
                 $body.classList.add("darkTheme");
-                localStorage.setItem("theme", "lightTheme");
-
+                localStorage.setItem("theme", "darkTheme");
             }
-       
             
 }
