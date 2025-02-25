@@ -23,7 +23,7 @@ export const Monsters = () => {
     const [monsterType,setMonstertype] = useState(["small"]);
 
     useEffect(()=>{
-
+        
 
         const getMonsters = (data)=>{ 
         const largueMonster =[];

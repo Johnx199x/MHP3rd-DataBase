@@ -1,0 +1,72 @@
+body.lightTheme{ 
+    .main-container{
+    background-color: var(--main-background-color-light);
+    color: var(--main-text-color-light);
+    }
+
+
+    /*****  Monsters section  *****/
+    .monster-type-select{
+    color: var(--main-interactive-color);
+
+    }
+    .selected-monster-type{
+    background-color: #e7e7f0;
+    }
+    .monsters-figure:hover{
+        background-color: var(--second-background-color);
+    }
+    .monster-description.show-description{
+        background-color: #ddd;
+    }
+    .monster-drops-collapse:hover{
+        background-color: var(--second-background-color);
+    }
+    .fa-github{
+        color:#2b3137;
+    }
+    .fa-envelope{
+        color:#333333;
+
+    }
+
+}
+
+
+
+
+body.darkTheme{
+
+    .main-container{
+        color:var(--main-text-color-dark);
+        background-color: var(--main-background-color-dark);
+}
+/*****  Monsters section  *****/
+
+.monster-type-select{
+    color: var(--main-interactive-color);
+
+    }
+    .selected-monster-type{
+        background-color: #525257;
+}
+
+
+    .monsters-figure:hover{
+        background-color: var(--main-background-color-dark-hover);
+}
+    .monster-description.show-description{
+        background-color: var(--main-background-color-dark-hover);
+}
+.monster-drops-collapse:hover{
+    background-color: var(--second-background-color);
+}
+.fa-github{
+    color: var(--main-background-color-light);
+}
+.fa-envelope{
+    color: var(--main-background-color-light);
+
+}
+
+}

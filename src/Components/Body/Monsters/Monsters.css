@@ -13,12 +13,9 @@
     margin: 0;
     font-size: 20px;
     font-weight: 500;
-    color: var(--main-interactive-color);
     transition: all 0.3s ease-in-out;
 }
 
-.selected-monster-type{
-    background-color: #e7e7f0;
-}
+
 
 

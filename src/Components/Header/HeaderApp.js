@@ -1,12 +1,28 @@
-import React,{useRef} from 'react';
+import React,{useRef,useState} from 'react';
 
 import "./HeaderApp.css"
 import { SearchInput } from './searchInput/SearchInput'
+import { Theme } from '../Themes/Theme';
+
 
 export const HeaderApp = () => {
-
+    const $themeBtn = useRef(null)
     const $sideBtn = useRef(null)
 
+    const [theme, setTheme] = useState("lightTheme")
+    const changeTheme=(theme)=>{
+        setTheme(theme)
+    }
+    
+    const handleClickTheme = ()=>{
+        <Theme theme={theme} changeTheme={changeTheme} /> 
+        theme==="lightTheme"?changeTheme("darkTheme"):changeTheme("lightTheme");
+
+    }
+    let themeIcon;
+
+    theme ==="lightTheme"?themeIcon= <i className="fa-solid fa-moon"></i>:themeIcon=<i className="fa-regular fa-sun"></i>;
+    
 const handleClick=(e)=>{
     const $sideMenu = document.querySelector(".side-menu") //cambiar luego
     !$sideMenu.classList.contains("show")
@@ -19,8 +35,6 @@ const handleClick=(e)=>{
     
 
 }
-
-    
     return (
         <header>
             <button className="panel-btn hamburger hamburger--collapse" ref={$sideBtn} type="button" onClick={handleClick}>
@@ -29,6 +43,10 @@ const handleClick=(e)=>{
                 </span>
             </button>
             <h2>MHP3RD Data-Base</h2>
+            <button className='themeBtn' 
+                onClick={handleClickTheme}
+                ref={$themeBtn}>{themeIcon} </button>
+            <Theme theme={theme}/>
             <SearchInput />
         </header>
     )

@@ -34,10 +34,10 @@ export const About = () => {
 
             <div className="about-contact-icons">
                 <a  className="about-contact-icons-link" href="https://github.com/johnx199x" target="_blank" rel="noopener noreferrer" title="GitHub">
-                    <i className="fa-brands fa-github about-contact-icons-img" style={{color:"#2b3137"}}></i>
+                    <i className="fa-brands fa-github about-contact-icons-img" ></i>
                 </a>
                 <a className="about-contact-icons-link"href="mailto:jeremydev666@gmail.com" title="Gmail">
-                    <i className="fa-solid fa-envelope about-contact-icons-img" style={{color:"#333333"}}></i>
+                    <i className="fa-solid fa-envelope about-contact-icons-img"></i>
                 </a>
                 <a className="about-contact-icons-link" href="https://www.linkedin.com/in/jonathan-cruz-martin-741a30268/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
                     <i className="fa-brands fa-linkedin about-contact-icons-img" style={{color:"#0077B5"}}></i>
@@ -47,8 +47,6 @@ export const About = () => {
                 </a>
 </div>
         </div>
-        
-        
     </div>
     )
 }

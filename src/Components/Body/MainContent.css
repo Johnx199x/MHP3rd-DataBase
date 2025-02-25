@@ -1,6 +1,5 @@
 .main-container{
     grid-area: MainContent;
-    background-color: var(--main-background-color);
     overflow: scroll;
 
 }

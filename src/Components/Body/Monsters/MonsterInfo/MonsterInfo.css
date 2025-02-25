@@ -9,7 +9,6 @@
 }
 .monsters-figure:hover{
     cursor: pointer;
-    background-color: var(--second-background-color);
 }
 
 .monsters-icon{
@@ -34,7 +33,7 @@
     visibility: hidden;
     max-height: 0;
 
-    transition: all 0.5s ease-in, background-color 1s ease-in ;
+    transition: all 0.5s ease-in;
     transform: translateY(-1%);
 }
 .monster-description-notes{
@@ -45,7 +44,6 @@
     max-height: 5000px;
     opacity: 1;
     transform: translateX(0);
-    background-color: #ddd;
 }
 .monster-description>*{
     margin: 0;
@@ -85,7 +83,6 @@
 
 .monster-drops-collapse:hover{
     cursor: pointer;
-    background-color: var(--second-background-color);
 }
 
 
