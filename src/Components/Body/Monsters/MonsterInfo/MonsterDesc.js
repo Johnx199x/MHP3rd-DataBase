@@ -137,7 +137,26 @@ export const MonstersDescription = (props) =>{
     </table>
     )
     }
-    
+    const huntTips = (arrEle)=>{
+        const prepare = arrEle[0];
+        const breakPart = arrEle[1];
+        const weaknessSign = arrEle[2];
+        const image = <img src={require(`../../../../Assets/MonstersTipsImg/${arrEle[3]}`)} alt={`tips-${arrEle[3]}`}   />
+
+        return (
+            <>
+                <span className='monster-info-tags'>Prepare:</span> {prepare}
+                <br/>
+                <span className='monster-info-tags'>Break: </span>{breakPart}
+                <br/>
+                <span className='monster-info-tags'>Weakness Sign:</span> {weaknessSign}
+                <br/>
+
+                {image}
+                
+            </>
+        )
+    }
     
     return(
         <div className='monster-description'>
@@ -146,7 +165,19 @@ export const MonstersDescription = (props) =>{
             <p><span className='monster-info-tags'>Danger: </span>{monsterDanger()}</p>
             <div><span className='monster-info-tags'>Monster element: </span>{props.element===undefined ? "None" : monsterElement(props.element)}</div>
             <div><span className="monster-info-tags">Special Attack Status:</span>{props.ailments=== undefined?"None ": monsterSpecialAttack(props.ailments)}</div>
-            <div><span className='monster-info-tags'>Monster weakness: </span>{props.weakness===undefined?"None weakness discovered":monsterElement(props.weakness,  )}</div>
+            <div><span className='monster-info-tags'>Monster weakness: </span>{props.weakness===undefined?"None weakness discovered":monsterElement(props.weakness)}</div>
+            {props.huntTips &&(
+                <div className="hunt-tips">
+                    <div className="monster-drops-collapse" onClick={handleClick}>
+                        <span className='monster-info-tags'>Hunt Tips </span> 
+                        <span className='monsters-arrow'>{up}</span>
+                    </div>
+                    <div className="hunt-tips-container">
+                        {props.huntTips===undefined?"":huntTips(props.huntTips)}
+                    </div>
+                </div>
+                )
+            }
             <div className='monster-drops'>
                 <div className="monster-drops-collapse" onClick={handleClick}>
                     <span className='monster-info-tags'>Monster drops </span> 

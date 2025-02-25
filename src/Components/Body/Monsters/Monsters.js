@@ -31,7 +31,7 @@ export const Monsters = () => {
         
             data.forEach((ele) =>{
                 let monster;
-                ele.drops ?
+                ele.isLarge ?
                         monster= {
                             id: ele._id.$oid,
                             name: ele.name,
@@ -43,10 +43,9 @@ export const Monsters = () => {
                             isLarge: ele.isLarge,
                             element:ele.elements,
                             weakness:ele.weakness,
+                            huntTips:[ele.huntTips.prepare,ele.huntTips.break,ele.huntTips.weaknessSign,ele.huntTips.image],
                             dropsLowRank:ele.drops.lowRank,
-                            dropsHighRAnk:ele.drops.highRank
-                        
-                        
+                            dropsHighRAnk:ele.drops.highRank     
                     } 
                         : monster= {
                             id: ele._id.$oid,
@@ -59,11 +58,12 @@ export const Monsters = () => {
                             isLarge: ele.isLarge,
                             element:ele.elements,
                             weakness:ele.weakness,
+                            dropsLowRank:ele.drops.lowRank,
+                            dropsHighRAnk:ele.drops.highRank 
                         
                         }
-
                     ele.isLarge 
-                        ?largueMonster.push(monster) 
+                        ?(largueMonster.push(monster)) 
                         :smallMonster.push(monster) 
                 
             }
@@ -114,6 +114,7 @@ export const Monsters = () => {
                     element={ele.element}
                     weakness={ele.weakness}
                     ailments={ele.ailments}
+                    huntTips ={ele.huntTips}
                     dropsLowRank={ele.dropsLowRank}
                     dropsHighRAnk={ele.dropsHighRAnk}
                     />

@@ -99,13 +99,7 @@
 .monster-drops-container.show-description{
     padding-bottom: 1rem;
 }
-.monster-drops-container.show-description{
-    visibility: visible;
-    max-height: 2000px;
-    opacity: 1;
-    transform: translateX(0);
-    
-}
+
 
 .monster-drops-table{
     margin: 0 auto;
@@ -120,5 +114,24 @@
 .monster-drops-table-item , .monster-drops-table-header{
     padding: 0.8rem 0;
     text-align: center;
+}
+
+.hunt-tips-container{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-1%);
+}
+
+.show-description{
+    visibility: visible;
+    max-height: 2000px;
+    opacity: 1;
+    transform: translateX(0);
+    
 }
 

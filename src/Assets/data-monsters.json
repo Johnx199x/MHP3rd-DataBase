@@ -7,11 +7,11 @@
             "name": "Agnaktor",
             "type": "Leviathan",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Nulberry, Sonic bomb(works only when non-raged, to makes it jump out from digging), Pitfall traps(to melten its Lava Armor)",
-              "Break":"Beak, Chest, Fin, Left/Right Foreleg, Left/Right Hind Leg, Tail (x2) (break)/(Sever)",
-              "Weakness sign":"Limping",
-              "Image":"Agnaktor-hunt.webp"
+            "huntTips":{
+              "prepare": "Nulberry, Sonic bomb(works only when non-raged, to makes it jump out from digging), Pitfall traps(to melten its Lava Armor)",
+              "break":"Beak, Chest, Fin, Left/Right Foreleg, Left/Right Hind Leg, Tail (x2) (break)/(Sever)",
+              "weaknessSign":"Limping",
+              "image":"Agnaktor-hunt.webp"
 
             },
 
@@ -91,11 +91,11 @@
             "name": "Akantor",
             "type": "Flying Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Armorskin, Mega Armorskin, Nulberry",
-              "Break":"Tusks (x2), Chest, Left Claw, Right Claw, Tail (Sever)",
-              "Weakness sign":"None",
-              "Image":"Akantor-hunt.webp"
+            "huntTips":{
+              "prepare": "Armorskin, Mega Armorskin, Nulberry",
+              "break":"Tusks (x2), Chest, Left Claw, Right Claw, Tail (Sever)",
+              "weaknessSign":"None",
+              "image":"Akantor-hunt.webp"
 
             },
             "drops":{ 
@@ -147,11 +147,11 @@
             "name": "Alatreon",
             "type": "Elder Dragon",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Nulberry, Flash Bombs",
-              "Break":"Horns (x2), Front Claws (x2), Tail (Sever), Left Wing, Right Wing",
-              "Weakness sign":"None",
-              "Image":"Alatreon-hunt.webp"
+            "huntTips":{
+              "prepare": "Nulberry, Flash Bombs",
+              "break":"Horns (x2), Front Claws (x2), Tail (Sever), Left Wing, Right Wing",
+              "weaknessSign":"None",
+              "image":"Alatreon-hunt.webp"
 
             },
             "drops":{ 
@@ -296,11 +296,11 @@
             "name": "Amatsu",
             "type": "Elder Dragon",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Nulberry, Farcaster(just in case), your awareness to dodge its Sky Blast",
-              "Break":"Head (x2), Back, Left Pectoral Fin, Right Pectoral Fin, Tail (Sever)",
-              "Weakness sign":"None",
-              "Image":"Amatsu-hunt.webp"
+            "huntTips":{
+              "prepare": "Nulberry, Farcaster(just in case), your awareness to dodge its Sky Blast",
+              "break":"Head (x2), Back, Left Pectoral Fin, Right Pectoral Fin, Tail (Sever)",
+              "weaknessSign":"None",
+              "image":"Amatsu-hunt.webp"
 
             },
             "drops":{ 
@@ -451,11 +451,11 @@
             "name": "Arzuros",
             "type": "Fanged Beast",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "For nothing, it's just an Arzuros :problem",
-              "Break":"Forelegs",
-              "Weakness sign":"Limping",
-              "Image":"Arzuros-hunt.webp"
+            "huntTips":{
+              "prepare": "For nothing, it's just an Arzuros :problem",
+              "break":"Forelegs",
+              "weaknessSign":"Limping",
+              "image":"Arzuros-hunt.webp"
 
             },
             "drops":{ 
@@ -577,11 +577,11 @@
             "name": "Baleful Gigginox",
             "type": "Flying Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Nulberry",
-              "Break":"Tail (No Visual Scars)",
-              "Weakness sign":"Limping(seen on the ceiling)",
-              "Image":"BalefulGigginox-hunt.webp"
+            "huntTips":{
+              "prepare": "Nulberry",
+              "break":"Tail (No Visual Scars)",
+              "weaknessSign":"Limping(seen on the ceiling)",
+              "image":"BalefulGigginox-hunt.webp"
 
             },
 
@@ -623,11 +623,11 @@
             "name": "Barioth",
             "type": "Flying Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Cleanser, Nulberry",
-              "Break":"Fangs (x2), Left Wing, Right Wing, Tail (Sever)",
-              "Weakness sign":"Limping",
-              "Image":"Barioth-hunt.webp"
+            "huntTips":{
+              "prepare": "Cleanser, Nulberry",
+              "break":"Fangs (x2), Left Wing, Right Wing, Tail (Sever)",
+              "weaknessSign":"Limping",
+              "image":"Barioth-hunt.webp"
 
             },
 
@@ -799,11 +799,11 @@
             "name": "Barroth",
             "type": "Brute Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Cleanser",
-              "Break":"Crown, Arms (Mud, Scars), Legs (Mud), Tail (Sever) ",
-              "Weakness sign":"Limping",
-              "Image":"Barroth-hunt.webp"
+            "huntTips":{
+              "prepare": "Cleanser",
+              "break":"Crown, Arms (Mud, Scars), Legs (Mud), Tail (Sever) ",
+              "weaknessSign":"Limping",
+              "image":"Barroth-hunt.webp"
 
             },
 
@@ -887,11 +887,11 @@
             "name": "Black Diablos",
             "type": "Flying Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Sonic Bombs",
-              "Break":"Horns (x2), Tail (Sever)",
-              "Weakness sign":"Limping, Get enraged after one hit",
-              "Image":"BlackDiablos-hunt.webp"
+            "huntTips":{
+              "prepare": "Sonic Bombs",
+              "break":"Horns (x2), Tail (Sever)",
+              "weaknessSign":"Limping, Get enraged after one hit",
+              "image":"BlackDiablos-hunt.webp"
 
             },
             "drops":{ 
@@ -952,11 +952,11 @@
             "name": "Bulldrome",
             "type": "Fanged Beast",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Nothing",
-              "Break":"None",
-              "Weakness sign":"Moving to other area",
-              "Image":"Bulldrome-hunt.webp"
+            "huntTips":{
+              "prepare": "Nothing",
+              "break":"None",
+              "weaknessSign":"Moving to other area",
+              "image":"Bulldrome-hunt.webp"
 
             },
             "drops":{ 
@@ -1061,11 +1061,11 @@
             "name": "Brute Tigrex",
             "type": "Flying Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Nulberry (when fighting in fiery or watery terrains), to face its mighty roar",
-              "Break":"Face, Left Fore Claw, Right Fore Claw, Tail (Sever)",
-              "Weakness sign":"Limping",
-              "Image":"BruteTigrex-hunt.webp"
+            "huntTips":{
+              "prepare": "Nulberry (when fighting in fiery or watery terrains), to face its mighty roar",
+              "break":"Face, Left Fore Claw, Right Fore Claw, Tail (Sever)",
+              "weaknessSign":"Limping",
+              "image":"BruteTigrex-hunt.webp"
 
             },
             "drops":{ 
@@ -1121,11 +1121,11 @@
             "name": "Crimson Qurupeco",
             "type": "Bird Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Nulberry, Sonic Bombs(for interrupting its Ally call)",
-              "Break":"Beak, Flints (x2)",
-              "Weakness sign":"Limping",
-              "Image":"CrimsonPeco-hunt.webp"
+            "huntTips":{
+              "prepare": "Nulberry, Sonic Bombs(for interrupting its Ally call)",
+              "break":"Beak, Flints (x2)",
+              "weaknessSign":"Limping",
+              "image":"CrimsonPeco-hunt.webp"
             },
 
             "drops":{ 
@@ -1229,11 +1229,11 @@
             "name": "Deviljho",
             "type": "Brute Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Nulberry, Armorskin, Mega Armorskin, Para/Drugged Meat, your sense of humor because you will die a lot",
-              "Break":"Face (x2), Tail (Sever)",
-              "Weakness sign":"Limping",
-              "Image":"Deviljho-hunt.webp"
+            "huntTips":{
+              "prepare": "Nulberry, Armorskin, Mega Armorskin, Para/Drugged Meat, your sense of humor because you will die a lot",
+              "break":"Face (x2), Tail (Sever)",
+              "weaknessSign":"Limping",
+              "image":"Deviljho-hunt.webp"
             },
             "drops":{
               "highRank":[
@@ -1303,11 +1303,11 @@
             "name": "Diablos",
             "type": "Flying Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Sonic Bombs",
-              "Break":"Horns (x2), Tail (Sever)",
-              "Weakness sign":"Limping, get enraged after one hit",
-              "Image":"Diablos-hunt.webp"
+            "huntTips":{
+              "prepare": "Sonic Bombs",
+              "break":"Horns (x2), Tail (Sever)",
+              "weaknessSign":"Limping, get enraged after one hit",
+              "image":"Diablos-hunt.webp"
             },
             "drops":{ 
               "lowRank":[ 
@@ -1391,11 +1391,11 @@
             "name": "Duramboros",
             "type": "Brute Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Flash Bombs",
-              "Break":"Horns (x2), Tail (x2), Humps",
-              "Weakness sign":"Limping",
-              "Image":"Duramboros-hunt.webp"
+            "huntTips":{
+              "prepare": "Flash Bombs",
+              "break":"Horns (x2), Tail (x2), Humps",
+              "weaknessSign":"Limping",
+              "image":"Duramboros-hunt.webp"
             },
             "drops":{ 
               "lowRank":[ 
@@ -1610,11 +1610,11 @@
             "name": "Gigginox",
             "type": "Flying Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Antidote",
-              "Break":"Tail (No Visual Scars)",
-              "Weakness sign":"Limping(seen in the ceiling)",
-              "Image":"Gigginox-hunt.webp"
+            "huntTips":{
+              "prepare": "Antidote",
+              "break":"Tail (No Visual Scars)",
+              "weaknessSign":"Limping(seen in the ceiling)",
+              "image":"Gigginox-hunt.webp"
             },
             "drops":{ 
             "lowRank":[ 
@@ -1665,11 +1665,11 @@
             "name": "Glacial Agnaktor",
             "type": "Leviathan",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Nulberry",
-              "Break":"Beak, Chest, Dorsal Fin, Left Foreleg, Right Foreleg, Left Hindleg, Right Hindleg, Tail (x2) (Break, Sever)",
-              "Weakness sign":"Limping",
-              "Image":"GlacialAgnaktor-hunt.webp"
+            "huntTips":{
+              "prepare": "Nulberry",
+              "break":"Beak, Chest, Dorsal Fin, Left Foreleg, Right Foreleg, Left Hindleg, Right Hindleg, Tail (x2) (Break, Sever)",
+              "weaknessSign":"Limping",
+              "image":"GlacialAgnaktor-hunt.webp"
             },
             "drops":{ 
               "highRank":[
@@ -1726,11 +1726,11 @@
             "name": "Gold Rathian",
             "type": "Flying Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Flash Bombs, Antidote, Nulberry",
-              "Break":"Crown, Left Wing, Right Wing, Tail (Sever)",
-              "Weakness sign":"Limping",
-              "Image":"GoldRathian-hunt.webp"
+            "huntTips":{
+              "prepare": "Flash Bombs, Antidote, Nulberry",
+              "break":"Crown, Left Wing, Right Wing, Tail (Sever)",
+              "weaknessSign":"Limping",
+              "image":"GoldRathian-hunt.webp"
             },
             "drops":{ 
               "highRank":[
@@ -1809,11 +1809,11 @@
             "name": "Great Baggi",
             "type": "Bird Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Energy Drink",
-              "Break":"Crest",
-              "Weakness sign":"Limping",
-              "Image":"GreatBaggi-hunt.webp"
+            "huntTips":{
+              "prepare": "Energy Drink",
+              "break":"Crest",
+              "weaknessSign":"Limping",
+              "image":"GreatBaggi-hunt.webp"
             },
             "drops":{ 
             "lowRank":[ 
@@ -1873,11 +1873,11 @@
             "name": "Great Jaggi",
             "type": "Bird Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Nothing",
-              "Break":"Frills",
-              "Weakness sign":"Limping",
-              "Image":"GreatBaggi-hunt.webp"
+            "huntTips":{
+              "prepare": "Nothing",
+              "break":"Frills",
+              "weaknessSign":"Limping",
+              "image":"GreatBaggi-hunt.webp"
             },
             "drops":{ 
               
@@ -1939,11 +1939,11 @@
             "name": "Great Wroggi",
             "type": "Bird Wyvern",
             "isLarge": true,
-             "Hunt Tips":{
-              "Prepare": "Antidote",
-              "Break":"Throat Sac",
-              "Weakness sign":"Limping",
-              "Image":"GreatWroggi-hunt.webp"
+             "huntTips":{
+              "prepare": "Antidote",
+              "break":"Throat Sac",
+              "weaknessSign":"Limping",
+              "image":"GreatWroggi-hunt.webp"
             },
             "drops":{ 
               "lowRank":[ 
@@ -1995,11 +1995,11 @@
             "name": "Green Nargacuga",
             "type": "Flying Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Your own awareness",
-              "Break":"Face, Left Wing (x2), Right Wing (x2), Tail (x2) (Scar,  Sever when enraged)",
-              "Weakness sign":"Limping",
-              "Image":"GreenNargacuga-hunt.webp"
+            "huntTips":{
+              "prepare": "Your own awareness",
+              "break":"Face, Left Wing (x2), Right Wing (x2), Tail (x2) (Scar,  Sever when enraged)",
+              "weaknessSign":"Limping",
+              "image":"GreenNargacuga-hunt.webp"
             },
             "drops":{ 
             
@@ -2051,11 +2051,11 @@
             "name": "Jade Barroth",
             "type": "Brute Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Nulberry, Cleanser",
-              "Break":"Crown, Arms (Mud, Scars), Legs (Mud), Tail (Sever)",
-              "Weakness sign":"Limping, Break to secret area(in Tundra map)",
-              "Image":"JadeBarroth-hunt.webp"
+            "huntTips":{
+              "prepare": "Nulberry, Cleanser",
+              "break":"Crown, Arms (Mud, Scars), Legs (Mud), Tail (Sever)",
+              "weaknessSign":"Limping, Break to secret area(in Tundra map)",
+              "image":"JadeBarroth-hunt.webp"
             },
             "drops":{ 
             
@@ -2228,11 +2228,11 @@
             "name": "Jhen Mohran",
             "type": "Elder Dragon",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Anything to Maximize DPS",
-              "Break":"Left Foreleg, Right Foreleg, Spine Cracks (x2), Left Tusk, Right Tusk",
-              "Weakness sign":"None",
-              "Image":"JhenMohran-hunt.webp"
+            "huntTips":{
+              "prepare": "Anything to Maximize DPS",
+              "break":"Left Foreleg, Right Foreleg, Spine Cracks (x2), Left Tusk, Right Tusk",
+              "weaknessSign":"None",
+              "image":"JhenMohran-hunt.webp"
             },
             "drops":{ 
             "lowRank":[ 
@@ -2353,11 +2353,11 @@
             "name": "Lagombi",
             "type": "Fanged Beast",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Nulberry",
-              "Break":"Ears",
-              "Weakness sign":"Limping",
-              "Image":"Lagombi-hunt.webp"
+            "huntTips":{
+              "prepare": "Nulberry",
+              "break":"Ears",
+              "weaknessSign":"Limping",
+              "image":"Lagombi-hunt.webp"
             },
             "drops":{ 
             "lowRank":[ 
@@ -2551,11 +2551,11 @@
             "name": "Nargacuga",
             "type": "Flying Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Flash Bombs, Traps",
-              "Break":"Face, Left Wing, Right Wing, Tail (Scar first)",
-              "Weakness sign":"Limping",
-              "Image":"Nargacuga-hunt.webp"
+            "huntTips":{
+              "prepare": "Flash Bombs, Traps",
+              "break":"Face, Left Wing, Right Wing, Tail (Scar first)",
+              "weaknessSign":"Limping",
+              "image":"Nargacuga-hunt.webp"
             },
             "drops":{ 
             "lowRank":[ 
@@ -2640,11 +2640,11 @@
             "name": "Nibelsnarf",
             "type": "Leviathan",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Nulberry, Large Bombs, Sonic Bombs",
-              "Break":"Forelegs, Gills, Uvula",
-              "Weakness sign":"Limping(like shit)",
-              "Image":"Nibelsnarf-hunt.webp"
+            "huntTips":{
+              "prepare": "Nulberry, Large Bombs, Sonic Bombs",
+              "break":"Forelegs, Gills, Uvula",
+              "weaknessSign":"Limping(like shit)",
+              "image":"Nibelsnarf-hunt.webp"
             },
             "drops":{ 
               "lowRank":[ 
@@ -2765,11 +2765,11 @@
             "name": "Purple Ludroth",
             "type": "Leviathan",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Antidote",
-              "Break":"Crest, Mane, Tail (Sever)",
-              "Weakness sign":"Limping",
-              "Image":"PurpleLudroth-hunt.webp"
+            "huntTips":{
+              "prepare": "Antidote",
+              "break":"Crest, Mane, Tail (Sever)",
+              "weaknessSign":"Limping",
+              "image":"PurpleLudroth-hunt.webp"
             },
             "drops":{ 
             
@@ -2820,11 +2820,11 @@
             "name": "Qurupeco",
             "type": "Bird Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Nulberry, Sonic Bombs, Armorskin, Mega Armorskin, Energy Drink (G-Rank), Dung Bombs",
-              "Break":"Beak, Flints (x2)",
-              "Weakness sign":"Limping",
-              "Image":"Qurupeco-hunt.webp"
+            "huntTips":{
+              "prepare": "Nulberry, Sonic Bombs, Armorskin, Mega Armorskin, Energy Drink (G-Rank), Dung Bombs",
+              "break":"Beak, Flints (x2)",
+              "weaknessSign":"Limping",
+              "image":"Qurupeco-hunt.webp"
             },
             "drops":{ 
               "lowRank":[ 
@@ -2893,11 +2893,11 @@
             "name": "Rathalos",
             "type": "Flying Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Flash Bombs, Antidote, Nulberry",
-              "Break":"Crown, Left Wing, Right Wing, Tail (Sever)",
-              "Weakness sign":"Limping",
-              "Image":"Rathalos-hunt.webp"
+            "huntTips":{
+              "prepare": "Flash Bombs, Antidote, Nulberry",
+              "break":"Crown, Left Wing, Right Wing, Tail (Sever)",
+              "weaknessSign":"Limping",
+              "image":"Rathalos-hunt.webp"
             },
             "drops":{ 
             "lowRank":[ 
@@ -2995,11 +2995,11 @@
             "name": "Rathian",
             "type": "Flying Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Flash Bombs, Antidote, Nulberry",
-              "Break":"Crown, Left Wing, Right Wing, Tail (Sever)",
-              "Weakness sign":"Limping",
-              "Image":"Rathian-hunt.webp"
+            "huntTips":{
+              "prepare": "Flash Bombs, Antidote, Nulberry",
+              "break":"Crown, Left Wing, Right Wing, Tail (Sever)",
+              "weaknessSign":"Limping",
+              "image":"Rathian-hunt.webp"
             },
             "drops":{ 
               "lowRank":[ 
@@ -3151,11 +3151,11 @@
             "name": "Royal Ludroth",
             "type": "Leviathan",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Nulberry",
-              "Break":"Crest, Mane, Tail (Sever)",
-              "Weakness sign":"Limping",
-              "Image":"RoyalLudroth-hunt.webp"
+            "huntTips":{
+              "prepare": "Nulberry",
+              "break":"Crest, Mane, Tail (Sever)",
+              "weaknessSign":"Limping",
+              "image":"RoyalLudroth-hunt.webp"
             },
             "drops":{ 
               "lowRank":[ 
@@ -3233,11 +3233,11 @@
             "name": "Sand Barioth",
             "type": "Flying Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Heh, you're funny",
-              "Break":"Fangs (x2), Left Wing, Right Wing, Tail (Sever)",
-              "Weakness sign":"Limping",
-              "Image":"SandBarioth-hunt.webp"
+            "huntTips":{
+              "prepare": "Heh, you're funny",
+              "break":"Fangs (x2), Left Wing, Right Wing, Tail (Sever)",
+              "weaknessSign":"Limping",
+              "image":"SandBarioth-hunt.webp"
             },
             "drops":{ 
             
@@ -3284,11 +3284,11 @@
             "name": "Silver Rathalos",
             "type": "Flying Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Heh, you're funny",
-              "Break":"Crown, Left Wing, Right Wing, Tail (Sever)",
-              "Weakness sign":"Limping",
-              "Image":"SilverRathalos-hunt.webp"
+            "huntTips":{
+              "prepare": "Heh, you're funny",
+              "break":"Crown, Left Wing, Right Wing, Tail (Sever)",
+              "weaknessSign":"Limping",
+              "image":"SilverRathalos-hunt.webp"
             },
             "drops":{ 
             
@@ -3431,11 +3431,11 @@
             "name": "Steel Uragaan",
             "type": "Brute Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Deodorant, Nulberry",
-              "Break":"Tail (Sever), Back, Chin",
-              "Weakness sign":"Limping",
-              "Image":"SteelUragan-hunt.webp"
+            "huntTips":{
+              "prepare": "Deodorant, Nulberry",
+              "break":"Tail (Sever), Back, Chin",
+              "weaknessSign":"Limping",
+              "image":"SteelUragan-hunt.webp"
             },
             "drops":{ 
               "highRank":[
@@ -3478,11 +3478,11 @@
             "name": "Tigrex",
             "type": "Flying Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Flash Bombs, Traps",
-              "Break":"Face, Left Claw, Right Claw, Tail (Sever)",
-              "Weakness sign":"Limping",
-              "Image":"Tigrex-hunt.webp"
+            "huntTips":{
+              "prepare": "Flash Bombs, Traps",
+              "break":"Face, Left Claw, Right Claw, Tail (Sever)",
+              "weaknessSign":"Limping",
+              "image":"Tigrex-hunt.webp"
             },
             "drops":{ 
             "lowRank":[ 
@@ -3561,11 +3561,11 @@
             "name": "Ukanlos",
             "type": "Flying Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Lifepowders, Cleanser, Nulberry ",
-              "Break":"Chin (x2), Left Claw, Right Claw, Chest, Back, Tail (Sever)",
-              "Weakness sign":"None",
-              "Image":"Ukanlos-hunt.webp"
+            "huntTips":{
+              "prepare": "Lifepowders, Cleanser, Nulberry ",
+              "break":"Chin (x2), Left Claw, Right Claw, Chest, Back, Tail (Sever)",
+              "weaknessSign":"None",
+              "image":"Ukanlos-hunt.webp"
             },
             "drops":{ 
             
@@ -3613,11 +3613,11 @@
             "name": "Uragaan",
             "type": "Brute Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Energy Drink, Nulberry",
-              "Break":"Tail (Sever), Back, Chin",
-              "Weakness sign":"Limping",
-              "Image":"Uragan-hunt.webp"
+            "huntTips":{
+              "prepare": "Energy Drink, Nulberry",
+              "break":"Tail (Sever), Back, Chin",
+              "weaknessSign":"Limping",
+              "image":"Uragan-hunt.webp"
             },
             "drops":{ 
             "lowRank":[ 
@@ -3748,11 +3748,11 @@
             "name": "Volvidon",
             "type": "Fanged Beast",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Deodorant",
-              "Break":"Back",
-              "Weakness sign":"Limping",
-              "Image":"Volvidon-hunt.webp"
+            "huntTips":{
+              "prepare": "Deodorant",
+              "break":"Back",
+              "weaknessSign":"Limping",
+              "image":"Volvidon-hunt.webp"
             },
             "drops":{ 
             "lowRank":[ 
@@ -3853,11 +3853,11 @@
             "name": "Zinogre",
             "type": "Fanged Wyvern",
             "isLarge": true,
-            "Hunt Tips":{
-              "Prepare": "Nulberry",
-              "Break":"Horns (x2), Left Claw, Right Claw, Back, Tail (Sever)",
-              "Weakness sign":"Limping",
-              "Image":"Zinogre-hunt.webp"
+            "huntTips":{
+              "prepare": "Nulberry",
+              "break":"Horns (x2), Left Claw, Right Claw, Back, Tail (Sever)",
+              "weaknessSign":"Limping",
+              "image":"Zinogre-hunt.webp"
             },
             "drops":{ 
             "lowRank":[ 
