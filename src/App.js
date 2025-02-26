@@ -10,7 +10,7 @@ const MainContent =lazy(()=> import("./Components/Body/MainContent"))
 
 
 function App() {
-  const [zone, setZone] = useState("Monsters")
+  const [zone, setZone] = useState("Home")
 
   const changeZone = (dato) =>{
     setZone(dato);

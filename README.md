@@ -3,6 +3,8 @@
 > Data used:
 >> Monsters-DataBase---->[DataBase used](https://github.com/CrimsonNynja/monster-hunter-DB).
 >>
+>> Hunt-Tips: [HunsterVerse](https://hunstermonter.net/)
+>>
 >> Monsters-Loot-Data:
     >>> [Monsters Drops](https://gamefaqs.gamespot.com/psp/991479-monster-hunter-portable-3rd/faqs/61490)
     >>> [Some Small Monsters Drops](https://monsterhunter.fandom.com/wiki/MH3:_Small_Monster_Carve_List)

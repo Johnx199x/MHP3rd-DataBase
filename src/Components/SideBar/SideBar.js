@@ -1,6 +1,5 @@
 import React,{useRef} from 'react'
 import "./SideBar.css"
-import optionIcon from "../../Assets/icons/option-icon.png"
 
 
 export const SideBar = ({ubi}) => {
@@ -21,13 +20,14 @@ const handleClick = (newZone)=>{
   return (
     <div className='side-menu' ref={$sideMenu}>
     <ul className='side-list'>
+      <li className='side-list-item' onClick={()=>handleClick("Home")}><i class="fa-solid fa-house" style={{marginRight:"0.5rem"}}></i>Home</li>
       <li className='side-list-item'  onClick={()=>handleClick("Monsters")}>Monsters</li>
       <li className='side-list-item'  onClick={()=>handleClick("Misions")}>Misions</li>
       <li className='side-list-item'  onClick={()=>handleClick("Items")}>Items</li>
       <li className='side-list-item'  onClick={()=>handleClick("Ubications")}>Ubications</li>
       <br />
       <br />
-      <li className='side-list-item' onClick={()=>handleClick("Options")}><img src={optionIcon} alt="option-icon" />Options</li>
+      
       <li className='side-list-item side-list-item-about' onClick={()=>handleClick("About This Project")}><span>About This Project</span></li>
       
     </ul>

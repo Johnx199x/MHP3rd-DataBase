@@ -2,10 +2,10 @@ import React from 'react'
 import "./MainContent.css"
 import { Monsters } from './Monsters/Monsters'
 import { Items } from './Items/Items'
-import {Options} from "./Options/Options"
 import {Misions} from "./Misions/Misions"
 import {Ubications} from "./Ubications/Ubications"
 import { About } from './About/About'
+import {Home} from "./Home/Home"
 
 
 export default function MainContent({content}){
@@ -16,9 +16,9 @@ export default function MainContent({content}){
         case "Items": return <Items />;
         case "Misions": return <Misions/>; 
         case "Ubications":return <Ubications/>; 
-        case "Options": return <Options/>;
+        case "Home": return <Home/>;
         case "About This Project": return <About/>;
-        default:return <Monsters />; 
+        default:return <Home/>; 
       }
   }
 

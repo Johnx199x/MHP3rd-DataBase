@@ -53,10 +53,7 @@ body.darkTheme{
 
 
     .monsters-figure:hover{
-        background-color: var(--main-background-color-dark-hover);
-}
-    .monster-description.show-description{
-        background-color: var(--main-background-color-dark-hover);
+        background-color:  var(--main-background-color-dark-hover);
 }
 .monster-drops-collapse:hover{
     background-color: var(--second-background-color);

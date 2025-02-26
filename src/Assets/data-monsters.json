@@ -452,7 +452,7 @@
             "type": "Fanged Beast",
             "isLarge": true,
             "huntTips":{
-              "prepare": "For nothing, it's just an Arzuros :problem",
+              "prepare": "For nothing, it's just an Arzuros :)",
               "break":"Forelegs",
               "weaknessSign":"Limping",
               "image":"Arzuros-hunt.webp"

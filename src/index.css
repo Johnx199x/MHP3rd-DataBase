@@ -6,12 +6,12 @@
   --main-background-color-light:#F8F8FF;
   --main-background-color-light-hover:#F8F8FF80;
   --main-background-color-dark: #343434;
-  --main-background-color-dark-hover: #34343480;
+  --main-background-color-dark-hover: #525257;
   --main-background-header-color: #2d2d2d;
-
   --second-background-color:#99A3A4;
   --alert-color:#990000;
   --detail-color:#FFC20E;
+  --detail-color-light:#edb714;
 
 }
 
