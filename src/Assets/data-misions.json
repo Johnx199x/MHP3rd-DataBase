@@ -1,0 +1,103 @@
+{
+    "quests": [
+        {
+            "_id": {
+                "$oid": "" 
+            },
+            "name": "Harvset Shroom",
+            "client": "Long-haired Girl", 
+            "description": "I'mad! I hate this mushroom diet, I hate it! Please hunter, could you fetch me 10 Unique Mushrooms form the Misty Peaks?", 
+            "reward": 300 ,
+            "map": "Peacks<D>", 
+            "isKey": false, 
+            "questType": "Village", 
+            "game": "Monster Hunter Portable 3rd", 
+            "difficulty": "1", 
+            "objective": "Deliver 10 Unique Mushrooms" 
+
+        },
+        {
+            "_id": {
+                "$oid": "" 
+            },
+            "name": "Prescription Pick-Up",
+            "client": "Shy Brother", 
+            "description": "It's my annoying sister's birthday. She wants a necklace made from Kelby Horns as a gift! She's selfish, but I love her. Please, could you bring me 3 Kelby Horns?", 
+            "reward": 300 ,
+            "map": "Peacks<D>", 
+            "isKey": false, 
+            "questType": "Village", 
+            "game": "Monster Hunter Portable 3rd", 
+            "difficulty": "1", 
+            "objective": "Deliver 3 Kelbi Horns"
+            
+        },{
+            "_id": {
+                "$oid": "" 
+            },
+            "name": "Jaggi Takedown",
+            "client": "Resting Felyne", 
+            "description": "Nya! When I was resting in the Misty Peaks, a Great Jaggi appeared from nowhere, and  tried to eat me. Nyaaa! Hunter, take down that beast for me!", 
+            "reward": 300 ,
+            "map": "Peacks<D>", 
+            "isKey": true, 
+            "questType": "Village", 
+            "game": "Monster Hunter Portable 3rd", 
+            "difficulty": "1", 
+            "objective": "Slay 5 Jaggi", 
+            "targets": [
+                "Jaggi"
+            ]
+        },
+        {
+            "_id": {
+                "$oid": "" 
+            },
+            "name": "Bully the Bullfango",
+            "client": "Gatekeeper", 
+            "description": "I was picking some mushrooms when suddenly a pack of Bullfango appeared behind me! They ran me down and hurt my back. It's painful! Please go and get revenge for me.", 
+            "reward": 300 ,
+            "map": "Peacks<D>", 
+            "isKey": true, 
+            "questType": "Village", 
+            "game": "Monster Hunter Portable 3rd", 
+            "difficulty": "1", 
+            "objective": "Slay 3 Bullfangos", 
+            "targets": [
+                "Bullfango"
+            ]
+        },
+        {
+            "_id": {
+                "$oid": "" 
+            },
+            "name": "Harbinger of Terror",
+            "client": "Worried Old Traveller", 
+            "description": "I regularly visit the Misty Peaks to collect Royal Honey. Recently I heard a scary sound approaching behind me. I ran and hid! I can't go out again until the culprit has been found.", 
+            "reward": 300 ,
+            "map": "Peacks<D>", 
+            "isKey": true,
+            "questType": "Village", 
+            "game": "Monster Hunter Portable 3rd", 
+            "difficulty": "1", 
+            "objective": "Deliver 5 Royal Honey"
+        },{
+            "_id": {
+                "$oid": "" 
+            },
+            "name": "Blue Bear: Arzuros",
+            "client": "Village Chief", 
+            "description": "Arzuros is a common monster to the village. However, it's terrorizing the children. This can't happen any longer! Hunter, please eradicate this threat!", 
+            "reward": 1200 ,
+            "map": "Peacks<D>", 
+            "isKey": true, 
+            "questType": "Village", 
+            "game": "Monster Hunter Portable 3rd", 
+            "difficulty": "2", 
+            "objective": "Hunt the Arzuros", 
+            "targets": [
+                "Arzuros"
+            ]
+        }
+    ]
+}
