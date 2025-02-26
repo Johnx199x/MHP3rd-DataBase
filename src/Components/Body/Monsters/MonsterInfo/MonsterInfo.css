@@ -50,7 +50,8 @@
     padding: 1rem;
     text-align: justify;
 }
-.span-element-icon>img{
+
+.span-element-icon img{
     width: 25px;
 }
 

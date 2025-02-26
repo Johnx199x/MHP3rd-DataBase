@@ -42,3 +42,6 @@
 .about-contact-icons-img:hover{
     font-size: 45px;
 }
+.about-credit li{
+    margin-top: 0.5rem;
+}

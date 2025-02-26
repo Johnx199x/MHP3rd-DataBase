@@ -44,7 +44,7 @@ export const MonstersDescription = (props) =>{
             </>
         )
     }
-    const monsterSpecialAttack =(arrEle)=>{
+    const monsterAilments =(arrEle)=>{
         let elements=[];
         arrEle.forEach((e)=>{
             
@@ -74,10 +74,10 @@ export const MonstersDescription = (props) =>{
         }
         })
         return(
-            <>
-                {elements.map((e,index)=> <span key={index}
-                className='span-element-icon'>{e}</span>  )}
-            </>
+            <ul>
+                {arrEle.map((e,index)=> <li key={index}
+                className='span-element-icon'>{e}({elements[index]} )</li> )}
+            </ul>
         )
     }
     const monsterDrops=(arrEle, dropsRank, jehn, isLarge)=>{
@@ -167,7 +167,7 @@ export const MonstersDescription = (props) =>{
             <p><span className='monster-info-tags'>Monster type: </span>{props.type}</p>
             <p><span className='monster-info-tags'>Danger: </span>{monsterDanger()}</p>
             <div><span className='monster-info-tags'>Monster element: </span>{props.element===undefined ? "None" : monsterElement(props.element)}</div>
-            <div><span className="monster-info-tags">Special Attack Status:</span>{props.ailments=== undefined?"None ": monsterSpecialAttack(props.ailments)}</div>
+            <div><span className="monster-info-tags">Ailments:</span>{props.ailments=== undefined?"None ": monsterAilments(props.ailments)}</div>
             <div><span className='monster-info-tags'>Monster weakness: </span>{props.weakness===undefined?"None weakness discovered":monsterElement(props.weakness)}</div>
             {props.huntTips &&(
                 <div className="hunt-tips">
