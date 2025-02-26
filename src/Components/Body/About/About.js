@@ -26,6 +26,8 @@ export const About = () => {
                 <li><a href="https://gamefaqs.gamespot.com/psp/991479-monster-hunter-portable-3rd/faqs/61490" target="_blank" rel="noopener noreferrer">GameFAQs Guide by BBlitz</a>: An extensive guide that helped me verify monsters loot and their drops rates.</li>
                 <li><a href="https://monsterhunter.fandom.com/wiki/MH3:_Small_Monster_Carve_List" target="_blank" rel="noopener noreferrer">Monster Hunter Fandom Wiki - Small Monster Carves</a>: A detailed list of small monster carves and rewards.</li>
                 <li><a href="https://monsterhunter.fandom.com/wiki/MH3:_Monster_Carves_%26_Rewards" target="_blank" rel="noopener noreferrer">Monster Hunter Fandom Wiki - Monster Carves & Rewards</a>: A comprehensive resource for monster carves and rewards in MHP3rd.</li>
+                <li><a href="https://hunstermonter.net" target="_blank" rel="noopener noreferrer">Hunsterverse</a>: For providing essential tips and strategies to combat monsters, making the journey through the game much more manageable.</li>
+
             </ul>
         </div>
         <div className="about-contact">

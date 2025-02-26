@@ -145,13 +145,16 @@ export const MonstersDescription = (props) =>{
 
         return (
             <>
-                <span className='monster-info-tags'>Prepare:</span> {prepare}
-                <br/>
+                <p><span className='monster-info-tags'>Prepare: </span> {prepare}
+                <br />
+                <br />
                 <span className='monster-info-tags'>Break: </span>{breakPart}
+                <br />
                 <br/>
                 <span className='monster-info-tags'>Weakness Sign:</span> {weaknessSign}
+                <br />
                 <br/>
-
+                </p>
                 {image}
                 
             </>
