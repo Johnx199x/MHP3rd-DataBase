@@ -4,7 +4,6 @@ export const MonstersDescription = (props) =>{
     let up = ">";    
 
     const handleClick=(e)=>{
-        console.log(e.currentTarget.nextElementSibling)
             let $monsterArrow = e.currentTarget.children[1]
     
             $monsterArrow.classList.contains("rotate")

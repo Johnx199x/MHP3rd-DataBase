@@ -10,7 +10,7 @@ body.lightTheme{
     color: var(--main-interactive-color);
 
     }
-    .selected-monster-type{
+    .item-type-selected{
     background-color: #e7e7f0;
     }
     .monsters-figure:hover{
@@ -47,7 +47,7 @@ body.darkTheme{
     color: var(--main-interactive-color);
 
     }
-    .selected-monster-type{
+    .item-type-selected{
         background-color: #525257;
 }
 

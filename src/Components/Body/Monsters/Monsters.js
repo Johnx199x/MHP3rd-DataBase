@@ -1,8 +1,7 @@
-import React,{useState,useEffect} from 'react'
-import data from "../../../Assets/data-monsters.json"
+import React,{useState} from 'react'
 import "./Monsters.css"
 import { MonsterInfo } from './MonsterInfo/MonsterInfo'
-
+import { GetDataBase } from '../../Others/GetDataBase'
 
 export const Monsters = () => {
 /*  initialDB = {
@@ -17,62 +16,12 @@ export const Monsters = () => {
         weakness:[],
     }*/
     
-    const [largueMonsters, setLargueMonsters] = useState([]);
-    const [smallMonsters, setSmallMonsters] = useState([]);
-    const dataMonster =  data.monsters;
+    const { largueMonster, smallMonster } = GetDataBase();
+    const [largueMonsters] = largueMonster;
+    const [smallMonsters] = smallMonster;
+
     const [monsterType,setMonstertype] = useState(["small"]);
 
-    useEffect(()=>{
-        
-
-        const getMonsters = (data)=>{ 
-        const largueMonster =[];
-        const smallMonster = [];
-        
-            data.forEach((ele) =>{
-                let monster;
-                ele.isLarge ?
-                        monster= {
-                            id: ele._id.$oid,
-                            name: ele.name,
-                            type:ele.type,
-                            image: ele.games[0].image,
-                            info: ele.games[0].info,
-                            danger:ele.games[0].danger,
-                            ailments:ele.ailments,
-                            isLarge: ele.isLarge,
-                            element:ele.elements,
-                            weakness:ele.weakness,
-                            huntTips:[ele.huntTips.prepare,ele.huntTips.break,ele.huntTips.weaknessSign,ele.huntTips.image],
-                            dropsLowRank:ele.drops.lowRank,
-                            dropsHighRAnk:ele.drops.highRank     
-                    } 
-                        : monster= {
-                            id: ele._id.$oid,
-                            name: ele.name,
-                            type:ele.type,
-                            image: ele.games[0].image,
-                            info: ele.games[0].info,
-                            danger:ele.games[0].danger,
-                            ailments:ele.ailments,
-                            isLarge: ele.isLarge,
-                            element:ele.elements,
-                            weakness:ele.weakness,
-                            dropsLowRank:ele.drops.lowRank,
-                            dropsHighRAnk:ele.drops.highRank 
-                        
-                        }
-                    ele.isLarge 
-                        ?(largueMonster.push(monster)) 
-                        :smallMonster.push(monster) 
-                
-            }
-                    );
-        setLargueMonsters(largueMonster);
-        setSmallMonsters(smallMonster);
-        };
-        getMonsters(dataMonster);
-    },[dataMonster])
 
     let monsterTypeShow = ""
         monsterType==="largue"
@@ -83,16 +32,16 @@ export const Monsters = () => {
     return (
     <div className='monsters-container'>
         <nav>
-            <ul className='monster-type-select '>
-                <li className="selected-monster-type" onClick={(e)=>{
+            <ul className='item-type-select '>
+                <li className="item-type-selected" onClick={(e)=>{
                     setMonstertype("small")
-                    e.target.classList.add("selected-monster-type")
-                    e.target.nextElementSibling.classList.contains("selected-monster-type") && e.target.nextElementSibling.classList.remove("selected-monster-type")
+                    e.target.classList.add("item-type-selected")
+                    e.target.nextElementSibling.classList.contains("item-type-selected") && e.target.nextElementSibling.classList.remove("item-type-selected")
                     }}>Small</li>
                 <li onClick={(e)=>{
                     setMonstertype("largue")
-                    e.target.classList.add("selected-monster-type")
-                    e.target.previousElementSibling.classList.contains("selected-monster-type") && e.target.previousElementSibling.classList.remove("selected-monster-type")
+                    e.target.classList.add("item-type-selected")
+                    e.target.previousElementSibling.classList.contains("item-type-selected") && e.target.previousElementSibling.classList.remove("item-type-selected")
                 }}>Largue</li>
             </ul>
         </nav>
