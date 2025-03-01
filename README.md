@@ -9,10 +9,12 @@
     >>> [Monsters Drops](https://gamefaqs.gamespot.com/psp/991479-monster-hunter-portable-3rd/faqs/61490)
     >>> [Some Small Monsters Drops](https://monsterhunter.fandom.com/wiki/MH3:_Small_Monster_Carve_List)
     >>> [Some Largue Monsters Drops](https://monsterhunter.fandom.com/wiki/MH3:_Monster_Carves_%26_Rewards)
+>>
+>>Quest-Data: Created by me based on the game.
 
 ## Description
 
-This is a developing database application for Monster Hunter Portable 3rd(MHP3rd). Currently, the main focus is to provide detailed information about the monsters in the game.
+This is a developing database application for Monster Hunter Portable 3rd(MHP3rd). Currently, the main focus is to provide detailed information about the quest in the game.
 
 ## Project Status
 
@@ -29,3 +31,5 @@ At this time, the application contains only data related to the monsters of MHP3
 * Details on  weaknesses, and resistances of monsters
 
 * Monster loot and drop rates
+
+* Some Village Quest
