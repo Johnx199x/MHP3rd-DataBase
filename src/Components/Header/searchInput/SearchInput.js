@@ -18,7 +18,7 @@ export const SearchInput = () => {
                 ? document.querySelector(".search-container").classList.add("search-notEmpty")
                 : document.querySelector(".search-container").classList.remove("search-notEmpty")
                 $searchItems.forEach(el => {
-                    el.children[0].children[1].textContent.toLowerCase().includes(searchValue.toLowerCase() )
+                    el.children[0].textContent.toLowerCase().includes(searchValue.toLowerCase() )
                         ? el.classList.remove("hide")
                         : el.classList.add("hide")
                 });    

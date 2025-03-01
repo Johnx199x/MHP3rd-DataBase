@@ -1,15 +1,17 @@
 import {useState,useEffect} from 'react'
-import data from "../../Assets/data-monsters.json"
+import data from "../../Assets/data.json"
 
 
 export const GetDataBase = () => {
     const [largueMonsters, setLargueMonsters] = useState([]);
     const [smallMonsters, setSmallMonsters] = useState([]);
+    const [mision, setMision]= useState([]);
+
     const dataMonster =  data.monsters;
-
+    const dataMision = data.quests;
+    
     useEffect(()=>{
-        
-
+    
         const getMonsters = (data)=>{ 
         const largueMonster =[];
         const smallMonster = [];
@@ -57,10 +59,38 @@ export const GetDataBase = () => {
         setSmallMonsters(smallMonster);
         };
         getMonsters(dataMonster);
-    },[dataMonster])
+
+        const getMisions=(data)=>{
+            const misions =[];
+
+            data.forEach((ele) =>{
+                let mision;
+                mision = {
+                    id: ele._id.$oid,
+                    client: ele.client,
+                    name: ele.name,
+                    description:ele.description,
+                    reward:ele.reward,
+                    map:ele.map,
+                    isKey:ele.isKey,
+                    questsType: ele.questsType,
+                    game:ele.game,
+                    difficulty: ele.difficulty,
+                    objetive:ele.objective,
+                    targets:ele.targets|| undefined
+                }
+                misions.push(mision);
+            
+            }
+                    );
+            setMision(misions)        
+        }
+        getMisions(dataMision);
+    },[dataMonster,dataMision])
     return {
         largueMonster: [largueMonsters, setLargueMonsters],
         smallMonster: [smallMonsters, setSmallMonsters],
+        quest: [mision,setMision]
     };
 
 }

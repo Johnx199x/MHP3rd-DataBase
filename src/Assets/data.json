@@ -3946,5 +3946,385 @@
               }
             ]
           }
-    ]
+    ],
+    "quests": [
+      {
+          "_id": {
+              "$oid": "1" 
+          },
+          "name": "Harvset Shroom",
+          "client": "Long-haired Girl", 
+          "description": "I'mad! I hate this mushroom diet, I hate it! Please hunter, could you fetch me 10 Unique Mushrooms form the Misty Peaks?", 
+          "reward": 300 ,
+          "map": "Peacks<D>", 
+          "isKey": false, 
+          "questType": "Village", 
+          "game": "Monster Hunter Portable 3rd", 
+          "difficulty": "1", 
+          "objective": "Deliver 10 Unique Mushrooms" 
+
+      },
+      {
+          "_id": {
+              "$oid": "2" 
+          },
+          "name": "Prescription Pick-Up",
+          "client": "Shy Brother", 
+          "description": "It's my annoying sister's birthday. She wants a necklace made from Kelby Horns as a gift! She's selfish, but I love her. Please, could you bring me 3 Kelby Horns?", 
+          "reward": 300 ,
+          "map": "Peacks<D>", 
+          "isKey": false, 
+          "questType": "Village", 
+          "game": "Monster Hunter Portable 3rd", 
+          "difficulty": "1", 
+          "objective": "Deliver 3 Kelbi Horns"
+          
+      },{
+          "_id": {
+              "$oid": "3" 
+          },
+          "name": "Jaggi Takedown",
+          "client": "Resting Felyne", 
+          "description": "Nya! When I was resting in the Misty Peaks, a Great Jaggi appeared from nowhere, and  tried to eat me. Nyaaa! Hunter, take down that beast for me!", 
+          "reward": 300 ,
+          "map": "Peacks<D>", 
+          "isKey": true, 
+          "questType": "Village", 
+          "game": "Monster Hunter Portable 3rd", 
+          "difficulty": "1", 
+          "objective": "Slay 5 Jaggi", 
+          "targets": [
+              "Jaggi"
+          ]
+      },
+      {
+          "_id": {
+              "$oid": "4" 
+          },
+          "name": "Bully the Bullfango",
+          "client": "Gatekeeper", 
+          "description": "I was picking some mushrooms when suddenly a pack of Bullfango appeared behind me! They ran me down and hurt my back. It's painful! Please go and get revenge for me.", 
+          "reward": 300 ,
+          "map": "Peacks<D>", 
+          "isKey": true, 
+          "questType": "Village", 
+          "game": "Monster Hunter Portable 3rd", 
+          "difficulty": "1", 
+          "objective": "Slay 3 Bullfangos", 
+          "targets": [
+              "Bullfango"
+          ]
+      },
+      {
+          "_id": {
+              "$oid": "5" 
+          },
+          "name": "Harbinger of Terror",
+          "client": "Worried Old Traveller", 
+          "description": "I regularly visit the Misty Peaks to collect Royal Honey. Recently I heard a scary sound approaching behind me. I ran and hid! I can't go out again until the culprit has been found.", 
+          "reward": 300 ,
+          "map": "Peacks<D>", 
+          "isKey": true,
+          "questType": "Village", 
+          "game": "Monster Hunter Portable 3rd", 
+          "difficulty": "1", 
+          "objective": "Deliver 5 Royal Honey"
+      },{
+          "_id": {
+              "$oid": "6" 
+          },
+          "name": "Blue Bear: Arzuros",
+          "client": "Village Chief", 
+          "description": "Arzuros is a common monster to the village. However, it's terrorizing the children. This can't happen any longer! Hunter, please eradicate this threat!", 
+          "reward": 1200 ,
+          "map": "Peacks<D>", 
+          "isKey": true, 
+          "questType": "Village", 
+          "game": "Monster Hunter Portable 3rd", 
+          "difficulty": "2", 
+          "objective": "Hunt the Arzuros", 
+          "targets": [
+              "Arzuros"
+          ]
+      },
+      {
+          "_id": {
+              "$oid": "7" 
+          },
+          "name": "Harvest Tour: Misty Peaks",
+          "client": "Village Chief", 
+          "description": "Materials can be collected from the Misty Peaks. As I worked hard, I can give you the expenses to your trip. If you deliver the paw pass ticket to the supply box, the quest is clear!", 
+          "reward": 12 ,
+          "map": "Peacks", 
+          "isKey": false, 
+          "questType": "Village", 
+          "game": "Monster Hunter Portable 3rd", 
+          "difficulty": "2", 
+          "objective": "Survive until Time Over or Deliver the Paw Pass Ticket" 
+          
+      },{
+          "_id": {
+              "$oid": "8" 
+          },
+          "name": "Harvest Tour: Sandy Plains",
+          "client": "Village Chief", 
+          "description": "Materials can be collected from the Sandy Plains. As I worked hard, I can give you the expenses to your trip. If you deliver the paw pass ticket to the supply box, the quest is clear!", 
+          "reward": 12 ,
+          "map": "Plains", 
+          "isKey": false, 
+          "questType": "Village", 
+          "game": "Monster Hunter Portable 3rd", 
+          "difficulty": "2", 
+          "objective": "Survive until Time Over or Deliver the Paw Pass Ticket"
+          
+      },{
+          "_id": {
+              "$oid": "9" 
+          },
+          "name": "Harvest Tour: Flooded Forest",
+          "client": "Village Chief", 
+          "description": "Materials can be collected from the Flooded Forest. As I worked hard, I can give you the expenses to your trip. If you deliver the paw pass ticket to the supply box, the quest is clear!", 
+          "reward": 12 ,
+          "map": "Forest", 
+          "isKey": false, 
+          "questType": "Village", 
+          "game": "Monster Hunter Portable 3rd", 
+          "difficulty": "2", 
+          "objective": "Survive until Time Over or Deliver the Paw Pass Ticket" 
+          
+      },
+      {
+          "_id": {
+              "$oid": "10" 
+          },
+          "name": "Forest Murmur",
+          "client": "Family-minded youth", 
+          "description": "From the depths of the forest, the Bulldrome ruins my bamboo plants and it never grows back. Can you confront this monster for me?", 
+          "reward": 1200 ,
+          "map": "Peacks", 
+          "isKey": true, 
+          "questType": "Village", 
+          "game": "Monster Hunter Portable 3rd", 
+          "difficulty": "2", 
+          "objective": "Hunt Bulldrome", 
+          "targets": [
+              "Bulldrome"
+          ]
+      },
+      {
+          "_id": {
+              "$oid": "11" 
+          },
+          "name": "Field Trip",
+          "client": "Excited Teacher", 
+          "description": "My students want to watch a brave fight between a hunter and a monster. Please show them a wonderful brawl. A Great Jaggi is close by!", 
+          "reward": 900 ,
+          "map": "Peacks", 
+          "isKey": true, 
+          "questType": "Village", 
+          "game": "Monster Hunter Portable 3rd", 
+          "difficulty": "2", 
+          "objective": "Hunt the Great Jaggi", 
+          "targets": [
+              "Great Jaggi"
+          ]
+      },
+      {
+          "_id": {
+              "$oid": "12" 
+          },
+          "name": "Jaggia Extermination!",
+          "client": "Concerned villager", 
+          "description": "Do you think Jaggia can increase their population? No way! Our field got damaged recently because of the. They must be killed. Please hunter, do it right now", 
+          "reward": 900 ,
+          "map": "Peacks", 
+          "isKey": false, 
+          "questType": "Village", 
+          "game": "Monster Hunter Portable 3rd", 
+          "difficulty": "2", 
+          "objective": "Slay 3 Jaggia", 
+          "targets": [
+              "Jaggia"
+          ]
+      },{
+          "_id": {
+              "$oid": "13" 
+          },
+          "name": "Under the Yolk",
+          "client": "Loving mother", 
+          "description": "Today is the birthday of my daughter. I want to surprise her and prepare her a lot of egg dishes. By the way, she loves Gargwa eggs. Would you mind helping me out?", 
+          "reward":  900,
+          "map": "Peacks", 
+          "isKey": false, 
+          "questType": "Village", 
+          "game": "Monster Hunter Portable 3rd", 
+          "difficulty": "2", 
+          "objective": "Deliver 3 Gargwa Eggs"
+      },
+      {
+          "_id": {
+              "$oid": "14" 
+          },
+          "name": "An Afternoon in the Forest",
+          "client": "Good daughter", 
+          "description": "The mushroom I was looking for is different form the others. When I asked my mom, she said it can be found in an insect. I feel likde i can't do it. Could you help me  with this?", 
+          "reward": 900 ,
+          "map": "Peacks", 
+          "isKey": false, 
+          "questType": "Village", 
+          "game": "Monster Hunter Portable 3rd", 
+          "difficulty": "2", 
+          "objective": "Deliver 5 Ripened Mushrooms"
+      },
+      {
+          "_id": {
+              "$oid": "15" 
+          },
+          "name": "Pain in the Plains",
+          "client": "Injured Villager", 
+          "description": "A Great Jaggi accompanied by its minions were walking around in a lordly manner. It is best to let a professional hunter to do the job!", 
+          "reward":  900,
+          "map": "Plains", 
+          "isKey": false, 
+          "questType": "Village", 
+          "game": "Monster Hunter Portable 3rd", 
+          "difficulty": "2", 
+          "objective": "Hunt the Great Jaggi", 
+          "targets": [
+              "Great Jaggi"
+          ]
+      },{
+          "_id": {
+              "$oid": "16" 
+          },
+          "name": "Bring Peace to the Sandy Plains!",
+          "client": "Retired hunter", 
+          "description": "Absence of their leader is a good thing. But we do not want those Jaggis to stroll around the Sandy Plains. Somebody must take this quest and exterminate them.", 
+          "reward":  900,
+          "map": "Plains", 
+          "isKey": false, 
+          "questType": "Village", 
+          "game": "Monster Hunter Portable 3rd", 
+          "difficulty": "2", 
+          "objective": "Slay 10 Jaggi", 
+          "targets": [
+              "Jaggi"
+          ]
+      },{
+          "_id": {
+              "$oid": "17" 
+          },
+          "name": "Ancient? Crystal Bone!",
+          "client": "Governmet Researcher", 
+          "description": "I'd like some wyvern ore for research. But it's too dangerous for me. Please get me 5 of them if you can. Use a Pickaxe on a mining spot to gather them.", 
+          "reward": 900 ,
+          "map": "Plains", 
+          "isKey": false, 
+          "questType": "Village", 
+          "game": "Monster Hunter Portable 3rd", 
+          "difficulty": "2", 
+          "objective": "Deliver 5 Crystal Bones"
+      },
+      {
+          "_id": {
+              "$oid": "18" 
+          },
+          "name": "Quick and Strong Bulldrome!",
+          "client": "Feudal Lord", 
+          "description": "A dangerous monster called the Bulldrome is attacking people indiscriminately. It has become a huge menace in the forest. I want you to remove this threat. Thank you!", 
+          "reward": 1200 ,
+          "map": "Forest", 
+          "isKey": false, 
+          "questType": "Village", 
+          "game": "Monster Hunter Portable 3rd", 
+          "difficulty": "2", 
+          "objective": "Hunt the Bulldrome", 
+          "targets": [
+              "Bulldrome"
+          ]
+      },{
+          "_id": {
+              "$oid": "19" 
+          },
+          "name": "Fanged Beast Taking a Bath",
+          "client": "Sopping-wet Felyne", 
+          "description": "Oh my god! There is a rampaging bear in the Flooded Forest! Please help us!", 
+          "reward":  1200,
+          "map": "Forest", 
+          "isKey": false, 
+          "questType": "Village", 
+          "game": "Monster Hunter Portable 3rd", 
+          "difficulty": "2", 
+          "objective": "Hunt the Arzuros", 
+          "targets": [
+              "Arzuros"
+          ]
+      },{
+          "_id": {
+              "$oid": "20" 
+          },
+          "name": "No Love for Ludroth",
+          "client": "Old Lady", 
+          "description": "The bedwetting of my son needs to be cured. He just keeps on doing it everyday. But it seems an absorbent material from a Ludroth can probably help. I need it right away!", 
+          "reward":  900,
+          "map": "Forest", 
+          "isKey": true, 
+          "questType": "Village", 
+          "game": "Monster Hunter Portable 3rd", 
+          "difficulty": "2", 
+          "objective": "Slay 5 Ludroth", 
+          "targets": [
+              "Ludroth"
+          ]
+      },{
+          "_id": {
+              "$oid": "21" 
+          },
+          "name": "Poisonous Wroggi",
+          "client": "Youth", 
+          "description": "When I arrived in my village, both the crops and the villagers were suffering from a venom. These Wroggi need to be killed. Please hepl us! Saly at least 10 Wroggi!", 
+          "reward":  900,
+          "map": "Forest", 
+          "isKey": true, 
+          "questType": "Village", 
+          "game": "Monster Hunter Portable 3rd", 
+          "difficulty": "2", 
+          "objective": "Slay 10 Wroggi", 
+          "targets": [
+              "Wroggi"
+          ]
+      },{
+          "_id": {
+              "$oid": "22" 
+          },
+          "name": "Hair of the Dog",
+          "client": "Barkeeper`s Daughter", 
+          "description": "My dad is suffering from a headache but it's not a hangover! I found a cure, bu I don't have the neccessary materials to complete the medicine", 
+          "reward": 900 ,
+          "map": "Forest", 
+          "isKey": false, 
+          "questType": "Village", 
+          "game": "Monster Hunter Portable 3rd", 
+          "difficulty": "2", 
+          "objective": "Deliver 5 Slagtoth Oils"
+      },
+      {
+          "_id": {
+              "$oid": "23" 
+          },
+          "name": "Dancing Qurupeco",
+          "client": "Village Chief", 
+          "description": "Qurupeco can call another companion. Using its unique dance that somehow inspire the other monsters! Expect that an unusual monster will appear! Be more cautious.", 
+          "reward": 1500 ,
+          "map": "Peacks", 
+          "isKey": true, 
+          "questType": "Village", 
+          "game": "Monster Hunter Portable 3rd", 
+          "difficulty": "3", 
+          "objective": "Hunt the Qurupeco", 
+          "targets": [
+              "Qurupeco"
+          ]
+      }
+  ]
 }

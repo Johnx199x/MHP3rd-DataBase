@@ -1,0 +1,38 @@
+.quest-item{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 700;
+    padding: 1.5rem;
+}
+.monster-drops-collapse{
+    border-bottom: 2px solid var(--second-background-color);
+}
+.quest-item-desc{
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    transition: all 0.5s ease-in;
+    transform: translateY(-1%);
+}
+.quest-item-desc.show-description {
+    visibility: visible;
+    max-height: 2000px;
+    opacity: 1;
+    transform: translateX(0);
+    margin-bottom: 1rem;
+}
+
+.quest-item-desc-list{
+    list-style: none;
+    
+}
+.list-item{
+    padding: 0.5rem;
+}
+
+.item-tag{
+    font-weight: 600;
+}

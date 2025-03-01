@@ -3,8 +3,6 @@ body.lightTheme{
     background-color: var(--main-background-color-light);
     color: var(--main-text-color-light);
     }
-
-
     /*****  Monsters section  *****/
     .monster-type-select{
     color: var(--main-interactive-color);
@@ -29,6 +27,9 @@ body.lightTheme{
         color:#333333;
 
     }
+    .monsters-info-tag.key-quest{
+    color:var(--detail-color-light)
+}
 
 }
 
@@ -64,6 +65,9 @@ body.darkTheme{
 .fa-envelope{
     color: var(--main-background-color-light);
 
+}
+.monsters-info-tag.key-quest{
+    color:var(--detail-color)
 }
 
 }

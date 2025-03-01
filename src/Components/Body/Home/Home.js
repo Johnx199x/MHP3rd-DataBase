@@ -26,7 +26,7 @@ export const Home = () => {
             </li>
             <li><span className="home-tags-section">Quests Section(In development):</span>
                 <ul>
-                    <li><span className="home-tags">Quest List:</span> All available quests with objectives.</li>
+                    <li><span className="home-tags">Quest List:</span> All available quests with objectives. (<span style={{color:"var(--detail-color)"}}>-Quest Name-</span> are necessary to advance to the next rank)</li>
                     <li><span className="home-tags">Rewards:</span> What you can earn from each quest.</li>
                     <li><span className="home-tags">Difficulty Levels:</span> From beginner to advanced challenges.</li>
                 </ul>
