@@ -6,7 +6,7 @@ footer{
     text-align: center;
     width: 100%;
     grid-area: Footer;
-    background-color: var(--main-background-color-dark);
+    background-color: var(--main-background-header-color);
     color: var(--main-interactive-color);
 }
 .githHub-contact{

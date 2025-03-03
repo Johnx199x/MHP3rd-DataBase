@@ -4325,6 +4325,343 @@
           "targets": [
               "Qurupeco"
           ]
-      }
+      },
+      {
+
+        "_id": {
+            "$oid": "24" 
+        },
+        "name": "Harvest Tour: Deserted Island",
+        "client": "Village Chief", 
+        "description": "Materials can be collected from the Deserted Island. As I I fully worked hard, I can give you the expenses to your trip. If you deliver the paw pass ticket to the supply box, the quest is clear!", 
+        "reward": 12 ,
+        "map": "Island", 
+        "isKey": false, 
+        "questType": "Village", 
+        "game": "Monster Hunter Portable 3rd", 
+        "difficulty": "3", 
+        "objective": "Survive until Time Over or Deliver the Paw Pass Ticket" 
+    }, 
+    {
+
+      "_id": {
+          "$oid": "25" 
+      },
+      "name": "Harvest Tour: Tundra",
+      "client": "Village Chief", 
+      "description": "Materials can be collected from the Tundra. As I I fully worked hard, I can give you the expenses to your trip. If you deliver the paw pass ticket to the supply box, the quest is clear!", 
+      "reward":  12,
+      "map": "Tundra", 
+      "isKey": false, 
+      "questType": "Village", 
+      "game": "Monster Hunter Portable 3rd", 
+      "difficulty": "3", 
+      "objective": "Survive until Time Over or Deliver the Paw Pass Ticket"
+  }, 
+  {
+
+    "_id": {
+        "$oid": "26" 
+    },
+    "name": "Violent Carnival!",
+    "client": "Investigator", 
+    "description": "Speed... The fastest... I wnat them to stop at any rate. Come back safe.", 
+    "reward": 900 ,
+    "map": "Peacks", 
+    "isKey": false, 
+    "questType": "Village", 
+    "game": "Monster Hunter Portable 3rd", 
+    "difficulty": "3", 
+    "objective": "Slay 10 Bullfango", 
+    "targets": [
+        "Bullfango"
+    ]
+}, 
+{
+
+            "_id": {
+                "$oid": "27" 
+            },
+            "name": "Leading th Charge!",
+            "client": "Badly-bruised hunter", 
+            "description": "Anyway, I was too obstinate. A single blow on the head is not enough. Instead my bultt got blown sky high. Its to unpleasant to accept a twice defeat. Would you challenge it for me ?", 
+            "reward": 1500 ,
+            "map": "Plains", 
+            "isKey": true, 
+            "questType": "Village", 
+            "game": "Monster Hunter Portable 3rd", 
+            "difficulty": "3", 
+            "objective": "Hunt the Barroth", 
+            "targets": [
+                "Barroth"
+            ]
+        },
+        {
+
+          "_id": {
+              "$oid": "28" 
+          },
+          "name": "Chasing th Trickster!",
+          "client": "Women Hunter", 
+          "description": "Oh, I still hearing that pounding! Its a strange very loud voice. After that, another monster suddenly appear. Please kill it!", 
+          "reward": 1500 ,
+          "map": "Plains", 
+          "isKey": false, 
+          "questType": "Village", 
+          "game": "Monster Hunter Portable 3rd", 
+          "difficulty": "3", 
+          "objective": "Hunt the Qurupeco", 
+          "targets": [
+              "Qurupeco"
+          ]
+      },  {
+
+        "_id": {
+            "$oid": "29" 
+        },
+        "name": "Rhenoplos Rampage",
+        "client": "Chief of Sandy Plains", 
+        "description": "Greetings hunte! A monster is hittin the village wall from the outside. If we not get rid of it. The wall would probably collapsed. Do something else!", 
+        "reward": 900 ,
+        "map": "Plains", 
+        "isKey": false, 
+        "questType": "Village", 
+        "game": "Monster Hunter Portable 3rd", 
+        "difficulty": "3", 
+        "objective": "Slay 8 Rhenoplos", 
+        "targets": [
+            "Rhenoplos"
+        ]
+    },{
+
+      "_id": {
+          "$oid": "30" 
+      },
+      "name": "Delicious Swimmer on Desert!?",
+      "client": "Whimsical epicure", 
+      "description": "A light liver. Its the best luxury there is. I prefer those that come from flying fish. That intense aroma!", 
+      "reward": 1200 ,
+      "map": "Plains", 
+      "isKey": false, 
+      "questType": "Village", 
+      "game": "Monster Hunter Portable 3rd", 
+      "difficulty": "3", 
+      "objective": "Deliver 5 Monster Guts"
+  },  {
+
+    "_id": {
+        "$oid": "31" 
+    },
+    "name": "Toxic Troublemaker",
+    "client": "Reckless Explorer", 
+    "description": "I removed some thick grass on the ground when someone stepped onto it. He was so orange in color and especially big. I wasn't able to deal with it. So I hand it over to you. I'm praying for you luck", 
+    "reward": 1500 ,
+    "map": "Forest", 
+    "isKey": true, 
+    "questType": "Village", 
+    "game": "Monster Hunter Portable 3rd", 
+    "difficulty": "3", 
+    "objective": "Hunt the Great Wroggi", 
+    "targets": [
+        "Great Wroggi"
+    ]
+  },{
+
+    "_id": {
+        "$oid": "32" 
+    },
+    "name": "Save our Boat",
+    "client": "Fisherman", 
+    "description": "They were hit by its water. They can't recover much of their stamina. It's something like their stamina is unstable! Be careful of this purple monster!", 
+    "reward": 1500 ,
+    "map": "Forest", 
+    "isKey": false, 
+    "questType": "Village", 
+    "game": "Monster Hunter Portable 3rd", 
+    "difficulty": "3", 
+    "objective": "Hunt the Royal Ludroth", 
+    "targets": [
+        "Royal Ludroth"
+    ]
+}, {
+
+  "_id": {
+      "$oid": "33" 
+  },
+  "name": "Facing Delicacy",
+  "client": "Whimsical epicure", 
+  "description": "From a foreign country this is their best delicacy. Insects stew! It was really delicious, but too expensive. Well, because its to dangerous to hunt.", 
+  "reward":  900,
+  "map": "Forest", 
+  "isKey": false, 
+  "questType": "Village", 
+  "game": "Monster Hunter Portable 3rd", 
+  "difficulty": "3", 
+  "objective": "Slay 20 Bnahabra", 
+  "targets": [
+      "Bnahabra"
+  ]
+}, {
+
+  "_id": {
+      "$oid": "34" 
+  },
+  "name": "Big Game Hunting",
+  "client": "Village vigilante", 
+  "description": "Villagers are attacked recently. By this frightful and ferocious Great Jaggi. Village cannot get rid of it by themselves. So please take this job and helped them", 
+  "reward": 900 ,
+  "map": "Island", 
+  "isKey": false, 
+  "questType": "Village", 
+  "game": "Monster Hunter Portable 3rd", 
+  "difficulty": "3", 
+  "objective": "Hunt the Great Jaggi", 
+  "targets": [
+      "Great Jaggi"
+  ]
+}, {
+
+  "_id": {
+      "$oid": "35" 
+  },
+  "name": "Current Events",
+  "client": "Mystery Girl", 
+  "description": "Mystery. Oh my. I saw this person drowning in the wate. I ask him why. He replied - a yellow monster. That's intriguing, eh? Solve this mystery, hunter", 
+  "reward":  1500,
+  "map": "Island", 
+  "isKey": true, 
+  "questType": "Village", 
+  "game": "Monster Hunter Portable 3rd", 
+  "difficulty": "3", 
+  "objective": "Hunt the Royal Ludroth", 
+  "targets": [
+      "Royal Ludroth"
+  ]
+}, 
+{
+
+  "_id": {
+      "$oid": "36" 
+  },
+  "name": "Pirates on a Deserted Island",
+  "client": "Fisherman", 
+  "description": "Oh dear! This freaky guys just steal the fish that I've caught. I needd to teach them a lesson. I hand it over to you hunter!", 
+  "reward":900  ,
+  "map": "Island", 
+  "isKey": false, 
+  "questType": "Village", 
+  "game": "Monster Hunter Portable 3rd", 
+  "difficulty": "3", 
+  "objective": "Slay 10 Ludroth", 
+  "targets": [
+      "Ludroth"
+  ]
+}, {
+
+  "_id": {
+      "$oid": "37" 
+  },
+  "name": "Unique Mushrooms Make Future",
+  "client": "Villagers", 
+  "description": "Mushrooms are in different taste in different region. On my dinner later, I want to make a special mushroom soup. But I need 20 Unique Mushrooms from the forest. Would you gather them for me?", 
+  "reward": 900 ,
+  "map": "Island", 
+  "isKey": false, 
+  "questType": "Village", 
+  "game": "Monster Hunter Portable 3rd", 
+  "difficulty": "3", 
+  "objective": "Deliver 15 Unique Mushrooms" 
+}, 
+{
+
+  "_id": {
+      "$oid": "38" 
+  },
+  "name": "Bulldrome Onslaught",
+  "client": "Tundra's research Team", 
+  "description": "Among the people living on a frozen ground. SUch a legend is flying around. This must be discovered at once! I ask you hunter to help us!", 
+  "reward": 2400 ,
+  "map": "Tundra", 
+  "isKey": false, 
+  "questType": "Village", 
+  "game": "Monster Hunter Portable 3rd", 
+  "difficulty": "3", 
+  "objective": "Hunt 2 Bulldrome", 
+  "targets": [
+      "Bulldrome"
+  ]
+}, 
+{
+
+  "_id": {
+      "$oid": "38" 
+  },
+  "name": "The Snowbound Slider",
+  "client": "Diligent Observer", 
+  "description": "I have a report from the Tundra region! A white rabbit just appeared! Please hunt it and take it down. I was covered with snow and I couldn't move. I was only here in my observatory", 
+  "reward": 1500 ,
+  "map": "Tundra", 
+  "isKey": true, 
+  "questType": "Village", 
+  "game": "Monster Hunter Portable 3rd", 
+  "difficulty": "3", 
+  "objective": "Hunt the Lagombi", 
+  "targets": [
+      "Lagombi"
+  ]
+},
+{
+
+  "_id": {
+      "$oid": "39" 
+  },
+  "name": "Hypnotic Blue",
+  "client": "Mystery Girl", 
+  "description": "A mystery! From the tundra zone area, A research team just suddenly slept without knowing, or they just becoming mentally weak? Well, what are you doing hunter solve and clarify this mystery!", 
+  "reward":  900,
+  "map": "Tundra", 
+  "isKey": false, 
+  "questType": "Village", 
+  "game": "Monster Hunter Portable 3rd", 
+  "difficulty": "3", 
+  "objective": "Slay 10 Baggi", 
+  "targets": [
+      "Baggi"
+  ]
+},  {
+
+  "_id": {
+      "$oid": "40" 
+  },
+  "name": "Designer Antlers",
+  "client": "Good Student", 
+  "description": "To finish the interior decoration insede my house. I need to add this large decoration. But I need the materials. 5 anteka antlers if enough. It should be easy to gather it from an anteka.", 
+  "reward":  900,
+  "map": "Tundra", 
+  "isKey": false, 
+  "questType": "Village", 
+  "game": "Monster Hunter Portable 3rd", 
+  "difficulty": "3", 
+  "objective": "Deliver 5 Anteka Antlers"
+}, {
+
+  "_id": {
+      "$oid": "41" 
+  },
+  "name": "Dancing at Misty Peaks!?!",
+  "client": "Village Chief", 
+  "description": "I want to get the attention of hunters for while. Recently a Rathian appeared in the Misty Peaks, and the security of the village is bothering me. Pleae remove the threat.", 
+  "reward": 3000 ,
+  "map": "Peacks", 
+  "isKey": true, 
+  "questType": "Village", 
+  "game": "Monster Hunter Portable 3rd", 
+  "difficulty": "4", 
+  "objective": "Hunt the Rathian", 
+  "targets": [
+      "Rathian"
+  ]
+}
+
   ]
 }
