@@ -5269,6 +5269,228 @@
   "targets": [
       "Duramboros"
   ]
+},{
+
+  "_id": {
+      "$oid": "77" 
+  },
+  "name": "Horned Wyvern Hunt",
+  "client": "Watchtower Guard", 
+  "description": "Two horned wyvern is appeared in the middle of the desert! Indeed! Your right, it was a Diablos. A black skinny guy. Be careful when it goes to berserk.", 
+  "reward":4200,
+  "map": "Plains", 
+  "isKey": true, 
+  "questType": "Village", 
+  "game": "Monster Hunter Portable 3rd", 
+  "difficulty": "6", 
+  "objective": "hunt the Diablos", 
+  "targets": [
+      "Diablos"
+  ]
+}, {
+
+  "_id": {
+      "$oid": "78" 
+  },
+  "name": "Tigrex Interception",
+  "client": "Village Elder", 
+  "description": "Help me! I'm coming now to village but a Tigrex is chasing me. I'm still at the sandy plains. Please help me hunter! Take me out from here.", 
+  "reward": 4200 ,
+  "map": "Plains", 
+  "isKey": true, 
+  "questType": "Village", 
+  "game": "Monster Hunter Portable 3rd", 
+  "difficulty": "6", 
+  "objective": "Hunt the Tigrex", 
+  "targets": [
+      "Tigrex"
+  ]
+}, {
+
+  "_id": {
+      "$oid": "79" 
+  },
+  "name": "Duramboros Watershed",
+  "client": "Villagers", 
+  "description": "A river on my village overflowed. The dike protecting it is now broken. Now, our village is buried in water. It seems that a Duramboros is a cause of this problem.", 
+  "reward":3900  ,
+  "map": "Forest", 
+  "isKey": false, 
+  "questType": "Village", 
+  "game": "Monster Hunter Portable 3rd", 
+  "difficulty": "6", 
+  "objective": "Hunt the Duramboros", 
+  "targets": [
+      "Duramboros"
+  ]
+}, {
+
+  "_id": {
+      "$oid": "80" 
+  },
+  "name": "Mountain Storm Flooding",
+  "client": "Confuse Hunter", 
+  "description": "I saw this two monster in the flooded forest. But no one beliebes me, they think I'm a crazy person, but I'm not. Please prve to them that its true!", 
+  "reward":  6000,
+  "map": "Forest", 
+  "isKey": false, 
+  "questType": "Village", 
+  "game": "Monster Hunter Portable 3rd", 
+  "difficulty": "6", 
+  "objective": "Hunt the Duramboros and Royal Ludroth", 
+  "targets": [
+      "Duramboros",
+      "Royal Ludroth"
+  ]
+}, {
+
+  "_id": {
+      "$oid": "81" 
+  },
+  "name": "Dancing White Wind",
+  "client": "Imperial Guard", 
+  "description": "Two ice devil is confirmed at the same time. So a team was dispatched in order to kill them. They came back alive in severe shock. We need a help from a hunter!", 
+  "reward": 6600 ,
+  "map": "Tundra", 
+  "isKey": false, 
+  "questType": "Village", 
+  "game": "Monster Hunter Portable 3rd", 
+  "difficulty": "6", 
+  "objective": "Hunt 2 Barioth", 
+  "targets": [
+      "Barioth"
+  ]
+}, {
+
+  "_id": {
+      "$oid": "82" 
+  },
+  "name": "Battle of the Tundra",
+  "client": "Princess Maid", 
+  "description": "It is a serious matter, my princess is in danger. She performed to challenge this monsters, buts that's to impossible for her. Please hunt the monsters before th princess arrives. Goodluck!", 
+  "reward": 6900 ,
+  "map": "Tundra", 
+  "isKey": false, 
+  "questType": "Village", 
+  "game": "Monster Hunter Portable 3rd", 
+  "difficulty": "6", 
+  "objective": "Hunt the Tigrex and Gigginox", 
+  "targets": [
+      "Tigrex",
+      "Gigginox"
+  ]
+}, {
+
+  "_id": {
+      "$oid": "83" 
+  },
+  "name": "Leviathan in the Fire!",
+  "client": "Village Elder", 
+  "description": "Our country is  partially destroyed for the past years. People are panicking because of the monster! We don't want it to be destroyed even more. Please save my people and the village.", 
+  "reward": 3900 ,
+  "map": "Volcano", 
+  "isKey": true, 
+  "questType": "Village", 
+  "game": "Monster Hunter Portable 3rd", 
+  "difficulty": "6", 
+  "objective": "Hunt the Agnaktor", 
+  "targets": [
+      "Agnaktor"
+  ]
+}, {
+
+  "_id": {
+      "$oid": "84" 
+  },
+  "name": "Rumbling Volcano",
+  "client": "Land of fire Princess", 
+  "description": "God become angry, so does the earth is now trembling. The mountains are crying with fire! Please make it calm, eventhough its not possible! Make a way hunter.", 
+  "reward": 7200 ,
+  "map": "Volcano", 
+  "isKey": false, 
+  "questType": "Village", 
+  "game": "Monster Hunter Portable 3rd", 
+  "difficulty": "6", 
+  "objective": "Hunt 2 Uragaan", 
+  "targets": [
+      "Uragaan"
+  ]
+}, {
+
+  "_id": {
+      "$oid": "85" 
+  },
+  "name": "Heaven and Earth",
+  "client": "---", 
+  "description": "Two wyvern appeared, it was a dangerous task. But its time to prove your skills hunter! Make it happen for me!", 
+  "reward":  8400,
+  "map": "Island", 
+  "isKey": false, 
+  "questType": "Village", 
+  "game": "Monster Hunter Portable 3rd", 
+  "difficulty": "6", 
+  "objective": "Hunt the Rathalos and Rathian", 
+  "targets": [
+      "Rathalos",
+      "Rathian"
+  ]
+}, {
+
+  "_id": {
+      "$oid": "86" 
+  },
+  "name": "Fast Lighting Defense",
+  "client": "Young Warrior", 
+  "description": "It will also serve as a testing ground. However this monster are tough, so don't understimate them. Depart now and make a scene!", 
+  "reward": 6900 ,
+  "map": "Peacks", 
+  "isKey": false, 
+  "questType": "Village", 
+  "game": "Monster Hunter Portable 3rd", 
+  "difficulty": "6", 
+  "objective": "Hunt the Main Monsters", 
+  "targets": [
+      "Nargacuga",
+      "Zinogre"
+  ]
+}, {
+
+  "_id": {
+      "$oid": "87" 
+  },
+  "name": "Sandy Plains Aid Request",
+  "client": "Pedlar Leader", 
+  "description": "After my business on a village. I meet two dragons, I run as fast as I can, now I'm here hiding behind a rock. It's a cold night! Please save me and kill those monster.", 
+  "reward": 6300 ,
+  "map": "Plains", 
+  "isKey": false, 
+  "questType": "Village", 
+  "game": "Monster Hunter Portable 3rd", 
+  "difficulty": "6", 
+  "objective": "Hunt the Main Monsters", 
+  "targets": [
+      "Barroth",
+      "Diablos"
+  ]
+}, {
+
+  "_id": {
+      "$oid": "88" 
+  },
+  "name": "The Twin Flame",
+  "client": "Hunter with a Curly Hair", 
+  "description": "Their was a rampage both from the sky and the ground. Rathalos is responsible above, and Aganktor for the ground. Please do something about it.", 
+  "reward": 7500 ,
+  "map": "Volcano", 
+  "isKey": false, 
+  "questType": "Village", 
+  "game": "Monster Hunter Portable 3rd", 
+  "difficulty": "6", 
+  "objective": "Hunt the Main Monsters", 
+  "targets": [
+      "Rathalos",
+      "Agnaktor"
+  ]
 }
 
   ]
