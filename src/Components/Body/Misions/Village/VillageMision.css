@@ -36,3 +36,14 @@
 .item-tag{
     font-weight: 600;
 }
+.list-item-monster-icon{
+    
+    display: flex;
+    margin: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.list-item-monster-icon img{
+    width: 54px;
+    margin-right: 1rem;
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const VillageMisionInfo = ({name,client,description,reward,map,isKey,questType,difficulty,  objective,target}) => {
+export const VillageMisionInfo = ({name,client,description,reward,map,isKey,questType,difficulty,  objective,targett}) => {
         let up = ">";
         let listItem = !isKey
                             ? <span className='monsters-info-tag' style={{marginLeft:"1rem"}}>{name}</span>
@@ -25,11 +25,16 @@ export const VillageMisionInfo = ({name,client,description,reward,map,isKey,ques
         <div className='monster-drops-collapse' onClick={handleClick}>{listItem} <span className='monsters-arrow'>{up}</span></div>
         <div className='quest-item-desc'>
             <ul className='quest-item-desc-list'>
+                    
                 <li className='list-item'><span className='item-tag'>Client: </span> {client}</li>
                 <li className='list-item'><span className='item-tag'>Description:</span> {description}</li>
                 <li className='list-item'><span className='item-tag'>Reward:</span> {reward}z</li>
                 <li className='list-item'><span className='item-tag'>Map:</span> {map}</li>
-                <li className='list-item'><span className='item-tag'>Objetive:</span> {objective}</li>
+                <li className='list-item'><span className='item-tag'>Objetive:</span> {objective}
+                </li>
+                <li className='list-item list-item  list-item-monster-icon'>{targett && targett.map((ele,index) => {
+                        return <img key={index} src={require(`../../../../Assets/icons/Monsters/MH3U-${ele}_Icon.png` )} alt={`${ele} icon`} />
+                    })}</li>
             </ul>
         </div>
                 

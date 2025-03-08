@@ -54,7 +54,7 @@ export const VillageMision = () => {
                       difficulty={ele.difficulty
                       }  
                       objective = {ele.objetive}
-                      target ={ele.target}
+                      targett ={ele.targets}
                       />
               )
             }
