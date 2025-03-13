@@ -5491,6 +5491,24 @@
       "Rathalos",
       "Agnaktor"
   ]
+}, {
+
+  "_id": {
+      "$oid": "89" 
+  },
+  "name": "The Desert Feast!",
+  "client": "Guild Master", 
+  "description": "Come, quickly! Hunters, the Guild will be mobilized to erase this very large monster from the face of the desert. Use any strategies to defend the ship. Be cooperative! The ultimate hunt begins!", 
+  "reward": 9000 ,
+  "map": "Desert", 
+  "isKey": true, 
+  "questType": "Village", 
+  "game": "Monster Hunter Portable 3rd", 
+  "difficulty": "6", 
+  "objective": "Slay the Jhen Mohran", 
+  "targets": [
+      "Jhen_Mohran"
+  ]
 }
 
   ]

@@ -37,13 +37,13 @@ const handleClick=(e)=>{
 }
     return (
         <header>
-            <button className="panel-btn hamburger hamburger--collapse" ref={$sideBtn} type="button" onClick={handleClick}>
+            <button name="Hamburguer-menu"  className="panel-btn hamburger hamburger--collapse" ref={$sideBtn} type="button" onClick={handleClick}>
                 <span className="hamburger-box">
                 <span className="hamburger-inner"></span>
                 </span>
             </button>
             <h2>MHP3RD Data-Base</h2>
-            <button className='themeBtn' 
+            <button name='Theme button' className='themeBtn' 
                 onClick={handleClickTheme}
                 ref={$themeBtn}>{themeIcon} </button>
             <Theme theme={theme}/>

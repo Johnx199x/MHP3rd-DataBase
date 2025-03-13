@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import "./VillageMision.css"
 import {GetDataBase} from "../../../Others/GetDataBase"
-import { VillageMisionInfo } from './VillageMisionInfo'
+import { MisionInfo } from '../MisionInfo'
 
 
 export const VillageMision = () => {
@@ -41,7 +41,7 @@ export const VillageMision = () => {
         <ul className="quests-list" style={{listStyle:"none", margin:"0" , padding:0}}>
             {
               quests.map((ele)=>ele.difficulty+"★"===misionLevel &&
-                    <VillageMisionInfo
+                    <MisionInfo
                       key={ele.id} 
                       misionLevel = {misionLevel} 
                       name={ele.name}

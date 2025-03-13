@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const VillageMisionInfo = ({name,client,description,reward,map,isKey,questType,difficulty,  objective,targett}) => {
+export const MisionInfo = ({name,client,description,reward,map,isKey,questType,difficulty,  objective,targett}) => {
         let up = ">";
         let listItem = !isKey
                             ? <span className='monsters-info-tag' style={{marginLeft:"1rem"}}>{name}</span>
@@ -33,7 +33,7 @@ export const VillageMisionInfo = ({name,client,description,reward,map,isKey,ques
                 <li className='list-item'><span className='item-tag'>Objetive:</span> {objective}
                 </li>
                 <li className='list-item list-item  list-item-monster-icon'>{targett && targett.map((ele,index) => {
-                        return <img key={index} src={require(`../../../../Assets/icons/Monsters/MH3U-${ele}_Icon.png` )} alt={`${ele} icon`} />
+                        return <img key={index} src={require(`../../../Assets/icons/Monsters/MH3U-${ele}_Icon.png` )} alt={`${ele} icon`} />
                     })}</li>
             </ul>
         </div>
