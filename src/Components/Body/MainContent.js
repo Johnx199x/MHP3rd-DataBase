@@ -4,9 +4,9 @@ import { Items } from './Items/Items'
 import {Ubications} from "./Ubications/Ubications"
 import { About } from './About/About'
 import {Home} from "./Home/Home"
+import { Monsters } from './Monsters/Monsters'
+import { Misions } from './Misions/Misions'
 
-const Monsters =lazy(()=> import("./Monsters/Monsters")) 
-const Misions = lazy(()=> import("./Misions/Misions"))
 export default function MainContent({content}){
 
   const Select =(conte)=>{
