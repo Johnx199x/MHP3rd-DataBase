@@ -8,6 +8,8 @@ import { Misions } from './Misions/Misions'
 
 const Home =lazy(()=>import("./Home/Home"));
 
+
+
 export default function MainContent({content}){
 
   const Select =(conte)=>{

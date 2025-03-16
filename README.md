@@ -32,4 +32,4 @@ At this time, the application contains only data related to the monsters of MHP3
 
 * Monster loot and drop rates
 
-* Some Village Quest
+* All Village Quest
