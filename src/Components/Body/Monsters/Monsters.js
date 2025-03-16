@@ -28,6 +28,7 @@ export const Monsters = () => {
             ?monsterTypeShow = largueMonsters
             :monsterTypeShow = smallMonsters
     
+            monsterTypeShow.sort((a,b)=>a.idEl - b.idEl);
 
     return (
     <div className='monsters-container'>
@@ -49,7 +50,7 @@ export const Monsters = () => {
         <ul className='monster-list'>
         {
             monsterTypeShow.length === 0 
-            ? <h3>Cargando...</h3>
+            ? <h3>Loading...</h3>
             :monsterTypeShow.map((ele,index)=> 
                 <li key={index}>
                 <MonsterInfo 

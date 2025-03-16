@@ -2,7 +2,7 @@ import React from 'react'
 import "./Home.css"
 
 
-export const Home = () => {
+export default function Home(){
   return (
     <div className='home-container'>
         <img className="home-img" src={require("../../../Assets/img/MHWI-Render_Zinogre.webp")} alt="zinogre_img" />

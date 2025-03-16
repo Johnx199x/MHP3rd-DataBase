@@ -1,25 +1,35 @@
 import {useState,useEffect} from 'react'
 import data from "../../Assets/data.json"
-
+import { supabase } from './supaBaseClient';
 
 export const GetDataBase = () => {
     const [largueMonsters, setLargueMonsters] = useState([]);
     const [smallMonsters, setSmallMonsters] = useState([]);
     const [mision, setMision]= useState([]);
 
-    const dataMonster =  data.monsters;
+    const [loading, setLoading] = useState(true);
+
     const dataMision = data.quests;
     
     useEffect(()=>{
-    
-        const getMonsters = (data)=>{ 
-        const largueMonster =[];
-        const smallMonster = [];
-        
-            data.forEach((ele) =>{
+        const fetchMonsters = async () => {
+            const largueMonster =[];
+            const smallMonster = [];
+
+            try {
+            const { data, error } = await supabase
+                .from('tb_Monster') // Nombre de la tabla
+                .select('id, monster_data');
+
+
+                if (error) throw error;
+            data.forEach((row) =>{
+                const ele = row.monster_data;
+                const eleId = row.id;
                 let monster;
                 ele.isLarge ?
                         monster= {
+                            idEl: eleId,
                             id: ele._id.$oid,
                             name: ele.name,
                             type:ele.type,
@@ -35,6 +45,7 @@ export const GetDataBase = () => {
                             dropsHighRAnk:ele.drops.highRank     
                     } 
                         : monster= {
+                            idEl: eleId,
                             id: ele._id.$oid,
                             name: ele.name,
                             type:ele.type,
@@ -49,17 +60,25 @@ export const GetDataBase = () => {
                             dropsHighRAnk:ele.drops.highRank 
                         
                         }
+
                     ele.isLarge 
                         ?(largueMonster.push(monster)) 
                         :smallMonster.push(monster) 
-                
             }
-                    );
-        setLargueMonsters(largueMonster);
-        setSmallMonsters(smallMonster);
-        };
-        getMonsters(dataMonster);
+                    ); 
+                    setLargueMonsters(largueMonster);
+                    setSmallMonsters(smallMonster);
 
+                    if(loading) return <div>Getting monsters...</div>
+            } catch (error) {
+            console.error('Error fetching monsters:', error);
+            } finally {
+            setLoading(false);
+            }
+            
+        };
+
+        fetchMonsters();
         const getMisions=(data)=>{
             const misions =[];
 
@@ -83,10 +102,11 @@ export const GetDataBase = () => {
             
             }
                     );
-            setMision(misions)        
+            setMision(misions)  
         }
         getMisions(dataMision);
-    },[dataMonster,dataMision])
+
+    },[loading,dataMision])
     return {
         largueMonster: [largueMonsters, setLargueMonsters],
         smallMonster: [smallMonsters, setSmallMonsters],

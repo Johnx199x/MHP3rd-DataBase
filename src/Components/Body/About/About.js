@@ -46,7 +46,7 @@ export const About = () => {
                     <i className="fa-brands fa-linkedin about-contact-icons-img" style={{color:"#0077B5"}}></i>
                 </a>
                 <a href="https://t.me/Johnx199x" className="about-contact-icons-link" target="_blank" rel="noopener noreferrer" title='Telegram'>
-                    <i class="fa-brands fa-telegram about-contact-icons-img" style={{color:"#0088cc"}}></i>
+                    <i className="fa-brands fa-telegram about-contact-icons-img" style={{color:"#0088cc"}}></i>
                 </a>
 </div>
         </div>

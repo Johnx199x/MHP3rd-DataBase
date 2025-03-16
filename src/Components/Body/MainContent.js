@@ -3,10 +3,11 @@ import "./MainContent.css"
 import { Items } from './Items/Items'
 import {Ubications} from "./Ubications/Ubications"
 import { About } from './About/About'
-import {Home} from "./Home/Home"
+import { Monsters } from './Monsters/Monsters'
+import { Misions } from './Misions/Misions'
 
-const Monsters =lazy(()=> import("./Monsters/Monsters")) 
-const Misions = lazy(()=> import("./Misions/Misions"))
+const Home =lazy(()=>import("./Home/Home"));
+
 export default function MainContent({content}){
 
   const Select =(conte)=>{
@@ -24,7 +25,7 @@ export default function MainContent({content}){
   return (
     <div className='main-container'>
       <h2>{content}</h2>
-      <Suspense fallback={<div>Loading...</div>}>{Select(content)}</Suspense>
+      <Suspense fallback={<h3 style={{fontSize:"2rem"}}>Loading...</h3>}>{Select(content)}</Suspense>
     </div>
   )
 }
