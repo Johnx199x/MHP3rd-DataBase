@@ -92,11 +92,11 @@ export const GetDataBase = () => {
                     reward:ele.reward,
                     map:ele.map,
                     isKey:ele.isKey,
-                    questsType: ele.questsType,
+                    questType: ele.questType,
                     game:ele.game,
                     difficulty: ele.difficulty,
                     objetive:ele.objective,
-                    targets:ele.targets|| undefined
+                    targets:ele.targets || undefined
                 }
                 misions.push(mision);
             

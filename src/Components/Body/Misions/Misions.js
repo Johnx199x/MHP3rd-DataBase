@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
-import { VillageMision } from './Village/VillageMision'
-import { GuildMision } from './Guild/GuildMision'
+import { QuestComp } from './QuestComp/QuestComp'
+
 
 
 export const Misions = () => {
@@ -25,27 +25,26 @@ export const Misions = () => {
             ]
         }, 
         */
-  const [misionType, setMisionType] = useState("village")
+  const [misionType, setMisionType] = useState("Village")
   
     return (
     <div>
       <nav>
             <ul className='item-type-select '>
                 <li className="item-type-selected" onClick={(e)=>{
-                    setMisionType("village")
+                    setMisionType("Village")
                     e.target.classList.add("item-type-selected")
                     e.target.nextElementSibling.classList.contains("item-type-selected") && e.target.nextElementSibling.classList.remove("item-type-selected")
                     }}>Village</li>
                 <li onClick={(e)=>{
-                    setMisionType("guild")
+                    setMisionType("Guild")
                     e.target.classList.add("item-type-selected")
                     e.target.previousElementSibling.classList.contains("item-type-selected") && e.target.previousElementSibling.classList.remove("item-type-selected")
                 }}>Guild</li>
             </ul>            
       </nav>
 
-      {misionType ==="village" ? <VillageMision /> :<GuildMision />
-      }
+      { <QuestComp questTypeB={misionType}  />}
     </div>
   )
 }

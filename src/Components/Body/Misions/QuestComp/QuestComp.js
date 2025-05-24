@@ -1,10 +1,10 @@
 import React,{useState} from 'react'
-import "./VillageMision.css"
+import "./QuestComp.css"
 import {GetDataBase} from "../../../Others/GetDataBase"
-import { MisionInfo } from '../MisionInfo'
+import { QuestInfo } from './QuestInfo'
 
 
-export const VillageMision = () => {
+export const QuestComp = ({questTypeB}) => {
 
   
   const [misionLevel, setMisionLevel] = useState("1★")
@@ -40,8 +40,10 @@ export const VillageMision = () => {
       <div className="quest-container">
         <ul className="quests-list" style={{listStyle:"none", margin:"0" , padding:0}}>
             {
-              quests.map((ele)=>ele.difficulty+"★"===misionLevel &&
-                    <MisionInfo
+              quests.map((ele)=>
+
+                ele.difficulty+"★"===misionLevel && ele.questType == questTypeB &&
+                    <QuestInfo
                       key={ele.id} 
                       misionLevel = {misionLevel} 
                       name={ele.name}
@@ -51,11 +53,12 @@ export const VillageMision = () => {
                       map = {ele.map}
                       isKey = {ele.isKey}
                       questType = {ele.questType}
-                      difficulty={ele.difficulty
-                      }  
+                      difficulty={ele.difficulty}  
                       objective = {ele.objetive}
                       targett ={ele.targets}
                       />
+                
+                    
               )
             }
         </ul>
