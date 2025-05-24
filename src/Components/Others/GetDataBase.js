@@ -15,7 +15,7 @@ export const GetDataBase = () => {
         const fetchMonsters = async () => {
             const largueMonster =[];
             const smallMonster = [];
-
+           
             try {
             const { data, error } = await supabase
                 .from('tb_Monster') // Nombre de la tabla
@@ -26,44 +26,33 @@ export const GetDataBase = () => {
             data.forEach((row) =>{
                 const ele = row.monster_data;
                 const eleId = row.id;
-                let monster;
-                ele.isLarge ?
-                        monster= {
+                const image = ele.games[0]?.image || "MH3U-Question_Mark_Icon.png";
+                let monster = {
                             idEl: eleId,
                             id: ele._id.$oid,
                             name: ele.name,
                             type:ele.type,
-                            image: ele.games[0].image,
+                            image: image,
                             info: ele.games[0].info,
                             danger:ele.games[0].danger,
                             ailments:ele.ailments,
                             isLarge: ele.isLarge,
                             element:ele.elements,
                             weakness:ele.weakness,
-                            huntTips:[ele.huntTips.prepare,ele.huntTips.break,ele.huntTips.weaknessSign,ele.huntTips.image],
+                            ...(ele.isLarge && { // only huntTips if isLarge es true
+                                huntTips: [
+                                    ele.huntTips.prepare,
+                                    ele.huntTips.break,
+                                    ele.huntTips.weaknessSign,
+                                    ele.huntTips.image
+                                ]
+                            }),
                             dropsLowRank:ele.drops.lowRank,
                             dropsHighRAnk:ele.drops.highRank     
                     } 
-                        : monster= {
-                            idEl: eleId,
-                            id: ele._id.$oid,
-                            name: ele.name,
-                            type:ele.type,
-                            image: ele.games[0].image,
-                            info: ele.games[0].info,
-                            danger:ele.games[0].danger,
-                            ailments:ele.ailments,
-                            isLarge: ele.isLarge,
-                            element:ele.elements,
-                            weakness:ele.weakness,
-                            dropsLowRank:ele.drops.lowRank,
-                            dropsHighRAnk:ele.drops.highRank 
-                        
-                        }
-
                     ele.isLarge 
-                        ?(largueMonster.push(monster)) 
-                        :smallMonster.push(monster) 
+                        ?largueMonster.push(monster)
+                        :smallMonster.push(monster)   
             }
                     ); 
                     setLargueMonsters(largueMonster);

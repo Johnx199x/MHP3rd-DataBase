@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import "./Monsters.css"
 import { MonsterInfo } from './MonsterInfo/MonsterInfo'
 import { GetDataBase } from '../../Others/GetDataBase'
+import { useSearchContext } from '../../Header/searchInput/SearchContext'
 
 export const Monsters = () => {
 /*  initialDB = {
@@ -15,7 +16,7 @@ export const Monsters = () => {
         element:[],
         weakness:[],
     }*/
-    
+    const { searchValue } = useSearchContext();
     const { largueMonster, smallMonster } = GetDataBase();
     const [largueMonsters] = largueMonster;
     const [smallMonsters] = smallMonster;
@@ -24,28 +25,43 @@ export const Monsters = () => {
 
 
     let monsterTypeShow = ""
-        monsterType==="largue"
+        searchValue === ""
+        ? monsterType==="largue"
             ?monsterTypeShow = largueMonsters
             :monsterTypeShow = smallMonsters
+        :monsterTypeShow = largueMonsters.concat(smallMonsters) ;
+        
     
             monsterTypeShow.sort((a,b)=>a.idEl - b.idEl);
 
+        const MonsterTypeSelected = (searchValue) =>{
+            return(
+                searchValue === ""
+                ?(<nav>
+                    <ul className='item-type-select '>
+                        <li className="item-type-selected" onClick={(e)=>{
+                            setMonstertype("small")
+                            e.target.classList.add("item-type-selected")
+                            e.target.nextElementSibling.classList.contains("item-type-selected") && e.target.nextElementSibling.classList.remove("item-type-selected")
+                            }}>Small</li>
+                        <li onClick={(e)=>{
+                            setMonstertype("largue")
+                            e.target.classList.add("item-type-selected")
+                            e.target.previousElementSibling.classList.contains("item-type-selected") && e.target.previousElementSibling.classList.remove("item-type-selected")
+                        }}>Largue</li>
+                    </ul>
+                </nav>)
+                :(<nav>
+                    <ul className='item-type-select '>
+                        <li >Search Result:</li>
+                    </ul>
+                </nav>)
+            )
+        }
+
     return (
     <div className='monsters-container'>
-        <nav>
-            <ul className='item-type-select '>
-                <li className="item-type-selected" onClick={(e)=>{
-                    setMonstertype("small")
-                    e.target.classList.add("item-type-selected")
-                    e.target.nextElementSibling.classList.contains("item-type-selected") && e.target.nextElementSibling.classList.remove("item-type-selected")
-                    }}>Small</li>
-                <li onClick={(e)=>{
-                    setMonstertype("largue")
-                    e.target.classList.add("item-type-selected")
-                    e.target.previousElementSibling.classList.contains("item-type-selected") && e.target.previousElementSibling.classList.remove("item-type-selected")
-                }}>Largue</li>
-            </ul>
-        </nav>
+        {MonsterTypeSelected(searchValue)}
 
         <ul className='monster-list'>
         {
@@ -64,7 +80,9 @@ export const Monsters = () => {
                     element={ele.element}
                     weakness={ele.weakness}
                     ailments={ele.ailments}
-                    huntTips ={ele.huntTips}
+                    {...(ele.isLarge && {  // Solo incluye huntTips si isLarge es true
+                        huntTips: ele.huntTips
+                    })}
                     dropsLowRank={ele.dropsLowRank}
                     dropsHighRAnk={ele.dropsHighRAnk}
                     />

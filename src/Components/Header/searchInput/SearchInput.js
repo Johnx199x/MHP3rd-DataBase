@@ -1,13 +1,12 @@
-import { useState, useEffect } from "react"
+import {useEffect } from "react"
+import { useSearchContext } from './SearchContext';
 import React from 'react'
 import "./SearchInput.css"
 
+
+
 export const SearchInput = () => {
-        const [searchValue, setSearchValue] = useState("");
-
-        
-
-
+    const { searchValue, setSearchValue } = useSearchContext();
         const handleChange=(e)=>{
             setSearchValue(e.target.value)
         };
@@ -17,11 +16,12 @@ export const SearchInput = () => {
             searchValue !== "" 
                 ? document.querySelector(".search-container").classList.add("search-notEmpty")
                 : document.querySelector(".search-container").classList.remove("search-notEmpty")
+
                 $searchItems.forEach(el => {
                     el.children[0].textContent.toLowerCase().includes(searchValue.toLowerCase() )
                         ? el.classList.remove("hide")
                         : el.classList.add("hide")
-                });    
+                }); 
         }, [searchValue])
         
         return(

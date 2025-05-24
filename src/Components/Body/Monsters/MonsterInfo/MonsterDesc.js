@@ -136,6 +136,7 @@ export const MonstersDescription = (props) =>{
     </table>
     )
     }
+    
     const huntTips = (arrEle)=>{
         const prepare = arrEle[0];
         const breakPart = arrEle[1];
@@ -158,6 +159,7 @@ export const MonstersDescription = (props) =>{
                 
             </>
         )
+    
     }
     
     return(
