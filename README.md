@@ -20,7 +20,7 @@ This is a developing database application for Monster Hunter Portable 3rd(MHP3rd
 
 ### 🚧 In Development 🚧
 
-At this time, the application contains only data related to the monsters of MHP3rd. I am working to expand the database and introduce more features over time.
+At this time, the application contains only data related to the monsters of MHP3rd and Village quest. I am working to expand the database and introduce more features over time.
 
 #### Current Features
 
@@ -32,4 +32,4 @@ At this time, the application contains only data related to the monsters of MHP3
 
 * Monster loot and drop rates
 
-* All Village Quest
+* All Village Quest and key quest

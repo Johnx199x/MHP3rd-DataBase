@@ -19,7 +19,7 @@ const handleClick = (newZone)=>{
     <ul className='side-list'>
       <li className='side-list-item' onClick={()=>handleClick("Home")}><i className="fa-solid fa-house" style={{marginRight:"0.5rem"}}></i>Home</li>
       <li className='side-list-item'  onClick={()=>handleClick("Monsters")}>Monsters</li>
-      <li className='side-list-item'  onClick={()=>handleClick("Misions")}>Misions</li>
+      <li className='side-list-item'  onClick={()=>handleClick("Misions")}>Quest</li>
       <li className='side-list-item'  onClick={()=>handleClick("Items")}>Items</li>
       <li className='side-list-item'  onClick={()=>handleClick("Ubications")}>Ubications</li>
       <li><br /></li>
