@@ -1561,7 +1561,160 @@
   "targets": [
       "Jhen_Mohran"
   ]
-}
+},{
+
+    "_id": {
+        "$oid": "90" 
+    },
+    "name": "Arzuros Erosion",
+    "client": "Housewife", 
+    "description": "I went to the Misty Peaks to harvest my crops and suddenly this Arzuros appeared! Now, my family is starving. Please hunter do me a favour, take it down for me", 
+    "reward": 1800 ,
+    "map": "Peacks", 
+    "isKey": false, 
+    "questType": "Guild", 
+    "game": "Monster Hunter Portable 3rd", 
+    "difficulty": "1", 
+    "objective": "Hunt the Arzuros", 
+    "targets": [
+        "Arzuros"
+    ]
+},{
+
+    "_id": {
+        "$oid": "91" 
+    },
+    "name": "Hard, Rush, Charge Bullfango!",
+    "client": "Novice Hunter", 
+    "description": "It's the biggest boar I've ever seen in my life! Larfe tusk and running like crazy. If you're a skilled hunter, please show him who's boss!", 
+    "reward": 1800 ,
+    "map": "Peacks", 
+    "isKey": false, 
+    "questType": "Guild", 
+    "game": "Monster Hunter Portable 3rd", 
+    "difficulty": "1", 
+    "objective": "Hunt the Bulldrome", 
+    "targets": [
+        "Bulldrome"
+    ]
+  },{
+
+    "_id": {
+        "$oid": "92" 
+    },
+    "name": "Field Trip",
+    "client": "Excited Teacher", 
+    "description": "My students want to watch a brave fight between a hunter and a monster. Please show them a wonderful brawl. A Great Jaggi is close by!", 
+    "reward": 1800 ,
+    "map": "", 
+    "isKey": false, 
+    "questType": "Guild", 
+    "game": "Monster Hunter Portable 3rd", 
+    "difficulty": "1", 
+    "objective": "Hunt the Great Jaggi", 
+    "targets": [
+        "Great_Jaggi"
+    ]
+  },{
+
+    "_id": {
+        "$oid": "93" 
+    },
+    "name": "Help in Gathering Honey",
+    "client": "Honey Hunter", 
+    "description": "I was searching for honey in the Misty Peaks for the entire morning! It's just so hard to find the Royal kind! Be careful, I heard this area is guarder by a blue monster.", 
+    "reward": 900 ,
+    "map": "Peacks", 
+    "isKey": false, 
+    "questType": "Guild", 
+    "game": "Monster Hunter Portable 3rd", 
+    "difficulty": "1", 
+    "objective": "Deliver 7 Royal Honey"
+  },{
+
+    "_id": {
+        "$oid": "94" 
+    },
+    "name": "Jaggi of the Sandy Plains",
+    "client": "Sandy Chief", 
+    "description": "Jaggi are  everywher in the Sandy Plains. I want to slay some but my wife ignored my request. Just get rid of them for me, please!", 
+    "reward": 12000 ,
+    "map": "Plains", 
+    "isKey": false, 
+    "questType": "Guild", 
+    "game": "Monster Hunter Portable 3rd", 
+    "difficulty": "1", 
+    "objective": "Slay 10 Jaggi", 
+    "targets": [
+        "Jaggi"
+    ]
+  },{
+
+    "_id": {
+        "$oid": "95" 
+    },
+    "name": "Ancient? Crystal Bone!",
+    "client": "Government Researchers", 
+    "description": "I want to gather Wyvern ore for my research, but it's too dangerous for me. Please, if you can, gather 5 of them. Use pickaxes on mining spots to mine them.", 
+    "reward": 900 ,
+    "map": "Plains", 
+    "isKey": false, 
+    "questType": "Guild", 
+    "game": "Monster Hunter Portable 3rd", 
+    "difficulty": "1", 
+    "objective": "Deliver 5 Crystal Bones"
+  },{
+
+    "_id": {
+        "$oid": "96" 
+    },
+    "name": "Toxic Troublemaker",
+    "client": "Reckless Explorer", 
+    "description": "I removed some thick grass on the ground when someone stepped onto it. He was so orange in color and especially big. I wasn't able to deal with it. So I hand it over to you. I'm praying for you luck", 
+    "reward": 1800 ,
+    "map": "Forest", 
+    "isKey": false, 
+    "questType": "Guild", 
+    "game": "Monster Hunter Portable 3rd", 
+    "difficulty": "1", 
+    "objective": "Hunt the Great Wroggi", 
+    "targets": [
+        "Great_Wroggi"
+    ]
+  },{
+
+    "_id": {
+        "$oid": "97" 
+    },
+    "name": "Poison Wroggi",
+    "client": "Young Boy", 
+    "description": "I live in a village where Wroggi breed close by. They poison our crops and livestock with their venom. I want to restore my village, so please slay 10 of them and get back safely.", 
+    "reward": 1200 ,
+    "map": "Forest", 
+    "isKey": false, 
+    "questType": "Guild", 
+    "game": "Monster Hunter Portable 3rd", 
+    "difficulty": "1", 
+    "objective": "Slay 10 Wroggi", 
+    "targets": [
+        "Wroggi"
+    ]
+  },{
+
+    "_id": {
+        "$oid": "98" 
+    },
+    "name": "Unique Mushroom Feast",
+    "client": "Interested Mother", 
+    "description": "Mushrooms from different regions taste different. For my dinner later, I want  to make Unique Mushroom soup. I need 20 Unique Mushrooms from the forest. Would you gather them for me?", 
+    "reward": 900 ,
+    "map": "Forest", 
+    "isKey": false, 
+    "questType": "Guild", 
+    "game": "Monster Hunter Portable 3rd", 
+    "difficulty": "1", 
+    "objective": "Deliver 20 Unique Mushrooms"
+  }
 
   ]
 }
