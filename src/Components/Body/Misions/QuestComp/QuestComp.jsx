@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import {useState} from 'react'
 import "./QuestComp.css"
 import {GetDataBase} from "../../../../utils/GetDataBase"
 import { QuestInfo } from './QuestInfo'

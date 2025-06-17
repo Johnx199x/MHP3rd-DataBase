@@ -1,5 +1,5 @@
 const monsterImages = import.meta.glob('../Assets/icons/Monsters/*.{png,jpg,jpeg,webp}', { eager: true });
-const huntTipsImages = import.meta.glob('../assets/MonstersTipsImg/*.{png,jpg,jpeg,webp}', {eager: true});
+const huntTipsImages = import.meta.glob('../Assets/MonstersTipsImg/*.{png,jpg,jpeg,webp}', {eager: true});
 
 export const getMonsterImage = (imageName) => {
   const imagePath = `../Assets/icons/Monsters/${imageName}`;

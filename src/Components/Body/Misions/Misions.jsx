@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import {useState} from 'react'
 import { QuestComp } from './QuestComp/QuestComp'
 import { useSearchContext } from '../../Header/searchInput/SearchContext'
 

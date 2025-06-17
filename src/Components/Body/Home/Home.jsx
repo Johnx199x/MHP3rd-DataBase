@@ -1,4 +1,3 @@
-import React from 'react'
 import "./Home.css"
 import zinogre from "../../../Assets/img/MHWI-Render_Zinogre.webp"
 

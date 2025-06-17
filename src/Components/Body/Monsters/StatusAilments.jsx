@@ -1,4 +1,4 @@
-import fireblightIcon from '../../../assets/icons/StatusEffect/Status_Effect-Severe_Fireblight_Icon.webp'
+import fireblightIcon from '../../../Assets/icons/StatusEffect/Status_Effect-Severe_Fireblight_Icon.webp'
 import thunderblightIcon from '../../../Assets/icons/StatusEffect/Status_Effect-Thunderblight_Icon.webp'
 import waterblightIcon from '../../../Assets/icons/StatusEffect/Status_Effect-Severe_Waterblight_Icon.webp'
 import iceblightIcon from '../../../Assets/icons/StatusEffect/Status_Effect-Iceblight_Icon.webp'
