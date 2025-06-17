@@ -8,7 +8,7 @@ export const MonsterList = ({ monsters }) => {
     return (
         <ul className='monster-list'>
             {monsters.map((monster, index) => (
-                <li key={monster.id || index}>
+                <li key={monster.id || index} className='search-item' >
                     <MonsterInfo 
                         name={monster.name} 
                         img={monster.image}

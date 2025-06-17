@@ -24,7 +24,7 @@ export const CollapsibleSection = ({ title, children, image }) => {
 
     return (
         <>
-            <div className="collapseSection search-item" onClick={handleClick}>
+            <div className="collapseSection" onClick={handleClick}>
                 {image && (
                     <img className="collapseSection-icon" src={imgSrc} alt={`${title}-image`} />
                     )}

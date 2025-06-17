@@ -7,7 +7,6 @@ import { CollapsibleSection } from '../../CollapsibleSection'
 export const MonsterInfo = (props) => {
     
     return (
-        
             <CollapsibleSection  title= {props.name} image={props.img}  >
                 <MonstersDescription 
                     name={props.name}
@@ -23,6 +22,5 @@ export const MonsterInfo = (props) => {
                     isLarge={props.isLarge} 
                     />
             </CollapsibleSection>
-
     )
     }
