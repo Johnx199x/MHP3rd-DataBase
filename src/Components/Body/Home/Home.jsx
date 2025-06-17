@@ -1,11 +1,11 @@
 import React from 'react'
 import "./Home.css"
-
+import zinogre from "../../../Assets/img/MHWI-Render_Zinogre.webp"
 
 export default function Home(){
   return (
     <div className='home-container'>
-        <img className="home-img" src={require("../../../Assets/img/MHWI-Render_Zinogre.webp")} alt="zinogre_img" />
+        <img className="home-img" src={zinogre} alt="zinogre_img" />
         <h3>"Your quick guide to hunting monsters"</h3>
         <p>Welcome to the MHP3rd Database! Here you’ll find everything you need to become the ultimate hunter. Explore detailed information about monsters, items, quests, locations, and more.</p>
         <h3>What You Can Find</h3>

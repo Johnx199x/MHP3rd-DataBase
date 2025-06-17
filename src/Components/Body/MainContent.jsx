@@ -1,4 +1,4 @@
-import React,{lazy, Suspense} from 'react'
+import {lazy, Suspense} from 'react'
 import "./MainContent.css"
 import { Items } from './Items/Items'
 import {Ubications} from "./Ubications/Ubications"

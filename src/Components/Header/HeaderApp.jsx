@@ -23,7 +23,7 @@ export const HeaderApp = () => {
 
     theme ==="lightTheme"?themeIcon= <i className="fa-solid fa-moon"></i>:themeIcon=<i className="fa-regular fa-sun"></i>;
     
-const handleClick=(e)=>{
+const handleClick=()=>{
     const $sideMenu = document.querySelector(".side-menu") //cambiar luego
     !$sideMenu.classList.contains("show")
         ?$sideMenu.classList.add("show")

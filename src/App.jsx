@@ -1,12 +1,11 @@
 import "./App.css"
-import React, { useState,lazy, Suspense } from 'react';
+import { useState,lazy, Suspense } from 'react';
 
 import { HeaderApp } from './Components/Header/HeaderApp';
 import { FooterApp } from './Components/Footer/FooterApp';
 import { SideBar } from "./Components/SideBar/SideBar";
-import { SpeedInsights } from '@vercel/speed-insights/react';
-import { Analytics } from "@vercel/analytics/react";
 import { SearchProvider } from './Components/Header/searchInput/SearchContext';
+
 
 const MainContent =lazy(()=> import("./Components/Body/MainContent")) 
 
@@ -28,8 +27,6 @@ function App() {
       </Suspense>
       <FooterApp />
       </SearchProvider>
-      <Analytics />
-      <SpeedInsights />
 
     </div>
   );

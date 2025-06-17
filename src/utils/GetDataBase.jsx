@@ -1,8 +1,9 @@
 import {useState,useEffect} from 'react'
-import data from "../../Assets/data.json"
+import data from "../assets/data.json"
 import { supabase } from './supaBaseClient';
 
 export const GetDataBase = () => {
+    
     const [largueMonsters, setLargueMonsters] = useState([]);
     const [smallMonsters, setSmallMonsters] = useState([]);
     const [mision, setMision]= useState([]);

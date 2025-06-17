@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import "./QuestComp.css"
-import {GetDataBase} from "../../../Others/GetDataBase"
+import {GetDataBase} from "../../../../utils/GetDataBase"
 import { QuestInfo } from './QuestInfo'
 import {useSearchContext} from '../../../Header/searchInput/SearchContext'
 
