@@ -1,18 +1,30 @@
 import {useState,useEffect} from 'react'
-import data from "@assets/data.json"
 import { supabase } from './supaBaseClient';
 
 export const GetDataBase = () => {
     
     const [largueMonsters, setLargueMonsters] = useState([]);
     const [smallMonsters, setSmallMonsters] = useState([]);
-    const [mision, setMision]= useState([]);
+    const [questState, setQuestState]= useState([]);
 
     const [loading, setLoading] = useState(true);
 
-    const dataMision = data.quests;
     
     useEffect(()=>{
+        const fetchData = async () => {
+            try {
+                await fetchQuests();
+
+                // Fetch monsters
+                await fetchMonsters();
+                // Fetch quests
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            } finally {
+                setLoading(false);
+            }
+        };
+
         const fetchMonsters = async () => {
             const largueMonster =[];
             const smallMonster = [];
@@ -22,8 +34,8 @@ export const GetDataBase = () => {
                 .from('tb_Monster') // Nombre de la tabla
                 .select('id, monster_data');
 
-
                 if (error) throw error;
+
             data.forEach((row) =>{
                 const ele = row.monster_data;
                 const eleId = row.id;
@@ -54,6 +66,7 @@ export const GetDataBase = () => {
                     ele.isLarge 
                         ?largueMonster.push(monster)
                         :smallMonster.push(monster)   
+
             }
                     ); 
                     setLargueMonsters(largueMonster);
@@ -68,39 +81,55 @@ export const GetDataBase = () => {
             
         };
 
-        fetchMonsters();
-        const getMisions=(data)=>{
-            const misions =[];
+       const fetchQuests = async () => {
 
-            data.forEach((ele) =>{
-                let mision;
-                mision = {
-                    id: ele._id.$oid,
-                    client: ele.client,
-                    name: ele.name,
-                    description:ele.description,
-                    reward:ele.reward,
-                    map:ele.map,
-                    isKey:ele.isKey,
-                    questType: ele.questType,
-                    game:ele.game,
-                    difficulty: ele.difficulty,
-                    objetive:ele.objective,
-                    targets:ele.targets || undefined
-                }
-                misions.push(mision);
-            
+            try {
+                const { data, error } = await supabase
+                .from('tb_Quest') // Nombre de la tabla
+                .select('id, quest_data');
+
+
+                if (error) throw error;
+
+                const questArr = [];
+
+                data.forEach((row) => {
+                    const ele = row.quest_data;
+                    const eleId = row.id;
+                    
+                    let quest = {
+                        idEl: eleId, // ID de la fila en la base de datos
+                        id: ele._id.$oid,
+                        client: ele.client,
+                        name: ele.name,
+                        description: ele.description,
+                        reward: ele.reward,
+                        map: ele.map,
+                        isKey: ele.isKey,
+                        questType: ele.questType,
+                        game: ele.game,
+                        difficulty: ele.difficulty,
+                        objetive: ele.objective,
+                        targets: ele.targets || undefined
+                    }
+                    questArr.push(quest);
+                });
+
+                setQuestState(questArr);
+
+            } catch (error) {
+                console.error('Error fetching quests:', error);
+                throw error;
             }
-                    );
-            setMision(misions)  
-        }
-        getMisions(dataMision);
+        };
+        
+        fetchData();
 
-    },[loading,dataMision])
+    }, []);
     return {
         largueMonster: [largueMonsters, setLargueMonsters],
         smallMonster: [smallMonsters, setSmallMonsters],
-        quest: [mision,setMision]
+        quest: [questState, setQuestState]
     };
 
 }

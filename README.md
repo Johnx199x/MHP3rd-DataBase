@@ -41,15 +41,6 @@ The application currently contains data related to MHP3rd monsters and Village q
 - Advanced filtering and sorting options
 - Mobile-responsive improvements
 
-## Contributing
-
-Contributions are welcome! If you'd like to help improve the database:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
 ## Issues & Feedback
 
 If you encounter any bugs or have suggestions for improvements, please [open an issue](../../issues) on GitHub.

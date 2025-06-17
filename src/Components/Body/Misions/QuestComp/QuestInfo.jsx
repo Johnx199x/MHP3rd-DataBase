@@ -34,7 +34,8 @@ export const QuestInfo = ({name,client,description,reward,map,isKey,objective,ta
                 <li className='list-item'><span className='item-tag'>Objetive:</span> {objective}
                 </li>
                 <li className='list-item list-item  list-item-monster-icon'>{targett && targett.map((ele,index) => {
-                        return <img key={index} src={getMonsterImage(ele)} alt={`${ele} icon`} />
+                        let imgSrc = getMonsterImage(`MH3U-${ele}_Icon.png`)
+                        return <img key={index} src={imgSrc} alt={`${ele} icon`} title={ele} />
                     })}</li>
             </ul>
         </div>

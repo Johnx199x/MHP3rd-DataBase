@@ -87,7 +87,7 @@ export const QuestComp = ({questTypeB}) => {
                 questType = {ele.questType}
                 difficulty={ele.difficulty}  
                 objective = {ele.objetive}
-                    targett ={ele.targets}
+                targett ={ele.targets}
                   />      
                 
             
