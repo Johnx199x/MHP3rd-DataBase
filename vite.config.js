@@ -1,27 +1,19 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
-import { fileURLToPath, URL } from 'node:url'
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
-      '@assets': fileURLToPath(new URL('./src/assets', import.meta.url))
+  build: {
+    commonjsOptions: {
+      transformMixedEsModules: true,  // Fuerza la transformación de módulos CJS/ES
+      exclude: ['@supabase/realtime-js']  // Excluye el módulo problemático
     }
   },
-  assetsInclude: ['**/*.json'],
-  build: {
-    rollupOptions: {
-      output: {
-        assetFileNames: (assetInfo) => {
-          if (assetInfo.name && assetInfo.name.endsWith('.json')) {
-            return 'assets/[name]-[hash][extname]'
-          }
-          return 'assets/[name]-[hash][extname]'
-        }
-      }
-    }
+  optimizeDeps: {
+    exclude: ['@supabase/realtime-js', 'whatwg-url']  // Evita optimizar estas dependencias
   }
 })
+
+
+ 
