@@ -1,0 +1,65 @@
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid rgba(79, 209, 199, 0.2);
+    transition: all 0.3s ease;
+    width: 70%;
+    align-items: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(79, 209, 199, 0.2);
+    border-color: #4fd1c7;
+}
+
+.feature-card-icon {
+    font-size: 3rem;
+    color: #4fd1c7;
+}
+.feature-card-icon>img{
+    width: 4rem;
+
+}
+
+.feature-card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ffd700;
+}
+
+.feature-card-description {
+    margin: 0 auto;
+    color: #cccccc;
+    line-height: 1.5;
+    text-align: left
+}
+.feature-card-description>br {
+    margin-bottom: 0.5rem;
+}
+
+
+/****** Colors ******/
+body.lightTheme {
+    .feature-card {
+        background-color: var(--second-background-color-light);
+    }
+
+    .feature-card-description {
+        color: var(--second-text-color-light);
+    }
+}

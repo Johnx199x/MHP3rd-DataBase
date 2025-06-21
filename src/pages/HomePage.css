@@ -10,12 +10,11 @@
 }
 .home-container p{
     padding: 0 1rem;
-    text-align: center;
 }
 
 
 .home-tags{
-    font-weight: 500;
+    font-weight: 900;
 }
 .home-list{
     list-style: none;

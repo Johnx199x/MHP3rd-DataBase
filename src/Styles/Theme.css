@@ -1,73 +1,106 @@
-body.lightTheme{ 
-    .main-container{
-    background-color: var(--main-background-color-light);
-    color: var(--main-text-color-light);
+body.lightTheme {
+    .main-container {
+        background-color: var(--main-background-color-light);
+        color: var(--main-text-color-light);
+    }
+     /****** SideBar ******/
+    .side-menu {
+        background: var(--sideBar-background-color-light);
+        color: var(--main-text-color-light);
+    }
+    .side-menu.show{
+        background: linear-gradient(to right, var(--sideBar-background-color-light) 40%, rgba(0, 0, 0, 0.5) 41%);
+        
     }
     /*****  Monsters section  *****/
-    .monster-type-select{
-    color: var(--main-interactive-color);
+    .monster-type-select {
+        color: var(--main-interactive-color);
 
     }
-    .item-type-selected{
-    background-color: #e7e7f0;
+
+    .item-type-selected {
+        background-color: var(--hover-color-light);
     }
-    .monsters-figure:hover{
+
+    .monsters-figure:hover {
         background-color: var(--second-background-color);
     }
-    .monster-description.show-description{
+
+    .monster-description.show-description {
         background-color: #ddd;
     }
-    .monster-drops-collapse:hover{
+
+    .monster-drops-collapse:hover {
         background-color: var(--second-background-color);
     }
-    .fa-github{
-        color:#2b3137;
+
+    .fa-github {
+        color: #2b3137;
     }
-    .fa-envelope{
-        color:#333333;
 
-    }
-    .monsters-info-tag.key-quest{
-    color:var(--detail-color-light)
-}
-
-}
-
-
-
-
-body.darkTheme{
-
-    .main-container{
-        color:var(--main-text-color-dark);
-        background-color: var(--main-background-color-dark);
-}
-/*****  Monsters section  *****/
-
-.monster-type-select{
-    color: var(--main-interactive-color);
+    .fa-envelope {
+        color: #333333;
 
     }
-    .item-type-selected{
-        background-color: #525257;
+
+    .monsters-info-tag.key-quest {
+        color: var(--detail-color-light)
+    }
+
 }
 
 
-    .monsters-figure:hover{
-        background-color:  var(--main-background-color-dark-hover);
-}
-.monster-drops-collapse:hover{
-    background-color: var(--second-background-color);
-}
-.fa-github{
-    color: var(--main-background-color-light);
-}
-.fa-envelope{
-    color: var(--main-background-color-light);
 
-}
-.monsters-info-tag.key-quest{
-    color:var(--detail-color)
-}
+
+body.darkTheme {
+
+    .main-container {
+        color: var(--main-text-color-dark);
+        background-image: var(--main-background-color-dark);
+    }
+
+    /****** SideBar ******/
+    .side-menu {
+        background: var(--sideBar-background-color-dark);
+        color: var(--main-text-color-dark);
+    }
+    .side-menu.show{
+        background: linear-gradient(to right, var(--sideBar-background-color-dark) 40%, rgba(0, 0, 0, 0.5) 41%);
+        
+    }
+
+
+    /*****  Monsters section  *****/
+
+    .monster-type-select {
+        color: var(--main-interactive-color);
+
+    }
+
+    .item-type-selected {
+        background-color: var(--hover-color-dark);
+    }
+
+
+    .monsters-figure:hover {
+        background-color: var(--main-background-color-dark-hover);
+    }
+
+    .monster-drops-collapse:hover {
+        background-color: var(--second-background-color);
+    }
+
+    .fa-github {
+        color: var(--main-background-color-light);
+    }
+
+    .fa-envelope {
+        color: var(--main-background-color-light);
+
+    }
+
+    .monsters-info-tag.key-quest {
+        color: var(--detail-color-dark)
+    }
 
 }

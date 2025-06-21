@@ -1,60 +1,71 @@
-.side-menu{
+.side-menu {
     grid-area: sideBar;
-    background-color: var(--second-background-color);
-    border-right: 5px solid rgb(0,0,0,0.5);
-    transition: all 0.5s ease-in-out;
+    backdrop-filter: blur(2px);
+    padding: 2rem 0;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.2);
 }
-.side-list{
+
+.side-list {
     display: flex;
     flex-direction: column;
     padding: 0;
     list-style: none;
     margin: none;
 }
-.side-list-item{
+
+.side-list-item {
     display: flex;
     align-items: center;
     margin: none;
-    padding: 1rem;
-    font-weight: bold; 
-}
-.side-list-item:hover{
-    background-color:#ddd ;
+    font-weight: bold;
+    padding: 1rem 2rem;
     cursor: pointer;
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+    font-size: 1.1rem;
 }
-.side-list img{
+.side-list-item:hover {
+            background: rgba(79, 209, 199, 0.1);
+            border-left-color: #4fd1c7;
+            transform: translateX(5px);
+        }
+
+
+.side-list img {
     height: 20px;
     margin-right: 0.5rem;
 }
 
-@media(max-width:800px){
-    .side-menu{
+@media(max-width:800px) {
+    .side-menu {
         transition: transform 0.3s ease-in-out;
         transform: translateX(-100%);
     }
 
-    .show{
-        background:  linear-gradient(to right, var(--second-background-color) 40%, rgba(0,0,0,0.5) 41%);
+    .side-menu.show {
+        background: linear-gradient(to right, var(--sideBar-background-color-light) 40%, rgba(0, 0, 0, 0.5) 41%);
         grid-column: 1/ -1;
-        grid-row: 2 / -1; 
+        grid-row: 2 / -1;
         z-index: 99;
         width: 100svw;
         border: none;
-        
+
         transform: translateX(0);
         transition: transform 0.3s ease-in-out;
-        
+
     }
-    .side-list-item-about > *{
+    .side-list-item:hover {
+            background: linear-gradient(to right, rgb(79, 209, 199, 0.1) 40%, rgba(0, 0, 0, 0) 41%);
+    }
+
+    .side-list-item-about>* {
         width: 40%;
         text-wrap: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    .side-list-item:hover{
-        background:linear-gradient(to right, #ddd 40%, rgba(0,0,0,0)    41%);
-        cursor: pointer;
-    }
+
    
+
 
 }
