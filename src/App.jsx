@@ -1,20 +1,21 @@
-import "./App.css"
-import { useState, lazy, Suspense } from 'react';
-import { HeaderApp } from './Components/Header/HeaderApp';
-import { FooterApp } from './Components/Footer/FooterApp';
-import { SideBar } from "./Components/SideBar/SideBar";
-import { SearchProvider } from './Components/Header/searchInput/SearchContext';
-import { SpeedInsights } from '@vercel/speed-insights/react'
-import { Analytics } from '@vercel/analytics/react';
+import "./Styles/App.css";
+import { useState, lazy, Suspense } from "react";
+import { HeaderApp } from "./Components/layout/HeaderApp";
+import { FooterApp } from "./Components/layout/FooterApp";
+import { SideBar } from "./Components/layout/SideBar";
+import { SearchProvider } from "./context/SearchContext";
 
-const MainContent = lazy(() => import("./Components/Body/MainContent"))
+import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
+
+const MainLayout = lazy(() => import("./Components/layout/MainLayout"));
 
 function App() {
-  const [zone, setZone] = useState("Home")
+  const [zone, setZone] = useState("Home");
 
   const changeZone = (dato) => {
     setZone(dato);
-  }
+  };
 
   return (
     <div className="app-container">
@@ -22,11 +23,11 @@ function App() {
         <HeaderApp zone={zone} />
         <SideBar ubi={changeZone} />
         <Suspense fallback={<div>Loading...</div>}>
-          <MainContent content={zone} />
+          <MainLayout content={zone} />
         </Suspense>
         <FooterApp />
       </SearchProvider>
-      
+
       {/* Analytics components */}
       <Analytics />
       <SpeedInsights />

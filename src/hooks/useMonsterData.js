@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { GetDataBase } from '../utils/GetDataBase.jsx';
-import { useSearchContext } from '../../src/Components/Header/searchInput/SearchContext.jsx';
+import { GetDataBase } from '../services/GetDataBase.jsx';
+import { useSearchContext } from '../context/SearchContext.jsx';
 
 export const useMonsterData = () => {
     const { searchValue } = useSearchContext();
