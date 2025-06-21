@@ -7,7 +7,7 @@ export const getMonsterImage = (imageName) => {
 };
 
 export const getHuntTipsImage = (monsterName)=>{
-  const imagePath = `../assets/MonstersTipsImg/${monsterName}`;
+  const imagePath = `../Assets/MonstersTipsImg/${monsterName}`;
   
   return huntTipsImages[imagePath].default; 
 }
