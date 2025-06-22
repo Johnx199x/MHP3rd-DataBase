@@ -1,9 +1,0 @@
-.main-container{
-    grid-area: MainContent;
-    overflow: scroll;
-
-}
-
-h3 {
-    color: var(--alert-color);
-}

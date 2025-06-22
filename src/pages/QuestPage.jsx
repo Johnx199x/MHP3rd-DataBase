@@ -3,7 +3,7 @@ import { QuestCard } from '../Components/quest/QuestCard'
 import { useSearchContext } from '../context/SearchContext'
 
 
-export const QuestPage = () => {
+export default function QuestPage  () {
 
   /*{
 

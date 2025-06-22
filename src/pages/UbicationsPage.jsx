@@ -1,6 +1,8 @@
 
-export const UbicationsPage = () => {
+
+  import UnderConstruction from "../Components/ui/UnderConstruction"
+export default function UbicationsPage()  {
   return (
-    <h3>Under contruction...</h3>
+    <UnderConstruction size="large" />
   )
 }

@@ -1,8 +1,9 @@
 import { MonsterInfo } from './MonsterInfo';
+import CustomLoader from '../ui/CustomLoader';
 
 export const MonsterList = ({ monsters }) => {
     if (monsters.length === 0) {
-        return <h3>Loading...</h3>;
+        return <CustomLoader />;
     }
 
     return (

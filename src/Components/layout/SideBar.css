@@ -23,13 +23,22 @@
     transition: all 0.3s ease;
     border-left: 3px solid transparent;
     font-size: 1.1rem;
+    text-decoration: none;
+    color: inherit;
 }
-.side-list-item:hover {
-            background: rgba(79, 209, 199, 0.1);
-            border-left-color: #4fd1c7;
-            transform: translateX(5px);
-        }
 
+.side-list-item:hover {
+    background: rgba(79, 209, 199, 0.1);
+    border-left-color: #4fd1c7;
+    transform: translateX(5px);
+}
+
+/* Estado activo para el enlace actual */
+.side-list-item.active {
+    background: rgba(79, 209, 199, 0.2);
+    border-left-color: #4fd1c7;
+    color: #4fd1c6d8;
+}
 
 .side-list img {
     height: 20px;
@@ -49,13 +58,16 @@
         z-index: 99;
         width: 100svw;
         border: none;
-
         transform: translateX(0);
         transition: transform 0.3s ease-in-out;
-
     }
+    
     .side-list-item:hover {
-            background: linear-gradient(to right, rgb(79, 209, 199, 0.1) 40%, rgba(0, 0, 0, 0) 41%);
+        background: linear-gradient(to right, rgb(79, 209, 199, 0.1) 40%, rgba(0, 0, 0, 0) 41%);
+    }
+
+    .side-list-item.active {
+        background: linear-gradient(to right, rgb(79, 209, 199, 0.2) 40%, rgba(0, 0, 0, 0) 41%);
     }
 
     .side-list-item-about>* {
@@ -64,8 +76,4 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
-
-   
-
-
 }

@@ -10,6 +10,15 @@
     "Footer";
     
 }
+.main-container{
+    grid-area: MainContent;
+    overflow: scroll;
+
+}
+
+h3 {
+    color: var(--alert-color);
+}
 
 
  @media (min-width:800px) { /* version deskopt */

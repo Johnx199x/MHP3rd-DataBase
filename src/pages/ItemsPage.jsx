@@ -1,6 +1,7 @@
+import UnderConstruction from "../Components/ui/UnderConstruction"
 
-export const ItemsPage = () => {
+export default function ItemsPage(){
   return (
-    <h3>Under contruction...</h3>
+    <UnderConstruction size="large" />
   )
 }

@@ -4,6 +4,7 @@ import { GetDataBase } from "../../services/GetDataBase";
 import { QuestInfo } from "./QuestInfo";
 import { useSearchContext } from "../../context/SearchContext";
 import { QuestStarSelection } from "./QuestStarSelection";
+import CustomLoader from "../ui/CustomLoader";
 
 export const QuestCard = ({ questTypeB }) => {
   const { searchValue } = useSearchContext();
@@ -11,6 +12,9 @@ export const QuestCard = ({ questTypeB }) => {
   const { quest } = GetDataBase();
   const [quests] = quest;
 
+  if (quest.length === 0) {
+        return <CustomLoader />;
+    }
   return (
     <div>
       <nav>

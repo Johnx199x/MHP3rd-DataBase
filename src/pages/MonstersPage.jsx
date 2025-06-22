@@ -3,7 +3,7 @@ import { useMonsterData } from '../hooks/useMonsterData';
 import { MonsterTypeSelector } from '../Components/monster/MonsterTypeSelector';
 import { MonsterList } from '../Components/monster/MonsterList';
 
-export const MonstersPage = () => {
+export default function MonstersPage (){
 /*  initialDB = {
         id: null,
         name: "",
