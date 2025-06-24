@@ -21,7 +21,7 @@ h3 {
 }
 
 
- @media (min-width:800px) { /* version deskopt */
+ @media (min-width:1010px) { 
     
     .app-container{
         width: 100vw;

@@ -74,6 +74,6 @@
         width: 40%;
         text-wrap: nowrap;
         overflow: hidden;
-        text-overflow: ellipsis;
+        text-overflow:ellipsis;
     }
 }

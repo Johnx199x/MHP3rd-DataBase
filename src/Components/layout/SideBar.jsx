@@ -100,7 +100,7 @@ export const SideBar = () => {
             <img src={AboutIcon} alt='About icon'
               style={{ marginRight: '0.5rem' }}
             />
-            <span>About This Project</span>
+            <span>About</span>
           </NavLink>
         </li>
       </ul>

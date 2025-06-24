@@ -15,9 +15,7 @@ const UnderConstruction = ({
         </div>
         <h2 className="uc-title">{title}</h2>
         <p className="uc-message">{message}</p>
-        <div className="uc-progress">
-          <div className="uc-progress-bar"></div>
-        </div>
+        
       </div>
     </div>
   );
