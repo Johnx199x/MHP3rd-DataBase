@@ -19,11 +19,6 @@ const UbicationsPage = lazy(() => import("./pages/UbicationsPage"));
 const AboutPage = lazy(() => import("./pages/AboutPage"));
 
 function App() {
-  // const [zone, setZone] = useState("Home");
-
-  // const changeZone = (dato) => {
-  //   setZone(dato);
-  // };
 
   return (
    <HashRouter>

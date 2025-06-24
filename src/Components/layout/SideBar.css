@@ -41,7 +41,9 @@
 }
 
 .side-list img {
+    width: 20px;
     height: 20px;
+    object-fit: contain;
     margin-right: 0.5rem;
 }
 

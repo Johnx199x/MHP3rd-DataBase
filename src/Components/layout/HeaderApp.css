@@ -16,12 +16,12 @@ h2{
     text-align: center;
 }
 
-@media(min-width:800px){
+@media(min-width:1010px){
     .panel-btn{
         display: none;
     }
 }
-@media(max-width:800px){
+@media(max-width:1010px){
 .panel-btn{
     z-index: 100;
 }

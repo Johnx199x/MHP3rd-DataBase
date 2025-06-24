@@ -3,13 +3,17 @@ import zinogre from '../Assets/img/MHWI-Render_Zinogre.webp'
 import { FeatureCard } from '../Components/ui/FeatureCard'
 
 export default function HomePage () {
-
   return (
     <div className='feature-cards'>
-      <img className='home-img' src={zinogre} alt='zinogre_img' />
-      <FeatureCard
-        tittle={'Your quick guide to hunting monsters'}
-      >
+      <img
+        className='home-img'
+        src={zinogre}
+        alt='zinogre_img'
+        width='600'
+        height='338'
+        loading='lazy'
+      />
+      <FeatureCard tittle={'Your quick guide to hunting monsters'}>
         <p>
           Welcome to the MHP3rd Database! Here you’ll find everything you need
           to become the ultimate hunter. Explore detailed information about
@@ -33,12 +37,15 @@ export default function HomePage () {
         rates for each monster.
         <br />
       </FeatureCard>
-      <FeatureCard tittle={'Items Section(In development)'} icon={"Chest.webp"}>
+      <FeatureCard tittle={'Items Section(In development)'} icon={'Chest.webp'}>
         <span className='home-tags'>Item List:</span> Complete catalog of items
         and their uses.
       </FeatureCard>
 
-      <FeatureCard tittle={'Quests Section(In development)'} icon={"Ticket-White.webp"}>
+      <FeatureCard
+        tittle={'Quests Section(In development)'}
+        icon={'Ticket-White.webp'}
+      >
         <span className='home-tags'>Quest List:</span> All available quests with
         objectives. <br />
         <span className='home-tags'>Rewards:</span> What you can earn from each
@@ -48,7 +55,10 @@ export default function HomePage () {
         advanced challenges.
         <br />
       </FeatureCard>
-      <FeatureCard tittle={' Location Section(In development)'} icon={"Map_Icon.png"}>
+      <FeatureCard
+        tittle={' Location Section(In development)'}
+        icon={'Map_Icon.png'}
+      >
         <span className='home-tags'>Maps:</span> Detailed maps of all areas.
         <br />
         <span className='home-tags'>Gathering Spots:</span> Key locations for
@@ -59,7 +69,10 @@ export default function HomePage () {
         <br />
       </FeatureCard>
 
-      <FeatureCard tittle={'About Section'} icon={"Question_Mark_Icon_Orange.png"}>
+      <FeatureCard
+        tittle={'About Section'}
+        icon={'Question_Mark_Icon_Orange.png'}
+      >
         <span className='home-tags'>Project Description:</span> Why this
         database was created.
         <br />
