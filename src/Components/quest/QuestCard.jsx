@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./QuestCard.css";
-import { GetDataBase } from "../../services/GetDataBase";
+import { useQuestData } from "../../hooks/useQuestData";
 import { QuestInfo } from "./QuestInfo";
 import { useSearchContext } from "../../context/SearchContext";
 import { QuestStarSelection } from "./QuestStarSelection";
@@ -9,7 +9,7 @@ import CustomLoader from "../ui/CustomLoader";
 export const QuestCard = ({ questTypeB }) => {
   const { searchValue } = useSearchContext();
   const [misionLevel, setMisionLevel] = useState("1★");
-  const { quest } = GetDataBase();
+  const { quest } = useQuestData();
   const [quests] = quest;
 
   if (quest.length === 0) {

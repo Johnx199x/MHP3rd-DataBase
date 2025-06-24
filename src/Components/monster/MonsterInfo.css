@@ -13,22 +13,12 @@
 
 .monster-description{
     overflow: hidden;
-    opacity: 0;
-    visibility: hidden;
-    max-height: 0;
-
-    transition: all 0.5s ease-in;
-    transform: translateY(-1%);
+    max-height: 5000px;
 }
 .monster-description-notes{
     font-family: 'Roboto', sans-serif;
 }
-.monster-description.show-description{
-    visibility: visible;
-    max-height: 5000px;
-    opacity: 1;
-    transform: translateX(0);
-}
+
 .monster-description>*:not(.hunt-tips-container, .monster-drops-container){
     margin: 0;
     padding: 1rem;
@@ -69,19 +59,14 @@
 
 .monster-drops-container{
     padding:0 1.5rem;
-
+    padding-bottom: 1rem;
     display: flex;
     flex-wrap: wrap;
     overflow: scroll;
-    opacity: 0;
-    visibility: hidden;
-    max-height: 0;
     transition: all 0.5s ease-in-out;
     transform: translateY(-1%);
 }
-.monster-drops-container.show-description{
-    padding-bottom: 1rem;
-}
+
 
 
 .monster-drops-table{
@@ -104,17 +89,13 @@
     padding: 0;
 }
 .hunt-tips-container{
+    padding: 2rem;
+
     display: flex;
     flex-wrap: wrap;
     overflow: scroll;
-    opacity: 0;
-    visibility: hidden;
-    max-height: 0;
     transition: all 0.5s ease-in-out;
     transform: translateY(-2%);
-}
-.hunt-tips-container.show-description{
-    padding: 2rem;
 }
 .hunt-tips-container img{
     border-radius: 1rem;
@@ -123,11 +104,4 @@
 
 }
 
-.show-description{
-    visibility: visible;
-    max-height: 2000px;
-    opacity: 1;
-    transform: translateX(0);
-    
-}
 

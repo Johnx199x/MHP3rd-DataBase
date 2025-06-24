@@ -1,11 +1,18 @@
 import { getHuntTipsImage } from "../../utils/imageHelper";
-
+import { useState,useEffect } from "react";
 export const HuntTips = ({ huntTips }) => {
-    if (!huntTips) return null;
+   
     
     const [prepare, breakPart, weaknessSign, imageName] = huntTips;
-    const imageSrc = getHuntTipsImage(imageName);
     
+    const [imageSrc, setImageSrc] = useState(undefined)
+    
+      useEffect(() => {
+        huntTips && getHuntTipsImage(imageName).then(setImageSrc)
+      }, [huntTips,imageName])
+    
+       if (!huntTips) return null;
+       
     return (
         <div className="hunt-tips-container">
             <p>

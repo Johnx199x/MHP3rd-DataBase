@@ -9,7 +9,6 @@ export default function HomePage () {
       <img className='home-img' src={zinogre} alt='zinogre_img' />
       <FeatureCard
         tittle={'Your quick guide to hunting monsters'}
-        icon={'none'}
       >
         <p>
           Welcome to the MHP3rd Database! Here you’ll find everything you need

@@ -15,6 +15,9 @@
     width: 54px;
     margin-right: 1rem;
 }
+.collapseSection-icon> img{
+    width: 100%;
+}
 
 
 .collapseSection-arrow{

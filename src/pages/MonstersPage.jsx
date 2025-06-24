@@ -2,6 +2,7 @@ import "./MonstersPage.css";
 import { useMonsterData } from '../hooks/useMonsterData';
 import { MonsterTypeSelector } from '../Components/monster/MonsterTypeSelector';
 import { MonsterList } from '../Components/monster/MonsterList';
+import CustomLoader from "../Components/ui/CustomLoader";
 
 export default function MonstersPage (){
 /*  initialDB = {
@@ -19,8 +20,13 @@ export default function MonstersPage (){
         filteredMonsters,
         monsterType,
         setMonsterType,
-        isSearching
+        isSearching,
+        loading,
+        error
     } = useMonsterData();
+
+    if (loading) return <CustomLoader />;
+    if (error) return <div>Error: {error}</div>;
 
     return (
         <div className='monsters-container'>
