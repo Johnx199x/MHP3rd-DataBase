@@ -1,7 +1,7 @@
 import { getHuntTipsImage } from "../../utils/imageHelper";
 import { useState,useEffect } from "react";
 import {ImageModal} from '../ui/ImageModal'
-
+import './HuntTips.css'
 export const HuntTips = ({ huntTips }) => {
    
     

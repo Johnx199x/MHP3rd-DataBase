@@ -14,17 +14,27 @@ export const CollapsibleSection = ({ title, children, image }) => {
   return (
     <>
       <div
-        className='collapseSection'
+        className='collapsible-header'
         onClick={() => setIsCollapsed(!isCollapsed)}
+        onKeyDown={e => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault()
+            setIsCollapsed(!isCollapsed)
+          }
+        }}
+        tabIndex={0}
+        role='button'
+        aria-expanded={!isCollapsed}
+        aria-controls={`section-${title.replace(/\s+/g, '-').toLowerCase()}`}
       >
         {image && (
           <img
-            className='collapseSection-icon'
+            className='collapseSection-image'
             src={imageSrc}
             alt={`${title}-image`}
           />
         )}
-        <span className='collapseSection-info-tags'>{title}</span>
+        <span className='collapseSection-title'>{title}</span>
         <span
           className={`collapseSection-arrow ${!isCollapsed ? 'rotate' : ''}`}
         >

@@ -1,0 +1,115 @@
+
+.span-element-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 5px;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.span-element-icon:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.span-element-icon img {
+    width: 24px;
+    height: 24px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    transition: all 0.3s ease;
+}
+
+.span-element-icon:hover img {
+    transform: scale(1.1);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+}
+
+/* Estilos específicos para elementos */
+.element-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.element-fire .span-element-icon {
+    border-color: rgba(255, 69, 0, 0.5);
+    background: rgba(255, 69, 0, 0.1);
+}
+
+.element-thunder .span-element-icon {
+    border-color: rgba(255, 215, 0, 0.5);
+    background: rgba(255, 215, 0, 0.1);
+}
+
+.element-water .span-element-icon {
+    border-color: rgba(30, 144, 255, 0.5);
+    background: rgba(30, 144, 255, 0.1);
+}
+
+.element-ice .span-element-icon {
+    border-color: rgba(173, 216, 230, 0.5);
+    background: rgba(173, 216, 230, 0.1);
+}
+
+.element-dragon .span-element-icon {
+    border-color: rgba(138, 43, 226, 0.5);
+    background: rgba(138, 43, 226, 0.1);
+}
+
+.element-poison .span-element-icon {
+    border-color: rgba(128, 0, 128, 0.5);
+    background: rgba(128, 0, 128, 0.1);
+}
+
+body.lightTheme{
+    .span-element-icon {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    color: #333333;
+}
+
+.span-element-icon:hover {
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.element-fire .span-element-icon {
+    border-color: rgba(255, 69, 0, 0.6);
+    background: rgba(255, 69, 0, 0.15);
+}
+
+.element-thunder .span-element-icon {
+    border-color: rgba(255, 165, 0, 0.6);
+    background: rgba(255, 165, 0, 0.15);
+}
+
+.element-water .span-element-icon {
+    border-color: rgba(30, 144, 255, 0.6);
+    background: rgba(30, 144, 255, 0.15);
+}
+
+.element-ice .span-element-icon {
+    border-color: rgba(70, 130, 180, 0.6);
+    background: rgba(70, 130, 180, 0.15);
+}
+
+.element-dragon .span-element-icon {
+    border-color: rgba(138, 43, 226, 0.6);
+    background: rgba(138, 43, 226, 0.15);
+}
+
+.element-poison .span-element-icon {
+    border-color: rgba(148, 0, 211, 0.6);
+    background: rgba(148, 0, 211, 0.15);
+}
+
+}

@@ -1,0 +1,142 @@
+
+.monster-drops {
+    padding: 0;
+}
+
+.monster-drops-container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    overflow-x: auto;
+    transition: all 0.5s ease-in-out;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: 15px;
+}
+
+.monster-drops-table {
+    margin: 0;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    min-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.monster-drops-table-caption {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 15px;
+    color: #ff6b35;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: rgba(255, 107, 53, 0.1);
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 107, 53, 0.3);
+}
+
+.monster-drops-table-header {
+    padding: 15px 10px;
+    text-align: center;
+    background: rgba(255, 107, 53, 0.2);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid rgba(255, 107, 53, 0.4);
+}
+
+.monster-drops-table-item {
+    padding: 12px 10px;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    font-size: 13px;
+}
+
+.monster-drops-table-row:hover .monster-drops-table-item {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.monster-drops-table-item:first-child {
+    font-weight: 600;
+    color: #ffd700;
+    text-align: left;
+}
+
+/* Scrollbar personalizado */
+.monster-drops-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.monster-drops-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.monster-drops-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 107, 53, 0.6);
+    border-radius: 4px;
+}
+
+.monster-drops-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 107, 53, 0.8);
+}
+
+body.lightTheme{
+    .monster-drops-container {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.monster-drops-table {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.monster-drops-table-caption {
+    color: #e74c3c;
+    background: rgba(231, 76, 60, 0.15);
+    border: 1px solid rgba(231, 76, 60, 0.4);
+}
+
+.monster-drops-table-header {
+    background: rgba(231, 76, 60, 0.2);
+    color: #2c3e50;
+    border-bottom: 2px solid rgba(231, 76, 60, 0.4);
+}
+
+.monster-drops-table-item {
+    color: #2c3e50;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.monster-drops-table-row:hover .monster-drops-table-item {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.monster-drops-table-item:first-child {
+    color: #f39c12;
+}
+
+.monster-drops-container::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.monster-drops-container::-webkit-scrollbar-thumb {
+    background: rgba(231, 76, 60, 0.6);
+}
+
+.monster-drops-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(231, 76, 60, 0.8);
+}
+}

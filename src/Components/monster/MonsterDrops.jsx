@@ -1,11 +1,13 @@
+import './MonsterDrops.css'
 
 export const MonsterDrops = ({ drops, dropsRank, monsterName, isLarge }) => {
-    if (!drops) return null;
     
     const isJhenMohran = monsterName === "Jhen Mohran";
+
+    if (!drops) return null;
     
     return (
-        <table className='monster-drops-table'>
+        <table className='monster-drops-table' style={{marginTop:"1rem"}}>
             <caption className='monster-drops-table-caption'>{dropsRank}</caption>
             <thead>
                 {isLarge ? ( 

@@ -13,12 +13,13 @@ import sleepIcon from '../../Assets/icons/StatusEffect/Status-Sleep.webp'
 import defencedownIcon from '../../Assets/icons/StatusEffect/StatusEffect-DefenseDow.webp'
 import muddyIcon from '../../Assets/icons/StatusEffect/Status_Effect-Webbed_MH4_Icon.webp'
 
+
 const ailmentIcons = {
     "Fireblight": fireblightIcon,
     "Thunderblight": thunderblightIcon,
     "Waterblight" : waterblightIcon,
     "IceBlight": iceblightIcon,
-    "DragonBligh" : dragonblightIcon,
+    "Dragonblight" : dragonblightIcon,
     "Poison": poisonIcon,
     "Snowman": snowmanIcon,
     "Soiled":soiledIcon,
@@ -34,15 +35,15 @@ export const StatusAilments = ({ ailments }) => {
     if (!ailments || ailments.length === 0) return "None"; 
     
     return (
-        <ul>
-            {ailments.map((ailment, index) => (
-                <li key={index} className='span-element-icon'>
-                    {ailment}
-                    ({ailmentIcons[ailment] && (
-                        <img src={ailmentIcons[ailment]} alt={`${ailment}_status_img`} />
-                    )})
-                </li>
-            ))}
-        </ul>
+        <ul className="status-ailments-list">
+        {ailments.map((ailment, index) => (
+            <li key={index} className={`status-ailment-item ailment-${ailment.toLowerCase().replace(' ', '-')}`}>
+                {ailment}
+                {ailmentIcons[ailment] && (
+                    <img src={ailmentIcons[ailment]} alt={`${ailment}_status_img`} />
+                )}
+            </li>
+        ))}
+    </ul>
     );
 };

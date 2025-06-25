@@ -1,8 +1,9 @@
 import { MonsterInfo } from './MonsterInfo';
 import { FeatureCard } from "../ui/FeatureCard"
-
+import './MonsterList.css'
 
 export const MonsterList = ({ monsters }) => {
+    
 
     return (
         <ul className='monster-list'>

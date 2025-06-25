@@ -1,0 +1,146 @@
+
+.status-ailments-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 0.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.status-ailment-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: rgba(220, 20, 60, 0.1);
+    border: 1px solid rgba(220, 20, 60, 0.3);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.status-ailment-item:hover {
+    background: rgba(220, 20, 60, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(220, 20, 60, 0.2);
+}
+
+.status-ailment-item img {
+    width: 20px;
+    height: 20px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    transition: all 0.3s ease;
+}
+
+.status-ailment-item:hover img {
+    transform: scale(1.1);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+}
+
+/* Estilos específicos por tipo de ailment */
+.ailment-poison {
+    border-color: rgba(128, 0, 128, 0.5);
+    background: rgba(128, 0, 128, 0.1);
+}
+
+.ailment-fire {
+    border-color: rgba(255, 69, 0, 0.5);
+    background: rgba(255, 69, 0, 0.1);
+}
+
+.ailment-thunder {
+    border-color: rgba(255, 215, 0, 0.5);
+    background: rgba(255, 215, 0, 0.1);
+}
+
+.ailment-water {
+    border-color: rgba(30, 144, 255, 0.5);
+    background: rgba(30, 144, 255, 0.1);
+}
+
+.ailment-ice {
+    border-color: rgba(173, 216, 230, 0.5);
+    background: rgba(173, 216, 230, 0.1);
+}
+
+.ailment-dragon {
+    border-color: rgba(138, 43, 226, 0.5);
+    background: rgba(138, 43, 226, 0.1);
+}
+
+.ailment-sleep {
+    border-color: rgba(75, 0, 130, 0.5);
+    background: rgba(75, 0, 130, 0.1);
+}
+
+.ailment-paralysis {
+    border-color: rgba(255, 255, 0, 0.5);
+    background: rgba(255, 255, 0, 0.1);
+}
+
+.ailment-stun {
+    border-color: rgba(255, 165, 0, 0.5);
+    background: rgba(255, 165, 0, 0.1);
+}
+
+body.lightTheme{
+    .status-ailment-item {
+    background: rgba(220, 20, 60, 0.15);
+    border: 1px solid rgba(220, 20, 60, 0.4);
+    color: #2c3e50;
+}
+
+.status-ailment-item:hover {
+    background: rgba(220, 20, 60, 0.25);
+}
+
+.ailment-poison {
+    border-color: rgba(148, 0, 211, 0.6);
+    background: rgba(148, 0, 211, 0.15);
+}
+
+.ailment-fire {
+    border-color: rgba(255, 69, 0, 0.6);
+    background: rgba(255, 69, 0, 0.15);
+}
+
+.ailment-thunder {
+    border-color: rgba(255, 165, 0, 0.6);
+    background: rgba(255, 165, 0, 0.15);
+}
+
+.ailment-water {
+    border-color: rgba(30, 144, 255, 0.6);
+    background: rgba(30, 144, 255, 0.15);
+}
+
+.ailment-ice {
+    border-color: rgba(70, 130, 180, 0.6);
+    background: rgba(70, 130, 180, 0.15);
+}
+
+.ailment-dragon {
+    border-color: rgba(138, 43, 226, 0.6);
+    background: rgba(138, 43, 226, 0.15);
+}
+
+.ailment-sleep {
+    border-color: rgba(75, 0, 130, 0.6);
+    background: rgba(75, 0, 130, 0.15);
+}
+
+.ailment-paralysis {
+    border-color: rgba(218, 165, 32, 0.6);
+    background: rgba(218, 165, 32, 0.15);
+}
+
+.ailment-stun {
+    border-color: rgba(255, 140, 0, 0.6);
+    background: rgba(255, 140, 0, 0.15);
+}
+}

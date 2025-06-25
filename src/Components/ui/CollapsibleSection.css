@@ -23,14 +23,69 @@
 .collapseSection-arrow{
     margin-left: auto;
     font-weight: 700;
-    transition: transform 0.5s ease-in-out;
+    font-size: 18px;
+    color: #ff6b35;
+    transition: all 0.3s ease;
     transform: rotate(-90deg);
+    padding: 5px;
+    border-radius: 50%;
+    background: rgba(255, 107, 53, 0.1);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 107, 53, 0.3);
 }
 .collapseSection-arrow.rotate{
     transform: rotate(90deg);
+    background: rgba(255, 107, 53, 0.2);
+    box-shadow: 0 0 15px rgba(255, 107, 53, 0.3);
 }
-.collapseSection-info-tags{
+
+.collapseSection-arrow:hover{
+     background: rgba(255, 107, 53, 0.2);
+    transform: rotate(-90deg) scale(1.1);
+    box-shadow: 0 3px 10px rgba(255, 107, 53, 0.2);
+}
+.collapseSection-arrow.rotate:hover{
+     transform: rotate(90deg) scale(1.1);
+}
+.collapseSection-title {
     font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.collapseSection-image {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid rgba(255, 107, 53, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+.collapsible-header {
+    display: flex;
+    align-items: center;
+    padding: 20px 25px;
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(255, 107, 53, 0.05) 100%);
+    border-radius: 15px 15px 0 0;
+    border-bottom: 1px solid rgba(255, 107, 53, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.collapsible-header:hover {
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.2) 0%, rgba(255, 107, 53, 0.1) 100%);
+    transform: translateY(-1px);
+}
+.collapsible-header:hover .collapsible-image {
+    transform: scale(1.05);
+    border-color: rgba(255, 107, 53, 0.8);
+    box-shadow: 0 8px 20px rgba(255, 107, 53, 0.3);
 }
 .collapseSection-container{
     padding:0 1.5rem;
