@@ -103,5 +103,11 @@
     width: 70%;
 
 }
+.monster-list-item-featureCard{
+    margin: 0 auto;
+}
 
+.monster-list-item-featureCard-desc{
+    width: 100%;
+}
 

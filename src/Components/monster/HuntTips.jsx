@@ -1,5 +1,7 @@
 import { getHuntTipsImage } from "../../utils/imageHelper";
 import { useState,useEffect } from "react";
+import {ImageModal} from '../ui/ImageModal'
+
 export const HuntTips = ({ huntTips }) => {
    
     
@@ -24,7 +26,10 @@ export const HuntTips = ({ huntTips }) => {
                 <br /><br />
             </p>
             {imageSrc && (
-                <img src={imageSrc} alt={`tips-${imageName}`} />
+                <ImageModal 
+                    src={imageSrc} 
+                    alt={`tips-${imageName}`}
+                />
             )}
         </div>
     );

@@ -2,7 +2,6 @@ import "./MonsterInfo.css"
 import { MonstersDescription } from './MonsterDesc'
 import { CollapsibleSection } from '../ui/CollapsibleSection'
 
-
 export const MonsterInfo = (props) => {
     
     return (
