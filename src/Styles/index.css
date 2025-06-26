@@ -1,26 +1,49 @@
-:root{
-  --main-interactive-color: #2a9d8f;
-  --main-interactive-color-dark:#1194cc;
-  --main-text-color-light: #2d3436;
-  --second-text-color-light:#636e72;
-  --main-text-color-dark:#F8F8FF;
-  --main-background-color-light:#e8eaeb;
-  --second-background-color-light:#ffffff;
-  --main-background-color-light-hover:#F8F8FF80;
-  --main-background-color-dark: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-  --main-background-color-dark-hover: #525257;
-  --main-background-header-color: #2d2d2d;
-  --sideBar-background-color-light:#f1f3f4;
-  --sideBar-background-color-dark: rgba(0, 0, 0.4);;
-  --second-background-color:#99A3A4;
-  --alert-color:#990000;
-  --detail-color-dark:#e76f51;
-  --detail-color-light:#d39f00;
-  --hover-color-light:rgba(33, 146, 137, 0.441);
-  --hover-color-dark:rgb(79, 209, 199, 0.2);
+:root {
+  --main-interactive-color: #4ecdc4; 
+  --main-interactive-color-dark: #20b2aa; 
+  
+  --main-text-color-light: #1a202c; 
+  --second-text-color-light: #4a5568; 
+  --main-text-color-dark: #ffffff; 
+  
+  --main-background-color-light: #e2e8f0; 
+  --second-background-color-light: #f7fafc; 
+  --main-background-color-light-hover: rgba(0, 0, 0, 0.05);
+  
+  --main-background-color-dark: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%);
+  --main-background-color-dark-hover: rgba(255, 255, 255, 0.08);
+  --main-background-header-color: #1a1a2e;
+  
+  --sideBar-background-color-light: rgba(226, 232, 240, 0.95); 
+  --sideBar-background-color-dark: rgba(26, 26, 46, 0.9); 
+  
+  --header-footer-background-dark: rgba(15, 15, 35, 0.95); 
+  --header-footer-background-light: rgba(247, 250, 252, 0.95);
 
+  --header-footer-border-dark: rgba(78, 205, 196, 0.2); 
+  --header-footer-border-light: rgba(32, 178, 170, 0.2); 
+  
+  --second-background-color: rgba(255, 255, 255, 0.05); 
+  --alert-color: #990000;
+  
+  --detail-color-dark: #ff6b35; 
+  --detail-color-light: #e74c3c; 
+  
+  --hover-color-light: rgba(32, 178, 170, 0.2); 
+  --hover-color-dark: rgba(78, 205, 196, 0.2);
+  
+  --monster-accent-color: #ff6b35;
+  --monster-accent-color-light: #e74c3c; 
+  --monster-secondary-color: #4ecdc4; 
+  --monster-secondary-color-light: #20b2aa;
+  --monster-gold-color: #ffd700; 
+  --monster-gold-color-light: #f39c12; 
+  
+  --glass-background-dark: rgba(255, 255, 255, 0.05);
+  --glass-background-light: rgba(0, 0, 0, 0.03);
+  --glass-border-dark: rgba(255, 255, 255, 0.1);
+  --glass-border-light: rgba(0, 0, 0, 0.1);
 }
-
 body {
   color: var(--main-text-color-light);
   margin: 0;

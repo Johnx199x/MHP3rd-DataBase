@@ -37,7 +37,7 @@ export const StatusAilments = ({ ailments }) => {
     return (
         <ul className="status-ailments-list">
         {ailments.map((ailment, index) => (
-            <li key={index} className={`status-ailment-item ailment-${ailment.toLowerCase().replace(' ', '-')}`}>
+            <li key={index} className={`status-ailment-item ailment-${ailment.toLowerCase().replace(' ', '-')} span-element-icon`}>
                 {ailment}
                 {ailmentIcons[ailment] && (
                     <img src={ailmentIcons[ailment]} alt={`${ailment}_status_img`} />

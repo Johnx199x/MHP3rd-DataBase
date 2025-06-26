@@ -5,6 +5,8 @@
     align-items: center;
     flex-direction: column;
 }
+
+
 .home-img{
     width: 50%;
     height: auto;
@@ -29,6 +31,33 @@
 .home-tags-section{
     font-weight: 700;
     font-size: large;
+}
+.nav-link-custom {
+    text-decoration: none !important;
+    color: inherit !important;
+    display: contents !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: none !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+    text-align: inherit !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+.nav-link-custom:hover,
+.nav-link-custom:focus,
+.nav-link-custom:active,
+.nav-link-custom:visited {
+    text-decoration: none !important;
+    color: inherit !important;
+    background: none !important;
+    border: none !important;
+    outline: none !important;
 }
 
 

@@ -2,7 +2,7 @@ import './FeatureCard.css'
 import { getOtherImage } from '../../utils/imageHelper'
 import {useState,useEffect} from 'react'
 
-export const FeatureCard = ({ tittle, children, icon,classNameCard, classNameDesc }) => {
+export const FeatureCard = ({ tittle, children, icon, classNameCard, classNameDesc }) => {
   const [imageSrc , setImageSrc] = useState(undefined);
 
   useEffect(()=>{

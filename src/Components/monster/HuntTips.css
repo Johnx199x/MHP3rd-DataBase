@@ -1,4 +1,3 @@
-
 .hunt-tips {
     margin: 0;
     padding: 0;
@@ -12,15 +11,15 @@
     background: rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     margin: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--glass-border-dark);
     transition: all 0.5s ease-in-out;
 }
 
 .hunt-tips-container p {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--glass-background-dark);
     padding: 20px;
     border-radius: 12px;
-    border-left: 4px solid #4ecdc4;
+    border-left: 4px solid var(--monster-secondary-color);
     line-height: 1.6;
     font-size: 14px;
     margin: 0;
@@ -32,7 +31,7 @@
     max-width: 100%;
     height: auto;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-    border: 2px solid rgba(255, 255, 255, 0.1);
+    border: 2px solid var(--glass-border-dark);
     transition: all 0.3s ease;
     align-self: center;
 }
@@ -40,16 +39,14 @@
 .hunt-tips-container img:hover {
     transform: scale(1.02);
     box-shadow: 0 15px 40px rgba(78, 205, 196, 0.3);
-    border-color: rgba(78, 205, 196, 0.5);
+    border-color: var(--monster-secondary-color);
 }
 
-/* Estilos mejorados para los tags dentro de hunt tips */
 .hunt-tips-container .monster-info-tags {
-    color: #4ecdc4;
-    background: rgba(78, 205, 196, 0.1);
+    color: var(--monster-secondary-color);
+    background: var(--hover-color-dark);
     border: 1px solid rgba(78, 205, 196, 0.3);
 }
-
 /* Media queries para móvil */
 @media (max-width: 768px) {
     .hunt-tips-container {
@@ -86,24 +83,24 @@
 body.lightTheme{
     .hunt-tips-container {
     background: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--glass-border-light);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .hunt-tips-container p {
-    background: rgba(0, 0, 0, 0.03);
-    border-left: 4px solid #20b2aa;
-    color: #2c3e50;
+    background: var(--glass-background-light);
+    border-left: 4px solid var(--monster-secondary-color-light);
+    color: var(--main-text-color-light);
 }
 
 .hunt-tips-container img:hover {
     box-shadow: 0 15px 40px rgba(32, 178, 170, 0.3);
-    border-color: rgba(32, 178, 170, 0.5);
+    border-color: var(--monster-secondary-color-light);
 }
 
 .hunt-tips-container .monster-info-tags {
-    color: #20b2aa;
-    background: rgba(32, 178, 170, 0.15);
+    color: var(--monster-secondary-color-light);
+    background: var(--hover-color-light);
     border: 1px solid rgba(32, 178, 170, 0.4);
 }
 

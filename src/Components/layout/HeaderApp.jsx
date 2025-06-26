@@ -53,7 +53,7 @@ export const HeaderApp = () => {
           <span className='hamburger-inner'></span>
         </span>
       </button>
-      <h2>MHP3RD Data-Base</h2>
+      <h2>MHP3RD Data-Base</h2><SearchInput />
       <button
         name='Theme button'
         className='themeBtn'
@@ -62,7 +62,7 @@ export const HeaderApp = () => {
         {themeIcon}{' '}
       </button>
       <ThemeContext theme={theme} />
-      <SearchInput />
+      
     </header>
   )
 }

@@ -1,18 +1,17 @@
-
 .monster-list {
     list-style: none;
     margin: 0;
     padding: 20px;
-    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%);
+    background: var(--main-background-color-dark);
     min-height: 100vh;
 }
 
 .monster-list-item-featureCard {
     margin: 0 auto 25px auto;
     max-width: 900px;
-    background: rgba(255, 255, 255, 0.03);
+    background: var(--glass-background-dark);
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--glass-border-dark);
     backdrop-filter: blur(20px);
     transition: all 0.4s ease;
     overflow: hidden;
@@ -22,7 +21,7 @@
 .monster-list-item-featureCard:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 40px rgba(255, 107, 53, 0.2);
-    border-color: rgba(255, 107, 53, 0.3);
+    border-color: var(--monster-accent-color);
 }
 
 .monster-list-item-featureCard-desc {
@@ -36,11 +35,25 @@
     transform: translateY(30px);
 }
 
-.search-item:nth-child(1) { animation-delay: 0.1s; }
-.search-item:nth-child(2) { animation-delay: 0.2s; }
-.search-item:nth-child(3) { animation-delay: 0.3s; }
-.search-item:nth-child(4) { animation-delay: 0.4s; }
-.search-item:nth-child(5) { animation-delay: 0.5s; }
+.search-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.search-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.search-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.search-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.search-item:nth-child(5) {
+    animation-delay: 0.5s;
+}
 
 @keyframes fadeInUp {
     to {
@@ -48,17 +61,18 @@
         transform: translateY(0);
     }
 }
+
 /* Media queries para móvil */
 @media (max-width: 768px) {
     .monster-list {
         padding: 10px;
     }
-    
+
     .monster-list-item-featureCard {
         margin: 0 auto 15px auto;
         border-radius: 15px;
     }
-    
+
     .search-item {
         margin-top: 10px !important;
     }
@@ -68,31 +82,32 @@
     .monster-list {
         padding: 5px;
     }
-    
+
     .monster-list-item-featureCard {
         margin: 0 auto 10px auto;
         border-radius: 12px;
     }
-    
+
     .search-item {
         margin-top: 8px !important;
     }
 }
 
-body.lightTheme{
+body.lightTheme {
+    
     .monster-list {
-    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-}
+        background: linear-gradient(135deg, var(--main-background-color-light) 0%, var(--second-background-color-light) 100%);
+    }
 
-.monster-list-item-featureCard {
-    background: rgba(255, 255, 255, 0.95);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-}
+    .monster-list-item-featureCard {
+        background: rgba(255, 255, 255, 0.95);
+        border: 1px solid var(--glass-border-light);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
 
-.monster-list-item-featureCard:hover {
-    box-shadow: 0 15px 40px rgba(231, 76, 60, 0.2);
-    border-color: rgba(231, 76, 60, 0.3);
-}
+    .monster-list-item-featureCard:hover {
+        box-shadow: 0 15px 40px rgba(231, 76, 60, 0.2);
+        border-color: var(--monster-accent-color-light);
+    }
 
 }

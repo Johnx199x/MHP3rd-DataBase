@@ -27,7 +27,6 @@ h2{
 }
 }
 .themeBtn{
-    margin-left: auto;
     margin-right: 0.75rem;
     color: var(--main-background-color-light);
     border-radius: 50%;
