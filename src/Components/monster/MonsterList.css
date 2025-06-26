@@ -48,6 +48,36 @@
         transform: translateY(0);
     }
 }
+/* Media queries para móvil */
+@media (max-width: 768px) {
+    .monster-list {
+        padding: 10px;
+    }
+    
+    .monster-list-item-featureCard {
+        margin: 0 auto 15px auto;
+        border-radius: 15px;
+    }
+    
+    .search-item {
+        margin-top: 10px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .monster-list {
+        padding: 5px;
+    }
+    
+    .monster-list-item-featureCard {
+        margin: 0 auto 10px auto;
+        border-radius: 12px;
+    }
+    
+    .search-item {
+        margin-top: 8px !important;
+    }
+}
 
 body.lightTheme{
     .monster-list {

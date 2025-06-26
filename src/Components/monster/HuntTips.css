@@ -50,6 +50,39 @@
     border: 1px solid rgba(78, 205, 196, 0.3);
 }
 
+/* Media queries para móvil */
+@media (max-width: 768px) {
+    .hunt-tips-container {
+        padding: 10px;
+        margin: 5px;
+        gap: 10px;
+    }
+    
+    .hunt-tips-container p {
+        padding: 12px;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    
+    .hunt-tips-container img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hunt-tips-container {
+        padding: 8px;
+        margin: 3px;
+    }
+    
+    .hunt-tips-container p {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+
 body.lightTheme{
     .hunt-tips-container {
     background: rgba(255, 255, 255, 0.8);

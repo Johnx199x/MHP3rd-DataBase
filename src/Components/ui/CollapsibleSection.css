@@ -105,3 +105,57 @@
 .collapseSection.hide{
     display: none;
 }
+@media (max-width: 768px) {
+    .collapsible-header {
+        padding: 12px 15px;
+    }
+    
+    .collapseSection-image {
+        width: 35px;
+        height: 35px;
+        margin-right: 12px;
+    }
+    
+    .collapseSection-title {
+        font-size: 14px;
+    }
+    
+    .collapseSection-arrow {
+        width: 25px;
+        height: 25px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .collapsible-header {
+        padding: 10px 12px;
+    }
+    
+    .collapseSection-image {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    
+    .collapseSection-title {
+        font-size: 13px;
+        line-height: 1.2;
+    }
+    
+    .collapseSection-arrow {
+        width: 22px;
+        height: 22px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .collapsible-header {
+        min-height: 44px; /* Mínimo recomendado para touch */
+    }
+    
+    .collapseSection-arrow {
+        min-width: 44px;
+        min-height: 44px;
+    }
+}
