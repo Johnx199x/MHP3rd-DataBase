@@ -1,5 +1,4 @@
-
-header{
+header {
     overflow: hidden;
     width: 100vw;
     grid-area: Header;  
@@ -8,33 +7,225 @@ header{
     align-items: center;
     background-color: var(--main-background-header-color);
     position: static;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(79, 209, 199, 0.2);
 }
 
-h2{
+.header-title {
     color: var(--main-interactive-color);
-    margin: 1rem;
+    margin: 0;
     text-align: center;
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #4fd1c7, #ffd700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all 0.3s ease;
 }
 
-@media(min-width:1010px){
-    .panel-btn{
+.header-title:hover {
+    transform: scale(1.02);
+    text-shadow: 0 4px 8px rgba(79, 209, 199, 0.3);
+}
+
+/* Hamburger menu styles */
+.panel-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 101;
+}
+
+.panel-btn:hover {
+    background: rgba(79, 209, 199, 0.1);
+    transform: scale(1.05);
+}
+
+.panel-btn:focus {
+    outline: 2px solid #4fd1c7;
+    outline-offset: 2px;
+}
+
+.hamburger-box {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+    width: 24px;
+    height: 3px;
+    background-color: var(--main-interactive-color);
+    border-radius: 4px;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+    content: '';
+    width: 24px;
+    height: 3px;
+    background-color: var(--main-interactive-color);
+    border-radius: 4px;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.hamburger-inner::before {
+    top: -8px;
+}
+
+.hamburger-inner::after {
+    bottom: -8px;
+}
+
+/* Animación cuando está activo */
+.hamburger--collapse.is-active .hamburger-inner {
+    transform: rotate(45deg);
+}
+
+.hamburger--collapse.is-active .hamburger-inner::before {
+    top: 0;
+    transform: rotate(-90deg);
+    opacity: 0;
+}
+
+.hamburger--collapse.is-active .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+}
+
+/* Theme button styles */
+.themeBtn {
+    margin-right:1rem;
+    color: var(--main-interactive-color);
+    border: 2px solid transparent;
+    border-radius: 50%;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    background: rgba(79, 209, 199, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.themeBtn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, transparent, rgba(79, 209, 199, 0.2));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.themeBtn:hover {
+    transform: scale(1.1);
+    border-color: #4fd1c7;
+    box-shadow: 0 0 20px rgba(79, 209, 199, 0.3);
+    background: rgba(79, 209, 199, 0.2);
+}
+
+.themeBtn:hover::before {
+    opacity: 1;
+}
+
+.themeBtn:focus {
+    outline: 2px solid #4fd1c7;
+    outline-offset: 2px;
+}
+
+.themeBtn:active {
+    transform: scale(0.95);
+}
+
+/* Responsive design */
+@media (min-width: 1010px) {
+    .panel-btn {
         display: none;
     }
-}
-@media(max-width:1010px){
-.panel-btn{
-    z-index: 100;
-}
-}
-.themeBtn{
-    margin-right: 0.75rem;
-    color: var(--main-background-color-light);
-    border-radius: 50%;
-    padding: 0.5rem;
-    font-size: large;
-    background-color: transparent;
-}
-.themeBtn:hover{
-    cursor: pointer;
+    
+    header {
+        padding: 1rem 2rem;
+    }
+    .themeBtn{
+        margin-right: 2.3rem;
+    }
 }
 
+@media (max-width: 1010px) {
+    .panel-btn {
+        z-index: 100;
+    }
+    
+    .header-title {
+        font-size: clamp(1rem, 4vw, 1.4rem);
+    }
+    
+    .themeBtn {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem;
+    }
+    
+    .header-title {
+        font-size: clamp(0.9rem, 5vw, 1.2rem);
+        margin: 0 0.5rem;
+    }
+    
+    .themeBtn {
+        padding: 0.4rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 1rem;
+        margin: 0 0.25rem;
+    }
+}
+
+/* Dark/Light theme specific styles */
+body.darkTheme .header-title {
+    background: linear-gradient(135deg, #4fd1c7, #ffd700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+body.lightTheme .header-title {
+    background: linear-gradient(135deg, #2c8a7a, #e6c200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}

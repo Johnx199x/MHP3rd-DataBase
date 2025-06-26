@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback, useMemo } from 'react'
+import { useLocation } from 'react-router-dom'
 
 import './HeaderApp.css'
 import { SearchInput } from '../ui/SearchInput'
@@ -9,6 +10,9 @@ export const HeaderApp = () => {
     return localStorage.getItem('theme') || 'lightTheme'
   })
   const [showSideMenu, setShowSideMenu] = useState(false)
+  
+  // Usar useLocation para obtener la ruta actual
+  const location = useLocation()
 
   useEffect(() => {
     // theme useEffect
@@ -37,6 +41,23 @@ export const HeaderApp = () => {
     )
   }, [theme])
 
+  const shouldShowSearch = useMemo(() => {
+    const searchRoutes = ['/monsters', '/quests']
+    return searchRoutes.includes(location.pathname)
+  }, [location.pathname])
+
+  const getPageTitle = useMemo(() => {
+    const titles = {
+      '/': 'MHP3RD Data-Base',
+      '/monsters': 'Monsters Database',
+      '/quests': 'Quest Database', 
+      '/items': 'Items Database',
+      '/locations': 'Locations Database',
+      '/about': 'About Project'
+    }
+    return titles[location.pathname] || 'MHP3RD Data-Base'
+  }, [location.pathname])
+
   return (
     <header>
       <button
@@ -53,16 +74,21 @@ export const HeaderApp = () => {
           <span className='hamburger-inner'></span>
         </span>
       </button>
-      <h2>MHP3RD Data-Base</h2><SearchInput />
+      
+      <h2 className="header-title">{getPageTitle}</h2>
+      
+      {shouldShowSearch && <SearchInput />}
+      
       <button
         name='Theme button'
         className='themeBtn'
         onClick={handleThemeToggle}
+        aria-label={theme === 'lightTheme' ? 'Cambiar a modo oscuro' : 'Cambiar a modo claro'}
       >
-        {themeIcon}{' '}
+        {themeIcon}
       </button>
-      <ThemeContext theme={theme} />
       
+      <ThemeContext theme={theme} />
     </header>
   )
 }

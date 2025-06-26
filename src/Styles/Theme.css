@@ -9,7 +9,7 @@ body.lightTheme {
         color: var(--main-text-color-light);
     }
     .side-menu.show{
-        background: linear-gradient(to right, var(--sideBar-background-color-light) 40%, rgba(0, 0, 0, 0.5) 41%);
+        background:  var(--sideBar-background-color-light);
         
     }
     /*****  Monsters section  *****/
@@ -65,7 +65,7 @@ body.darkTheme {
         color: var(--main-text-color-dark);
     }
     .side-menu.show{
-        background: linear-gradient(to right, var(--sideBar-background-color-dark) 40%, rgba(0, 0, 0, 0.5) 41%);
+        background: var(--sideBar-background-color-dark);
         
     }
 

@@ -72,8 +72,7 @@
           }
         }
         
-        /* Fallback para modo claro si no hay CSS variables */
-        @media (prefers-color-scheme: light) {
+        body.lightTheme{ 
           .custom-loader {
             background: var(--main-background-color-light, #e8eaeb);
             color: var(--main-text-color-light, #2d3436);
