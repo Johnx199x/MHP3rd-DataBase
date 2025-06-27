@@ -1,3 +1,13 @@
+:root{
+    
+  --header-footer-background-dark: rgba(15, 15, 35, 0.95); 
+  --header-footer-background-light: rgba(247, 250, 252, 0.95);
+
+  --header-footer-border-dark: rgba(78, 205, 196, 0.2); 
+  --header-footer-border-light: rgba(32, 178, 170, 0.2); 
+}
+
+
 header {
     overflow: hidden;
     width: 100vw;

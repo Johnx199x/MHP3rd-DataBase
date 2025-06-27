@@ -21,9 +21,11 @@ export const HeaderApp = () => {
 
   useEffect(() => {
     //sideMenu useEffect
-    const $sideMenu = document.querySelector('.side-menu')
+    const $sideMenu = document.querySelector('.side-menu');
+    const $sideOverlay =document.querySelector(".sidebar-overlay");
     if ($sideMenu) {
       $sideMenu.classList.toggle('show', showSideMenu)
+      $sideOverlay.classList.toggle('show', showSideMenu)
     }
   }, [showSideMenu])
 

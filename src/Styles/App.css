@@ -1,3 +1,36 @@
+:root {
+  --main-interactive-color: #4ecdc4; 
+  --main-interactive-color-dark: #20b2aa; 
+  
+  --main-text-color-light: #1a202c; 
+  --second-text-color-light: #4a5568; 
+  --main-text-color-dark: #ffffff; 
+  
+  --main-background-color-light: #e2e8f0; 
+  --second-background-color-light: #f7fafc; 
+  --main-background-color-light-hover: rgba(0, 0, 0, 0.05);
+  
+  --main-background-color-dark: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%);
+  --main-background-color-dark-hover: rgba(255, 255, 255, 0.08);
+  --main-background-header-color: #1a1a2e;
+  
+  
+  
+  --second-background-color: rgba(255, 255, 255, 0.05); 
+  --alert-color: #990000;
+  
+  --detail-color-dark: #ff6b35; 
+  --detail-color-light: #e74c3c; 
+  
+  --hover-color-light: rgba(32, 178, 170, 0.2); 
+  --hover-color-dark: rgba(78, 205, 196, 0.2);
+  
+ 
+  --glass-background-dark: rgba(255, 255, 255, 0.05);
+  --glass-background-light: rgba(0, 0, 0, 0.03);
+  --glass-border-dark: rgba(255, 255, 255, 0.1);
+  --glass-border-light: rgba(0, 0, 0, 0.1);
+}
 .app-container{
     overflow: hidden;
     display: grid;
