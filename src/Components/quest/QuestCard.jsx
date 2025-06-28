@@ -19,7 +19,7 @@ export const QuestCard = ({ questTypeB }) => {
     <div>
       <nav>
         <QuestStarSelection
-          questType={misionLevel}
+          questType={questTypeB}
           searchValue={searchValue}
           setQuestLevel={setMisionLevel}
         />

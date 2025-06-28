@@ -1,0 +1,257 @@
+/* Quest Star Selection Styles */
+.quest-navigation {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(79, 209, 199, 0.1);
+}
+
+.item-type-select {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0.7rem;
+
+}
+
+.quest-Type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 10%;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, rgba(79, 209, 199, 0.1) 0%, rgba(79, 209, 199, 0.05) 100%);
+    border: 2px solid rgba(79, 209, 199, 0.2);
+    border-radius: 12px;
+    color: #4fd1c7;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    
+}
+.item-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    height: 45px;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, rgba(79, 209, 199, 0.1) 0%, rgba(79, 209, 199, 0.05) 100%);
+    border: 2px solid rgba(79, 209, 199, 0.2);
+    border-radius: 12px;
+    color: #4fd1c7;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.item-type::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(79, 209, 199, 0.2), transparent);
+    transition: left 0.6s ease;
+}
+
+.item-type:hover::before {
+    left: 100%;
+}
+
+.item-type:hover {
+    transform: translateY(-2px);
+    border-color: #4fd1c7;
+    background: linear-gradient(135deg, rgba(79, 209, 199, 0.2) 0%, rgba(79, 209, 199, 0.1) 100%);
+    box-shadow: 0 8px 25px rgba(79, 209, 199, 0.25);
+}
+
+.item-type:active {
+    transform: translateY(0);
+    transition-duration: 0.1s;
+}
+
+.item-type-selected {
+    background: linear-gradient(135deg, #4fd1c7 0%, #20b2aa 100%);
+    border-color: #4fd1c7;
+    color: #ffffff;
+    box-shadow: 0 8px 25px rgba(79, 209, 199, 0.4);
+    transform: translateY(-2px);
+}
+
+.item-type-selected::before {
+    display: none;
+}
+
+.item-type-selected:hover {
+    background: linear-gradient(135deg, #20b2aa 0%, #4fd1c7 100%);
+    box-shadow: 0 12px 35px rgba(79, 209, 199, 0.5);
+}
+
+/* Star icon styling */
+.item-type::after {
+    content: '★';
+    margin-left: 0.25rem;
+    font-size: 0.9em;
+    opacity: 0.8;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+.item-type-selected::after {
+    opacity: 1;
+    color: #ffd700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .quest-navigation {
+        padding: 0.75rem;
+        margin-bottom: 0.75rem;
+        border-radius: 12px;
+    }
+    .quest-Type{
+        width: 80%;
+    }
+    
+    .item-type-select {
+        gap: 0.5rem;
+    }
+    
+    .item-type {
+        min-width: 50px;
+        height: 40px;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .quest-navigation {
+        padding: 0.5rem;
+        border-radius: 10px;
+    }
+    
+    .item-type-select {
+        gap: 0.4rem;
+        justify-content: space-between;
+    }
+    
+    .item-type {
+        min-width: 45px;
+        height: 36px;
+        padding: 0.3rem 0.6rem;
+        font-size: 0.85rem;
+        border-radius: 8px;
+        flex: 1;
+        max-width: calc(25% - 0.3rem);
+    }
+    
+    .item-type::after {
+        font-size: 0.8em;
+    }
+}
+
+body.lightTheme .quest-navigation {
+    background: var(--glass-background-light);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border-light);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+body.lightTheme .quest-Type {
+    background: linear-gradient(135deg, var(--hover-color-light) 0%, rgba(78, 205, 196, 0.1) 100%);
+    border: 2px solid var(--main-interactive-color);
+    color: var(--main-text-color-light);
+    text-shadow: none;
+}
+
+body.lightTheme .item-type {
+    background: linear-gradient(135deg, var(--hover-color-light) 0%, rgba(78, 205, 196, 0.1) 100%);
+    border: 2px solid var(--main-interactive-color);
+    color: var(--main-text-color-light);
+    text-shadow: none;
+}
+
+body.lightTheme .item-type::before {
+    background: linear-gradient(90deg, transparent, var(--hover-color-light), transparent);
+}
+
+body.lightTheme .item-type:hover {
+    border-color: var(--main-interactive-color-dark);
+    background: linear-gradient(135deg, var(--hover-color-light) 0%, rgba(78, 205, 196, 0.15) 100%);
+    box-shadow: 0 8px 25px rgba(78, 205, 196, 0.3);
+    color: var(--main-interactive-color-dark);
+}
+
+body.lightTheme .item-type-selected {
+    background: linear-gradient(135deg, var(--main-interactive-color) 0%, var(--main-interactive-color-dark) 100%);
+    border-color: var(--main-interactive-color-dark);
+    color: #ffffff;
+    box-shadow: 0 8px 25px rgba(78, 205, 196, 0.4);
+}
+
+body.lightTheme .item-type-selected:hover {
+    background: linear-gradient(135deg, var(--main-interactive-color-dark) 0%, var(--main-interactive-color) 100%);
+    box-shadow: 0 12px 35px rgba(78, 205, 196, 0.5);
+}
+
+body.lightTheme .item-type-selected::after {
+    color: var(--monster-gold-color);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus styles for keyboard navigation */
+.item-type:focus-visible {
+    outline: 2px solid #4fd1c7;
+    outline-offset: 2px;
+}
+
+body.lightTheme .item-type:focus-visible {
+    outline: 2px solid var(--main-interactive-color-dark);
+    outline-offset: 2px;
+}
+
+/* Loading animation */
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.item-type.loading {
+    animation: pulse 1.5s ease-in-out infinite;
+    pointer-events: none;
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+    .item-type, .item-type::before {
+        transition: none !important;
+    }
+    
+    .item-type.loading {
+        animation: none !important;
+    }
+}

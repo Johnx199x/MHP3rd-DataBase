@@ -86,7 +86,7 @@
     text-align: justify;
 }
 
-/* Lista de créditos mejorada */
+/* Lista de créditos*/
 .about-credits-list {
     list-style: none;
     padding: 0;
@@ -136,7 +136,7 @@
     width: 100%;
 }
 
-/* Iconos de contacto mejorados */
+/* Iconos de contacto */
 .about-contact-container {
     display: flex;
     justify-content: center;
@@ -209,14 +209,20 @@
 .about-contact-link[data-platform="email"]:hover .about-contact-icon {
     color: #ea4335;
 }
-
+.about-contact-link[data-platform="linkedin"]{
+    color:#0077B5;
+}
 .about-contact-link[data-platform="linkedin"]:hover {
-    border-color: #0077B5;
+    border-color: #0088cc;
     box-shadow: 0 15px 30px rgba(0, 119, 181, 0.3);
 }
 
 .about-contact-link[data-platform="linkedin"]:hover .about-contact-icon {
     color: #0077B5;
+}
+.about-contact-link[data-platform="telegram"]{
+    color: #24A1DE;
+
 }
 
 .about-contact-link[data-platform="telegram"]:hover {
