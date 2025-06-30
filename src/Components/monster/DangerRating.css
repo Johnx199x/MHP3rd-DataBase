@@ -1,5 +1,3 @@
-
-
 .danger-rating {
     display: inline-flex;
     align-items: center;
@@ -29,19 +27,17 @@
     border: 1px solid rgba(255, 215, 0, 0.3);
     backdrop-filter: blur(10px);
 }
-body.lightTheme {
-    .danger-star {
+
+body.lightTheme .danger-star {
     color: #ff8c00;
     text-shadow: 0 0 5px rgba(255, 140, 0, 0.4);
 }
 
-.danger-star:hover {
+body.lightTheme .danger-star:hover {
     text-shadow: 0 0 10px rgba(255, 140, 0, 0.6);
 }
 
-.danger-rating-container {
+body.lightTheme .danger-rating-container {
     background: rgba(255, 140, 0, 0.15);
     border: 1px solid rgba(255, 140, 0, 0.4);
-}
-
 }

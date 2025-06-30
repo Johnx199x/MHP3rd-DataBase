@@ -1,3 +1,4 @@
+
 :root {
   --main-interactive-color: #4ecdc4; 
   --main-interactive-color-dark: #20b2aa; 
@@ -14,8 +15,6 @@
   --main-background-color-dark-hover: rgba(255, 255, 255, 0.08);
   --main-background-header-color: #1a1a2e;
   
-  
-  
   --second-background-color: rgba(255, 255, 255, 0.05); 
   --alert-color: #990000;
   
@@ -25,12 +24,12 @@
   --hover-color-light: rgba(32, 178, 170, 0.2); 
   --hover-color-dark: rgba(78, 205, 196, 0.2);
   
- 
   --glass-background-dark: rgba(255, 255, 255, 0.05);
   --glass-background-light: rgba(0, 0, 0, 0.03);
   --glass-border-dark: rgba(255, 255, 255, 0.1);
   --glass-border-light: rgba(0, 0, 0, 0.1);
 }
+
 .app-container{
     overflow: hidden;
     display: grid;
@@ -41,21 +40,18 @@
     "Header"
     "MainContent"
     "Footer";
-    
 }
+
 .main-container{
     grid-area: MainContent;
     overflow: scroll;
-
 }
 
 h3 {
     color: var(--alert-color);
 }
 
-
- @media (min-width:1010px) { 
-    
+@media (min-width:1010px) { 
     .app-container{
         width: 100vw;
         height: 100vh;
@@ -65,7 +61,4 @@ h3 {
         "sideBar MainContent"
         "Footer Footer";
     }
-    
 }
-
-

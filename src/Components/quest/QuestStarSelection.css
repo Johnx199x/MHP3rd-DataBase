@@ -1,4 +1,4 @@
-/* Quest Star Selection Styles */
+/* Quest Navigation Styles */
 .quest-navigation {
     width: 100%;
     margin-top: 1rem;
@@ -8,6 +8,33 @@
     border-radius: 16px;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(79, 209, 199, 0.1);
+}
+
+/* Quest Type Selection (Village/Guild) */
+.quest-Type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 45px;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, rgba(79, 209, 199, 0.1) 0%, rgba(79, 209, 199, 0.05) 100%);
+    border: 2px solid rgba(79, 209, 199, 0.2);
+    border-radius: 12px;
+    color: #4fd1c7;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    user-select: none;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.quest-Type:hover {
+    transform: translateY(-2px);
+    border-color: #4fd1c7;
+    background: linear-gradient(135deg, rgba(79, 209, 199, 0.2) 0%, rgba(79, 209, 199, 0.1) 100%);
+    box-shadow: 0 8px 25px rgba(79, 209, 199, 0.25);
 }
 
 .item-type-select {
@@ -20,30 +47,8 @@
     margin: 0;
     padding: 0;
     gap: 0.7rem;
-
 }
 
-.quest-Type{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    height: 10%;
-    padding: 0.5rem 1rem;
-    background: linear-gradient(135deg, rgba(79, 209, 199, 0.1) 0%, rgba(79, 209, 199, 0.05) 100%);
-    border: 2px solid rgba(79, 209, 199, 0.2);
-    border-radius: 12px;
-    color: #4fd1c7;
-    font-weight: 700;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    user-select: none;
-    position: relative;
-    overflow: hidden;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-    
-}
 .item-type {
     display: flex;
     align-items: center;
@@ -131,8 +136,13 @@
         margin-bottom: 0.75rem;
         border-radius: 12px;
     }
-    .quest-Type{
+    
+    .quest-Type {
         width: 80%;
+        height: 40px;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+        border-radius: 10px;
     }
     
     .item-type-select {
@@ -174,18 +184,26 @@
     }
 }
 
-body.lightTheme .quest-navigation {
-    background: var(--glass-background-light);
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--glass-border-light);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-}
-
+/* Light Theme - Quest Type */
 body.lightTheme .quest-Type {
     background: linear-gradient(135deg, var(--hover-color-light) 0%, rgba(78, 205, 196, 0.1) 100%);
     border: 2px solid var(--main-interactive-color);
     color: var(--main-text-color-light);
     text-shadow: none;
+}
+
+body.lightTheme .quest-Type:hover {
+    border-color: var(--main-interactive-color-dark);
+    background: linear-gradient(135deg, var(--hover-color-light) 0%, rgba(78, 205, 196, 0.15) 100%);
+    box-shadow: 0 8px 25px rgba(78, 205, 196, 0.3);
+    color: var(--main-interactive-color-dark);
+}
+
+body.lightTheme .quest-navigation {
+    background: var(--glass-background-light);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border-light);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
 body.lightTheme .item-type {
@@ -234,24 +252,9 @@ body.lightTheme .item-type:focus-visible {
     outline-offset: 2px;
 }
 
-/* Loading animation */
-@keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
-}
-
-.item-type.loading {
-    animation: pulse 1.5s ease-in-out infinite;
-    pointer-events: none;
-}
-
 /* Accessibility improvements */
 @media (prefers-reduced-motion: reduce) {
     .item-type, .item-type::before {
         transition: none !important;
-    }
-    
-    .item-type.loading {
-        animation: none !important;
     }
 }

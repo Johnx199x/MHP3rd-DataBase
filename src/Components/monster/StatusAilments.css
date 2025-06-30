@@ -1,4 +1,3 @@
-
 .status-ailments-list {
     list-style: none;
     padding: 0;
@@ -88,59 +87,60 @@
     background: rgba(255, 165, 0, 0.1);
 }
 
-body.lightTheme{
+/* Light Theme */
+body.lightTheme {
     .status-ailment-item {
-    background: rgba(220, 20, 60, 0.15);
-    border: 1px solid rgba(220, 20, 60, 0.4);
-    color: #2c3e50;
-}
+        background: rgba(220, 20, 60, 0.15);
+        border: 1px solid rgba(220, 20, 60, 0.4);
+        color: #2c3e50;
+    }
 
-.status-ailment-item:hover {
-    background: rgba(220, 20, 60, 0.25);
-}
+    .status-ailment-item:hover {
+        background: rgba(220, 20, 60, 0.25);
+    }
 
-.ailment-poison {
-    border-color: rgba(148, 0, 211, 0.6);
-    background: rgba(148, 0, 211, 0.15);
-}
+    .ailment-poison {
+        border-color: rgba(148, 0, 211, 0.6);
+        background: rgba(148, 0, 211, 0.15);
+    }
 
-.ailment-fire {
-    border-color: rgba(255, 69, 0, 0.6);
-    background: rgba(255, 69, 0, 0.15);
-}
+    .ailment-fire {
+        border-color: rgba(255, 69, 0, 0.6);
+        background: rgba(255, 69, 0, 0.15);
+    }
 
-.ailment-thunder {
-    border-color: rgba(255, 165, 0, 0.6);
-    background: rgba(255, 165, 0, 0.15);
-}
+    .ailment-thunder {
+        border-color: rgba(255, 165, 0, 0.6);
+        background: rgba(255, 165, 0, 0.15);
+    }
 
-.ailment-water {
-    border-color: rgba(30, 144, 255, 0.6);
-    background: rgba(30, 144, 255, 0.15);
-}
+    .ailment-water {
+        border-color: rgba(30, 144, 255, 0.6);
+        background: rgba(30, 144, 255, 0.15);
+    }
 
-.ailment-ice {
-    border-color: rgba(70, 130, 180, 0.6);
-    background: rgba(70, 130, 180, 0.15);
-}
+    .ailment-ice {
+        border-color: rgba(70, 130, 180, 0.6);
+        background: rgba(70, 130, 180, 0.15);
+    }
 
-.ailment-dragon {
-    border-color: rgba(138, 43, 226, 0.6);
-    background: rgba(138, 43, 226, 0.15);
-}
+    .ailment-dragon {
+        border-color: rgba(138, 43, 226, 0.6);
+        background: rgba(138, 43, 226, 0.15);
+    }
 
-.ailment-sleep {
-    border-color: rgba(75, 0, 130, 0.6);
-    background: rgba(75, 0, 130, 0.15);
-}
+    .ailment-sleep {
+        border-color: rgba(75, 0, 130, 0.6);
+        background: rgba(75, 0, 130, 0.15);
+    }
 
-.ailment-paralysis {
-    border-color: rgba(218, 165, 32, 0.6);
-    background: rgba(218, 165, 32, 0.15);
-}
+    .ailment-paralysis {
+        border-color: rgba(218, 165, 32, 0.6);
+        background: rgba(218, 165, 32, 0.15);
+    }
 
-.ailment-stun {
-    border-color: rgba(255, 140, 0, 0.6);
-    background: rgba(255, 140, 0, 0.15);
-}
+    .ailment-stun {
+        border-color: rgba(255, 140, 0, 0.6);
+        background: rgba(255, 140, 0, 0.15);
+    }
 }

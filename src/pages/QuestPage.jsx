@@ -23,7 +23,12 @@ export default function QuestPage () {
             ]
         }, 
         */
-  const [misionType, setMisionType] = useState('Village')
+  const [selectedType, setSelectedType] = useState('Village')
+
+  const handleTypeChange = type => {
+    setSelectedType(type)
+  }
+
   const { searchValue } = useSearchContext()
 
   const MisionT = searchValue => {
@@ -33,30 +38,18 @@ export default function QuestPage () {
         style={{ display: 'flex', justifyContent: 'center' }}
       >
         <li
-          className='item-type-selected quest-Type '
-          onClick={e => {
-            setMisionType('Village')
-            e.target.classList.add('item-type-selected')
-            e.target.nextElementSibling.classList.contains(
-              'item-type-selected'
-            ) &&
-              e.target.nextElementSibling.classList.remove('item-type-selected')
-          }}
+          className={`quest-Type ${
+            selectedType === 'Village' ? 'item-type-selected' : ''
+          }`}
+          onClick={() => handleTypeChange('Village')}
         >
           Village
         </li>
         <li
-          className='quest-Type'
-          onClick={e => {
-            setMisionType('Guild')
-            e.target.classList.add('item-type-selected')
-            e.target.previousElementSibling.classList.contains(
-              'item-type-selected'
-            ) &&
-              e.target.previousElementSibling.classList.remove(
-                'item-type-selected'
-              )
-          }}
+          className={`quest-Type ${
+            selectedType === 'Guild' ? 'item-type-selected' : ''
+          }`}
+          onClick={() => handleTypeChange('Guild')}
         >
           Guild
         </li>
@@ -72,7 +65,7 @@ export default function QuestPage () {
     <div>
       <nav className='quest-navigation'>{MisionT(searchValue)}</nav>
 
-      {<QuestCard questTypeB={misionType} />}
+      {<QuestCard questTypeB={selectedType} />}
     </div>
   )
 }

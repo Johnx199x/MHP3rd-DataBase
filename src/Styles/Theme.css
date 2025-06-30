@@ -3,19 +3,18 @@ body.lightTheme {
         background-color: var(--main-background-color-light);
         color: var(--main-text-color-light);
     }
-     /****** SideBar ******/
+    
     .side-menu {
         background: var(--sideBar-background-color-light);
         color: var(--main-text-color-light);
     }
+    
     .side-menu.show{
         background:  var(--sideBar-background-color-light);
-        
     }
-    /*****  Monsters section  *****/
+    
     .monster-type-select {
         color: var(--main-interactive-color);
-
     }
 
     .item-type-selected {
@@ -40,47 +39,35 @@ body.lightTheme {
 
     .fa-envelope {
         color: #333333;
-
     }
 
     .monsters-info-tag.key-quest {
         color: var(--detail-color-light)
     }
-
 }
 
-
-
-
 body.darkTheme {
-
     .main-container {
         color: var(--main-text-color-dark);
         background-image: var(--main-background-color-dark);
     }
 
-    /****** SideBar ******/
     .side-menu {
         background: var(--sideBar-background-color-dark);
         color: var(--main-text-color-dark);
     }
+    
     .side-menu.show{
         background: var(--sideBar-background-color-dark);
-        
     }
-
-
-    /*****  Monsters section  *****/
 
     .monster-type-select {
         color: var(--main-interactive-color);
-
     }
 
     .item-type-selected {
         background-color: var(--hover-color-dark);
     }
-
 
     .monsters-figure:hover {
         background-color: var(--main-background-color-dark-hover);
@@ -96,11 +83,9 @@ body.darkTheme {
 
     .fa-envelope {
         color: var(--main-background-color-light);
-
     }
 
     .monsters-info-tag.key-quest {
         color: var(--detail-color-dark)
     }
-
 }

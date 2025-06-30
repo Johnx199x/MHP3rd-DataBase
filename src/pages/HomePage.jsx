@@ -1,7 +1,7 @@
 import './HomePage.css'
-import zinogre from '../Assets/img/MHWI-Render_Zinogre.webp?w=600&format=webp';
+import zinogre from '../Assets/img/MHWI-Render_Zinogre.webp?w=600&format=webp'
 import { FeatureCard } from '../Components/ui/FeatureCard'
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'
 
 export default function HomePage () {
   return (
@@ -23,9 +23,7 @@ export default function HomePage () {
         </p>
       </FeatureCard>
 
-      <NavLink 
-        to="/monsters"
-        className={'nav-link-custom'}>
+      <NavLink to="/monsters" className={'nav-link-custom'}>
         <FeatureCard tittle={'Monsters Section'} icon={'Book-White.webp'}>
           <span className='home-tags'>Hunter Notes:</span> Detailed observations
           from experienced hunters.
@@ -45,18 +43,14 @@ export default function HomePage () {
         </FeatureCard> 
       </NavLink>
       
-      <NavLink 
-        to="/items"
-        className={'nav-link-custom'}>
+      <NavLink to="/items" className={'nav-link-custom'}>
         <FeatureCard tittle={'Items Section(In development)'} icon={'Chest.webp'}>
           <span className='home-tags'>Item List:</span> Complete catalog of items
           and their uses.
         </FeatureCard>
       </NavLink>
 
-      <NavLink 
-        to="/quests"
-        className={'nav-link-custom'}>
+      <NavLink to="/quests" className={'nav-link-custom'}>
         <FeatureCard
           tittle={'Quests Section(In development)'}
           icon={'Ticket-White.webp'}
@@ -72,9 +66,7 @@ export default function HomePage () {
         </FeatureCard>
       </NavLink>
 
-      <NavLink 
-        to="/locations"
-        className={'nav-link-custom'}>
+      <NavLink to="/locations" className={'nav-link-custom'}>
         <FeatureCard
           tittle={' Location Section(In development)'}
           icon={'Map_Icon.png'}
@@ -90,9 +82,7 @@ export default function HomePage () {
         </FeatureCard>
       </NavLink>
 
-      <NavLink 
-        to="/about"
-        className={'nav-link-custom'}>
+      <NavLink to="/about" className={'nav-link-custom'}>
         <FeatureCard
           tittle={'About Section'}
           icon={'Question_Mark_Icon_Orange.png'}

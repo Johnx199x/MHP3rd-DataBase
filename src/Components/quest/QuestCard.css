@@ -28,8 +28,6 @@
     border-color: rgba(79, 209, 199, 0.3);
 }
 
-
-
 /* Quest Title */
 .monsters-info-tag {
     font-size: 1.2rem;
@@ -50,7 +48,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    position: relative;
 }
 
 .monsters-info-tag.key-quest::after {
@@ -59,42 +56,13 @@
     font-size: 1rem;
 }
 
-/* Arrow Animation */
-.monsters-arrow {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #ff6b35;
-    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transform: rotate(-90deg);
-    padding: 8px;
-    border-radius: 50%;
-    background: rgba(255, 107, 53, 0.1);
-    width: 36px;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid rgba(255, 107, 53, 0.2);
-    margin-left: 1rem;
-}
-
-.monsters-arrow.rotate {
-    transform: rotate(90deg);
-    background: rgba(255, 107, 53, 0.2);
-    border-color: rgba(255, 107, 53, 0.4);
-    box-shadow: 0 0 20px rgba(255, 107, 53, 0.3);
-}
-
 /* Quest Description Container */
 .quest-item-desc {
-     max-height: 1000px;
+    max-height: 1000px;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translateY(-20px);
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.01) 100%);
-    transform: translateY(0);
     padding: 2rem;
 }
-
 
 /* Quest Details List */
 .quest-item-desc-list {
@@ -113,7 +81,7 @@
     border-radius: 12px;
     border-left: 4px solid rgba(79, 209, 199, 0.3);
     transition: all 0.3s ease;
-    position: relative;
+    flex-direction: column;
 }
 
 .list-item:hover {
@@ -126,19 +94,9 @@
 .item-tag {
     font-weight: 700;
     color: #4fd1c7;
-    min-width: 100px;
-    margin-right: 0.75rem;
+    margin-bottom: 0.25rem;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     display: inline-block;
-}
-
-.list-item:not(.list-item-monster-icon) {
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.list-item:not(.list-item-monster-icon) .item-tag {
-    margin-bottom: 0.25rem;
 }
 
 /* Monster Icons Container */
@@ -190,11 +148,7 @@
         padding: 0.75rem;
     }
     
-    .monster-drops-collapse {
-        padding: 1.25rem 1.5rem;
-    }
-    
-    .quest-item-desc.show-description {
+    .quest-item-desc {
         padding: 1.5rem;
     }
 }
@@ -204,31 +158,15 @@
         padding: 0.5rem;
     }
     
-    .monster-drops-collapse {
-        padding: 1rem 1.25rem;
-        flex-direction: column;
-        text-align: center;
-        gap: 0.5rem;
-    }
-    
     .monsters-info-tag {
         font-size: 1.1rem;
-        margin-bottom: 0.5rem;
     }
     
-    .monsters-arrow {
-        width: 32px;
-        height: 32px;
-        font-size: 1rem;
-        margin-left: 0;
-    }
-    
-    .quest-item-desc.show-description {
+    .quest-item-desc {
         padding: 1rem;
     }
     
     .item-tag {
-        min-width: 80px;
         font-size: 0.9rem;
     }
     
@@ -239,26 +177,12 @@
 }
 
 @media (max-width: 480px) {
-    .search-item {
-        border-radius: 12px;
-    }
-    
-    .monster-drops-collapse {
-        padding: 0.75rem 1rem;
+    .quest-item-desc {
+        padding: 0.75rem;
     }
     
     .monsters-info-tag {
         font-size: 1rem;
-    }
-    
-    .monsters-arrow {
-        width: 28px;
-        height: 28px;
-        font-size: 0.9rem;
-    }
-    
-    .quest-item-desc.show-description {
-        padding: 0.75rem;
     }
     
     .list-item {
@@ -267,7 +191,6 @@
     }
     
     .item-tag {
-        min-width: 70px;
         font-size: 0.85rem;
     }
     
@@ -285,24 +208,16 @@
     }
 }
 
-/* Theme specific styles */
-body.lightTheme .search-item {
+/* Light Theme */
+body.lightTheme .quest.search-item {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(247, 250, 252, 0.8) 100%);
     border-color: rgba(32, 178, 170, 0.2);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
-body.lightTheme .search-item:hover {
+body.lightTheme .quest.search-item:hover {
     box-shadow: 0 8px 30px rgba(32, 178, 170, 0.2);
     border-color: rgba(32, 178, 170, 0.4);
-}
-
-body.lightTheme .monster-drops-collapse {
-    border-bottom-color: rgba(32, 178, 170, 0.15);
-}
-
-body.lightTheme .monster-drops-collapse:hover {
-    background: rgba(32, 178, 170, 0.08);
 }
 
 body.lightTheme .list-item {
@@ -329,38 +244,10 @@ body.lightTheme .monsters-info-tag.key-quest {
     background-clip: text;
 }
 
-/* Loading state */
-.quest-loading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 200px;
-    font-size: 1.1rem;
-    color: var(--main-interactive-color);
-}
-
-/* Empty state */
-.quest-empty {
-    text-align: center;
-    padding: 3rem 1rem;
-    color: var(--second-text-color-light);
-}
-
-.quest-empty h3 {
-    color: var(--main-interactive-color);
-    margin-bottom: 1rem;
-}
-
-/* Accessibility improvements */
+/* Accessibility */
 @media (prefers-reduced-motion: reduce) {
     * {
         transition: none !important;
         animation: none !important;
     }
-}
-
-/* Focus styles for keyboard navigation */
-.monster-drops-collapse:focus-visible {
-    outline: 2px solid #4fd1c7;
-    outline-offset: 2px;
 }

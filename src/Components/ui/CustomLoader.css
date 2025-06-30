@@ -1,84 +1,82 @@
 .custom-loader {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          height: 100vh;
-          background: var(--main-background-color-dark, linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%));
-          color: var(--main-text-color-dark, #F8F8FF);
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-            'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-            sans-serif;
-        }
-        
-        .loader-content {
-          text-align: center;
-        }
-        
-        .spinner {
-          display: inline-block;
-          position: relative;
-          width: 64px;
-          height: 64px;
-          margin-bottom: 24px;
-        }
-        
-        .spinner div {
-          position: absolute;
-          top: 27px;
-          width: 11px;
-          height: 11px;
-          border-radius: 50%;
-          background: var(--main-interactive-color, #2a9d8f);
-          animation: bounce 1.2s infinite ease-in-out;
-          box-shadow: 0 0 12px rgba(42, 157, 143, 0.4);
-        }
-        
-        .spinner div:nth-child(1) {
-          left: 6px;
-          animation-delay: -0.24s;
-        }
-        
-        .spinner div:nth-child(2) {
-          left: 26px;
-          animation-delay: -0.12s;
-          background: var(--main-interactive-color-dark, #1194cc);
-          box-shadow: 0 0 12px rgba(17, 148, 204, 0.4);
-        }
-        
-        .spinner div:nth-child(3) {
-          left: 46px;
-          animation-delay: 0s;
-          background: var(--detail-color-dark, #e76f51);
-          box-shadow: 0 0 12px rgba(231, 111, 81, 0.4);
-        }
-        
-        .custom-loader p {
-          font-size: 1.1rem;
-          font-weight: 500;
-          margin: 0;
-          opacity: 0.9;
-          letter-spacing: 0.5px;
-          color: var(--main-text-color-dark, #F8F8FF);
-        }
-        
-        @keyframes bounce {
-          0%, 80%, 100% {
-            transform: scale(0);
-            opacity: 0.5;
-          }
-          40% {
-            transform: scale(1);
-            opacity: 1;
-          }
-        }
-        
-        body.lightTheme{ 
-          .custom-loader {
-            background: var(--main-background-color-light, #e8eaeb);
-            color: var(--main-text-color-light, #2d3436);
-          }
-          
-          .custom-loader p {
-            color: var(--main-text-color-light, #2d3436);
-          }
-        }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: var(--main-background-color-dark, linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%));
+    color: var(--main-text-color-dark, #F8F8FF);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+}
+
+.loader-content {
+    text-align: center;
+}
+
+.spinner {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 24px;
+}
+
+.spinner div {
+    position: absolute;
+    top: 27px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--main-interactive-color, #2a9d8f);
+    animation: bounce 1.2s infinite ease-in-out;
+    box-shadow: 0 0 12px rgba(42, 157, 143, 0.4);
+}
+
+.spinner div:nth-child(1) {
+    left: 6px;
+    animation-delay: -0.24s;
+}
+
+.spinner div:nth-child(2) {
+    left: 26px;
+    animation-delay: -0.12s;
+    background: var(--main-interactive-color-dark, #1194cc);
+    box-shadow: 0 0 12px rgba(17, 148, 204, 0.4);
+}
+
+.spinner div:nth-child(3) {
+    left: 46px;
+    animation-delay: 0s;
+    background: var(--detail-color-dark, #e76f51);
+    box-shadow: 0 0 12px rgba(231, 111, 81, 0.4);
+}
+
+.custom-loader p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
+    opacity: 0.9;
+    letter-spacing: 0.5px;
+    color: var(--main-text-color-dark, #F8F8FF);
+}
+
+@keyframes bounce {
+    0%, 80%, 100% {
+        transform: scale(0);
+        opacity: 0.5;
+    }
+    40% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+body.lightTheme .custom-loader {
+    background: var(--main-background-color-light, #e8eaeb);
+    color: var(--main-text-color-light, #2d3436);
+}
+
+body.lightTheme .custom-loader p {
+    color: var(--main-text-color-light, #2d3436);
+}

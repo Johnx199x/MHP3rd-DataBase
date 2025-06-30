@@ -7,24 +7,7 @@
     border-bottom: 1px solid rgba(79, 209, 199, 0.1);
     transition: all 0.3s ease;
     user-select: none;
-    position: relative;
-    overflow: hidden;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
-}
-
-.collapsible-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(79, 209, 199, 0.1), transparent);
-    transition: left 0.6s ease;
-}
-
-.collapsible-header:hover::before {
-    left: 100%;
 }
 
 .collapsible-header:hover {
@@ -65,26 +48,11 @@
     transition: all 0.3s ease;
 }
 
-.collapseSection-title.key-quest {
-    background: linear-gradient(135deg, #ff6b35, #ffd700);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    position: relative;
-}
-
-.collapseSection-title.key-quest::after {
-    content: '🔑';
-    margin-left: 0.5rem;
-    font-size: 1rem;
-    filter: drop-shadow(0 2px 4px rgba(255, 107, 53, 0.3));
-}
-
 .collapseSection-arrow {
     font-size: 1.2rem;
     font-weight: bold;
     color: #ff6b35;
-    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.3s ease;
     transform: rotate(-90deg);
     padding: 8px;
     border-radius: 50%;
@@ -102,28 +70,9 @@
     transform: rotate(90deg);
     background: rgba(255, 107, 53, 0.2);
     border-color: rgba(255, 107, 53, 0.4);
-    box-shadow: 0 0 20px rgba(255, 107, 53, 0.3);
 }
 
-.collapseSection-container {
-    overflow: hidden;
-    opacity: 0;
-    visibility: hidden;
-    max-height: 0;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translateY(-20px);
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.01) 100%);
-}
-
-.collapseSection-container.show-description {
-    visibility: visible;
-    max-height: 1000px;
-    opacity: 1;
-    transform: translateY(0);
-    padding: 2rem;
-}
-
-/* Theme specific styles */
+/* Light Theme */
 body.lightTheme .collapsible-header {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(247, 250, 252, 0.8) 100%);
     border-bottom-color: rgba(32, 178, 170, 0.15);
@@ -140,13 +89,6 @@ body.lightTheme .collapseSection-title {
     background-clip: text;
 }
 
-body.lightTheme .collapseSection-title.key-quest {
-    background: linear-gradient(135deg, #e74c3c, #e6c200);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
 body.lightTheme .collapseSection-image {
     border-color: rgba(32, 178, 170, 0.4);
 }
@@ -157,54 +99,34 @@ body.lightTheme .collapsible-header:hover .collapseSection-image {
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
-    .collapsible-header {
-        padding: 1.25rem 1.5rem;
-    }
-    
-    .collapseSection-container.show-description {
-        padding: 1.5rem;
-    }
-}
-
 @media (max-width: 768px) {
     .collapsible-header {
         padding: 1rem 1.25rem;
-        text-align: center;
         gap: 0.5rem;
-        min-height: 44px; /* Mínimo recomendado para touch */
+        min-height: 44px;
     }
     
     .collapseSection-image {
         width: 45px;
         height: 45px;
-        margin-right: 0;
-        margin-bottom: 0.5rem;
+        margin-right: 0.75rem;
     }
     
     .collapseSection-title {
         font-size: 1.1rem;
-        margin-bottom: 0.5rem;
     }
     
     .collapseSection-arrow {
         width: 32px;
         height: 32px;
         font-size: 1rem;
-        margin-left: 0;
-        min-width: 44px;
-        min-height: 44px;
-    }
-    
-    .collapseSection-container.show-description {
-        padding: 1rem;
+        margin-left: 0.5rem;
     }
 }
 
 @media (max-width: 480px) {
     .collapsible-header {
         padding: 0.75rem 1rem;
-        border-radius: 12px;
     }
     
     .collapseSection-image {
@@ -221,28 +143,19 @@ body.lightTheme .collapsible-header:hover .collapseSection-image {
         height: 28px;
         font-size: 0.9rem;
     }
-    
-    .collapseSection-container.show-description {
-        padding: 0.75rem;
-    }
 }
 
-/* Focus styles for keyboard navigation */
+/* Focus styles for accessibility */
 .collapsible-header:focus-visible {
     outline: 2px solid #4fd1c7;
     outline-offset: 2px;
 }
 
-/* Accessibility improvements */
+/* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
     .collapsible-header,
     .collapseSection-arrow,
-    .collapseSection-image,
-    .collapseSection-container {
-        transition: none !important;
-    }
-    
-    .collapsible-header::before {
-        display: none;
+    .collapseSection-image {
+        transition: none;
     }
 }

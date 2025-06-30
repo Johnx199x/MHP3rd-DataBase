@@ -1,10 +1,6 @@
-/* Modal overlay con blur */
 .image-modal-overlay {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(8px);
     display: flex;
@@ -14,7 +10,6 @@
     animation: fadeIn 0.3s ease-out;
 }
 
-/* Contenedor del modal */
 .image-modal-content {
     position: relative;
     max-width: 90%;
@@ -24,7 +19,6 @@
     align-items: center;
 }
 
-/* Imagen del modal */
 .image-modal-img {
     max-width: 100%;
     max-height: 100%;
@@ -34,7 +28,6 @@
     animation: scaleIn 0.3s ease-out;
 }
 
-/* Botón de cerrar */
 .image-modal-close {
     position: absolute;
     top: -40px;
@@ -59,14 +52,9 @@
     transform: scale(1.1);
 }
 
-/* Animaciones */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 @keyframes scaleIn {
@@ -80,7 +68,6 @@
     }
 }
 
-/* Responsive para móviles */
 @media (max-width: 768px) {
     .image-modal-close {
         top: 10px;

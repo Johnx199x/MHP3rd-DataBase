@@ -47,6 +47,7 @@
     background: var(--hover-color-dark);
     border: 1px solid rgba(78, 205, 196, 0.3);
 }
+
 /* Media queries para móvil */
 @media (max-width: 768px) {
     .hunt-tips-container {
@@ -79,29 +80,26 @@
     }
 }
 
-
-body.lightTheme{
-    .hunt-tips-container {
+/* Light Theme */
+body.lightTheme .hunt-tips-container {
     background: rgba(255, 255, 255, 0.8);
     border: 1px solid var(--glass-border-light);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.hunt-tips-container p {
+body.lightTheme .hunt-tips-container p {
     background: var(--glass-background-light);
     border-left: 4px solid var(--monster-secondary-color-light);
     color: var(--main-text-color-light);
 }
 
-.hunt-tips-container img:hover {
+body.lightTheme .hunt-tips-container img:hover {
     box-shadow: 0 15px 40px rgba(32, 178, 170, 0.3);
     border-color: var(--monster-secondary-color-light);
 }
 
-.hunt-tips-container .monster-info-tags {
+body.lightTheme .hunt-tips-container .monster-info-tags {
     color: var(--monster-secondary-color-light);
     background: var(--hover-color-light);
     border: 1px solid rgba(32, 178, 170, 0.4);
-}
-
 }
