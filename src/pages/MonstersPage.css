@@ -12,13 +12,13 @@
 .item-type-select{
     list-style: none;
     display: flex;
+    flex: 1;
     margin: 0;
     padding: 0;
 }
 .item-type-select > li{
-    width: 100%;
     cursor: pointer;
-    
+    flex: auto;
     padding: 1.5rem;
     text-align: center;
     margin: 0;
@@ -27,6 +27,36 @@
     transition: all 0.3s ease-in-out;
 }
 
+.search-results-indicator {
+  margin: 0 auto;
+  padding: 12px 0;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  align-items: center;
+}
+
+.results-count {
+  font-weight: 600;
+  color: var(--second-text-color-dark);
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.no-results {
+  color: var(--monster-accent-color-light);
+  font-size: 0.98rem;
+  margin-top: 4px;
+  font-style: italic;
+  letter-spacing: 0.01em;
+}
 
 
 
+
+
+.body.lightTheme  .results-count {
+    color:var(--second-text-color-light)
+}

@@ -18,17 +18,17 @@ export const MonsterTypeSelector = ({
 
   if (isSearching) {
     return (
-      <nav>
+      <nav style={{width:"100%"}}>
         <ul className='item-type-select'>
-          <li>Search Result:</li>
+          <li style={{padding:"0.5rem"}}>Search Result:</li>
         </ul>
       </nav>
     )
   }
 
   return (
-    <nav>
-      <ul className='item-type-select'>
+    <nav style={{width:"100%"}}>
+      <ul className='item-type-select' >
         <li
           className={monsterType === 'small' ? 'item-type-selected' : ''}
           onClick={e => handleTypeClick('small', e)}

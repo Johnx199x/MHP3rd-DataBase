@@ -1,35 +1,40 @@
-import {useEffect } from "react"
+import { useLocation } from 'react-router-dom';
 import { useSearchContext } from '../../context/SearchContext';
 import "./SearchInput.css"
-
-
+import debounce from "just-debounce-it";
+import { useCallback } from "react";
 
 export const SearchInput = () => {
+    
     const { searchValue, setSearchValue } = useSearchContext();
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        const debouncedSearch = useCallback(
+            debounce(newSearch => {
+       setSearchValue(newSearch)
+    }, 300)
+    , [searchValue]
+  )
+
+
         const handleChange=(e)=>{
-            setSearchValue(e.target.value)
+            const newSearch =e.target.value;
+           debouncedSearch(newSearch)
         };
         
-        useEffect(() => {
-            const $searchItems = document.querySelectorAll(".search-item");
-            searchValue !== "" 
-                ? document.querySelector(".search-container").classList.add("search-notEmpty")
-                : document.querySelector(".search-container").classList.remove("search-notEmpty")
-
-                $searchItems.forEach(el => {
-                    el.children[0].textContent.toLowerCase().includes(searchValue.toLowerCase() )
-                        ? el.classList.remove("hide")
-                        : el.classList.add("hide")
-                }); 
-        }, [searchValue])
+        const handleSubmit =(event)=>{
+            event.preventDefault()
+        }
+    const location = useLocation()
+       
         
         return(
-            <form action="" className="search-container"> 
+            <form action="" className={`search-container ${searchValue !== "" ? "search-notEmpty":""}`} onSubmit={handleSubmit} > 
             <input 
             type="search" 
             name="search" 
             className="search-input"
-            placeholder="Search..."
+            placeholder={location.pathname.includes("/monsters")?`Arzuros,Tigrex, Zinogre...`: "Quest name"}
             onChange={handleChange}
             
             />
