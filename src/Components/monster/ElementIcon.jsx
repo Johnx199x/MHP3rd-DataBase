@@ -1,3 +1,4 @@
+import '../../Styles/App.css'
 import fireIcon from '../../Assets/icons/Element/Status-Fire.webp'
 import thunderIcon from '../../Assets/icons/Element/Status-Thunder.webp'
 import waterIcon from '../../Assets/icons/Element/Status-Water.webp'
@@ -24,7 +25,7 @@ export const ElementIcon = ({ elements }) => {
                 {elementIcons[element] ? (
                     <>
                         <span>{element}</span>
-                        <img src={elementIcons[element]} alt={`${element.toLowerCase()}_element_img`} />
+                        <img src={elementIcons[element]} alt={`${element.toLowerCase()}_element_img`} loading="lazy" />
                     </>
                 ) : (
                     element

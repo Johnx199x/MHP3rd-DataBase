@@ -5,7 +5,7 @@ import { CollapsibleSection } from '../ui/CollapsibleSection'
 export const MonsterInfo = (props) => {
     
     return (
-            <CollapsibleSection  title= {props.name} image={props.img}  >
+            <CollapsibleSection  title= {props.name} image={props.img} loading="lazy">
                 <MonstersDescription 
                     name={props.name}
                     info={props.info} 

@@ -63,6 +63,7 @@ export const SideBar = () => {
             >
               <img src={MonsterIcon} alt='monster-Book-Icon'
                 style={{ marginRight: '0.5rem' }}
+                loading="lazy"
               />
               Monsters
             </NavLink>
@@ -76,6 +77,7 @@ export const SideBar = () => {
             >
               <img src={QuestIcon} alt='Quest-icon'
                 style={{ marginRight: '0.5rem' }}
+                loading="lazy"
               />
               Quest
             </NavLink>
@@ -89,6 +91,7 @@ export const SideBar = () => {
             >
               <img src={ItemIcon} alt='Item Icon'
                 style={{ marginRight: '0.5rem' }}
+                loading="lazy"
               />
               Items
             </NavLink>
@@ -102,6 +105,7 @@ export const SideBar = () => {
             >
               <img src={UbiIcon} alt='Map icon'
                 style={{ marginRight: '0.5rem' }}
+                loading="lazy"
               />
               Locations
             </NavLink>
@@ -118,6 +122,7 @@ export const SideBar = () => {
             >
               <img src={AboutIcon} alt='About icon'
                 style={{ marginRight: '0.5rem' }}
+                loading="lazy"
               />
               <span>About</span>
             </NavLink>

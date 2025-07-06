@@ -1,4 +1,7 @@
-
+/*
+  Este archivo contiene todas las variables CSS globales del proyecto.
+  Si necesitas agregar o modificar variables, hazlo aquí para mantener la consistencia.
+*/
 :root {
   --main-interactive-color: #4ecdc4; 
   --main-interactive-color-dark: #20b2aa; 
@@ -28,6 +31,16 @@
   --glass-background-light: rgba(0, 0, 0, 0.03);
   --glass-border-dark: rgba(255, 255, 255, 0.1);
   --glass-border-light: rgba(0, 0, 0, 0.1);
+  
+  --sideBar-background-color-light: rgba(226, 232, 240, 0.95);
+  --sideBar-background-color-dark: rgba(26, 26, 46, 0.9);
+  
+  --monster-accent-color: #ff6b35;
+  --monster-accent-color-light: #e74c3c;
+  --monster-secondary-color: #4ecdc4;
+  --monster-secondary-color-light: #20b2aa;
+  --monster-gold-color: #ffd700;
+  --monster-gold-color-light: #f39c12;
 }
 
 .app-container{
@@ -61,4 +74,49 @@ h3 {
         "sideBar MainContent"
         "Footer Footer";
     }
+}
+
+.span-element-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 5px;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.span-element-icon:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.span-element-icon img {
+    width: 24px;
+    height: 24px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    transition: all 0.3s ease;
+}
+
+.span-element-icon:hover img {
+    transform: scale(1.1);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+}
+
+/* Light Theme para span-element-icon */
+body.lightTheme .span-element-icon {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    color: #333333;
+}
+
+body.lightTheme .span-element-icon:hover {
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }

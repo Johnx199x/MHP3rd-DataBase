@@ -29,6 +29,7 @@ export const HuntTips = ({ huntTips }) => {
                 <ImageModal 
                     src={imageSrc} 
                     alt={`tips-${imageName}`}
+                    loading="lazy"
                 />
             )}
         </div>

@@ -1,3 +1,5 @@
+import './StatusAilments.css'
+import '../../Styles/App.css'
 import fireblightIcon from '../../Assets/icons/StatusEffect/Status_Effect-Severe_Fireblight_Icon.webp'
 import thunderblightIcon from '../../Assets/icons/StatusEffect/Status_Effect-Thunderblight_Icon.webp'
 import waterblightIcon from '../../Assets/icons/StatusEffect/Status_Effect-Severe_Waterblight_Icon.webp'
@@ -40,7 +42,7 @@ export const StatusAilments = ({ ailments }) => {
             <li key={index} className={`status-ailment-item ailment-${ailment.toLowerCase().replace(' ', '-')} span-element-icon`}>
                 {ailment}
                 {ailmentIcons[ailment] && (
-                    <img src={ailmentIcons[ailment]} alt={`${ailment}_status_img`} />
+                    <img src={ailmentIcons[ailment]} alt={`${ailment}_status_img`} loading="lazy" />
                 )}
             </li>
         ))}

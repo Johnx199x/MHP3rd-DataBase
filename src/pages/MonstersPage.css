@@ -1,13 +1,4 @@
-:root{
-    --monster-accent-color: #ff6b35;
-  --monster-accent-color-light: #e74c3c; 
-  --monster-secondary-color: #4ecdc4; 
-  --monster-secondary-color-light: #20b2aa;
-  --monster-gold-color: #ffd700; 
-  --monster-gold-color-light: #f39c12; 
-  
-}
-
+/* Las variables globales de color/acento ahora están en src/Styles/App.css */
 
 .item-type-select{
     list-style: none;

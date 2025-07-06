@@ -14,7 +14,7 @@ export const FeatureCard = ({ tittle, children, icon, classNameCard, classNameDe
       <div className={`feature-card ${classNameCard ? classNameCard : ''}`}>
         {icon && (
           <div className='feature-card-icon'>
-            <img src={imageSrc} alt={`${icon}-icon`} ></img>
+            <img src={imageSrc} alt={`${icon}-icon`} loading="lazy" ></img>
           </div>
         )}
         {tittle&&<h3 className='feature-card-title'>{tittle}</h3>}

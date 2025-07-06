@@ -11,7 +11,7 @@ export default function HomePage () {
         src={zinogre}
         alt='zinogre_img'
         width='600'
-        height='338'
+        height='355'
         loading='lazy'
       />
       

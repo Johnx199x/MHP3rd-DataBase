@@ -33,6 +33,7 @@ export const CollapsibleSection = ({ title, children, image, imgArr }) => {
             className='collapseSection-image'
             src={imageSrc}
             alt={`${title}-image`}
+            loading="lazy"
           />
         )}
         {imgArr &&
@@ -42,6 +43,7 @@ export const CollapsibleSection = ({ title, children, image, imgArr }) => {
               className='collapseSection-image'
               src={ele}
               alt={`${title}-image`}
+              loading="lazy"
             />
           })
         }

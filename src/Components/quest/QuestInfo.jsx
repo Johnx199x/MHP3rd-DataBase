@@ -82,7 +82,8 @@ useEffect(() => {
                         <img
                           key={index}
                           src={imgSrc}
-                          alt={`${targett[index]} icon`}
+                          alt={`target-${index}`}
+                          loading="lazy"
                           title={targett[index]}
                         />
                       )

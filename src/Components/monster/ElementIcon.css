@@ -1,35 +1,4 @@
-.span-element-icon {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    margin: 5px;
-    padding: 8px 12px;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    transition: all 0.3s ease;
-    font-size: 13px;
-    font-weight: 500;
-}
-
-.span-element-icon:hover {
-    background: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.span-element-icon img {
-    width: 24px;
-    height: 24px;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
-    transition: all 0.3s ease;
-}
-
-.span-element-icon:hover img {
-    transform: scale(1.1);
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
-}
+/* .span-element-icon y variantes movidas a App.css como estilo común */
 
 .element-container {
     display: flex;

@@ -1,8 +1,4 @@
-:root {
-    --sideBar-background-color-light: rgba(226, 232, 240, 0.95); 
-    --sideBar-background-color-dark: rgba(26, 26, 46, 0.9); 
-}
-
+/* Las variables globales de sidebar ahora están en src/Styles/App.css */
 .side-menu {
     grid-area: sideBar;
     backdrop-filter: blur(2px);

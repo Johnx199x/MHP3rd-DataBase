@@ -21,6 +21,7 @@ export const ImageModal = ({ src, alt, className = "", style = {} }) => {
                 className={className}
                 style={{ ...style, cursor: 'pointer' }}
                 onClick={openModal}
+                loading="lazy"
             />
 
             {/* Modal */}
@@ -43,6 +44,7 @@ export const ImageModal = ({ src, alt, className = "", style = {} }) => {
                             src={src} 
                             alt={alt}
                             className="image-modal-img"
+                            loading="lazy"
                         />
                     </div>
                 </div>
