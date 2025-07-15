@@ -1,16 +1,12 @@
 header {
     overflow: hidden;
-    width: 100vw;
     grid-area: Header;  
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--main-background-header-color);
     position: static;
-    padding: 0.5rem 1rem;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(79, 209, 199, 0.2);
+    padding: 0.5rem 0;
 }
 
 .header-title {
@@ -24,14 +20,7 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    transition: all 0.3s ease;
 }
-
-.header-title:hover {
-    transform: scale(1.02);
-    text-shadow: 0 4px 8px rgba(79, 209, 199, 0.3);
-}
-
 /* Hamburger menu styles */
 .panel-btn {
     background: none;
@@ -39,14 +28,12 @@ header {
     cursor: pointer;
     padding: 0.5rem;
     border-radius: 8px;
-    transition: all 0.3s ease;
     position: relative;
     z-index: 101;
 }
 
 .panel-btn:hover {
     background: rgba(79, 209, 199, 0.1);
-    transform: scale(1.05);
 }
 
 .panel-btn:focus {
@@ -70,7 +57,6 @@ header {
     background-color: var(--main-interactive-color);
     border-radius: 4px;
     position: absolute;
-    transition: all 0.3s ease;
 }
 
 .hamburger-inner::before,
@@ -81,7 +67,6 @@ header {
     background-color: var(--main-interactive-color);
     border-radius: 4px;
     position: absolute;
-    transition: all 0.3s ease;
 }
 
 .hamburger-inner::before {
@@ -110,14 +95,12 @@ header {
 
 /* Theme button styles */
 .themeBtn {
-    margin-right: 1rem;
     color: var(--main-interactive-color);
     border: 2px solid transparent;
     border-radius: 50%;
     padding: 0.75rem;
     font-size: 1.2rem;
     background: rgba(79, 209, 199, 0.1);
-    transition: all 0.3s ease;
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -132,14 +115,11 @@ header {
     bottom: 0;
     background: linear-gradient(135deg, transparent, rgba(79, 209, 199, 0.2));
     opacity: 0;
-    transition: opacity 0.3s ease;
     z-index: -1;
 }
 
 .themeBtn:hover {
-    transform: scale(1.1);
     border-color: #4fd1c7;
-    box-shadow: 0 0 20px rgba(79, 209, 199, 0.3);
     background: rgba(79, 209, 199, 0.2);
 }
 
@@ -152,9 +132,6 @@ header {
     outline-offset: 2px;
 }
 
-.themeBtn:active {
-    transform: scale(0.95);
-}
 
 /* Responsive design */
 @media (min-width: 1010px) {
@@ -163,12 +140,11 @@ header {
     }
     
     header {
-        padding: 1rem 2rem;
+        padding: 1rem;
+        padding-left: 2rem;
     }
     
-    .themeBtn {
-        margin-right: 2.3rem;
-    }
+ 
 }
 
 @media (max-width: 1010px) {

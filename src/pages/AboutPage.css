@@ -49,7 +49,6 @@
     color: var(--monster-gold-color);
     background: rgba(255, 215, 0, 0.1);
     border-color: var(--monster-gold-color);
-    transform: scale(1.1);
 }
 
 .about-section h4 {
@@ -80,12 +79,10 @@
     padding: 1rem;
     margin-bottom: 0.8rem;
     border-left: 3px solid var(--detail-color-dark);
-    transition: all 0.3s ease;
 }
 
 .about-credits-item:hover {
     background: rgba(255, 255, 255, 0.08);
-    transform: translateX(8px);
     border-left-color: var(--monster-gold-color);
 }
 
@@ -93,7 +90,6 @@
     font-weight: 600;
     color: var(--main-interactive-color);
     text-decoration: none;
-    transition: all 0.3s ease;
     border-bottom: 2px solid transparent;
 }
 
@@ -120,18 +116,14 @@
     border: 2px solid var(--glass-border-dark);
     border-radius: 16px;
     text-decoration: none;
-    transition: all 0.3s ease;
 }
 
 .about-contact-link:hover {
-    transform: translateY(-8px) scale(1.1);
     border-color: var(--main-interactive-color);
-    box-shadow: 0 15px 30px rgba(78, 205, 196, 0.3);
 }
 
 .about-contact-icon {
     font-size: 1.5rem;
-    transition: all 0.3s ease;
     color: var(--main-interactive-color);
 }
 
@@ -142,7 +134,6 @@
 /* Platform specific colors */
 .about-contact-link[data-platform="github"]:hover {
     border-color: #333;
-    box-shadow: 0 15px 30px rgba(51, 51, 51, 0.3);
 }
 
 .about-contact-link[data-platform="github"]:hover .about-contact-icon {
@@ -151,7 +142,6 @@
 
 .about-contact-link[data-platform="email"]:hover {
     border-color: #ea4335;
-    box-shadow: 0 15px 30px rgba(234, 67, 53, 0.3);
 }
 
 .about-contact-link[data-platform="email"]:hover .about-contact-icon {
@@ -164,7 +154,6 @@
 
 .about-contact-link[data-platform="linkedin"]:hover {
     border-color: #0077B5;
-    box-shadow: 0 15px 30px rgba(0, 119, 181, 0.3);
 }
 
 .about-contact-link[data-platform="telegram"] .about-contact-icon {
@@ -173,7 +162,6 @@
 
 .about-contact-link[data-platform="telegram"]:hover {
     border-color: #24A1DE;
-    box-shadow: 0 15px 30px rgba(36, 161, 222, 0.3);
 }
 
 /* Light theme */

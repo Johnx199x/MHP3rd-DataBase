@@ -1,5 +1,4 @@
 import { MonsterInfo } from './MonsterInfo';
-import { FeatureCard } from "../ui/FeatureCard"
 import './MonsterList.css'
 
 export const MonsterList = ({ monsters }) => {
@@ -8,8 +7,8 @@ export const MonsterList = ({ monsters }) => {
     return (
         <ul className='monster-list'>
             {monsters.map((monster, index) => (
-                <li key={monster.id || index} className='search-item' style={{marginTop: "15px"}}>
-                    <FeatureCard classNameCard = "monster-list-item-featureCard" classNameDesc = "monster-list-item-featureCard-desc">
+                <li key={monster.id || index} className='search-item' style={{margin:"7.5px"}}>
+                    
                     <MonsterInfo 
                         name={monster.name} 
                         img={monster.image}
@@ -26,7 +25,6 @@ export const MonsterList = ({ monsters }) => {
                         dropsLowRank={monster.dropsLowRank}
                         dropsHighRAnk={monster.dropsHighRAnk}
                     />
-                    </FeatureCard>
                 </li>
 
             ))}

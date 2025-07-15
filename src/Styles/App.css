@@ -1,7 +1,4 @@
-/*
-  Este archivo contiene todas las variables CSS globales del proyecto.
-  Si necesitas agregar o modificar variables, hazlo aquí para mantener la consistencia.
-*/
+
 :root {
   --main-interactive-color: #4ecdc4; 
   --main-interactive-color-dark: #20b2aa; 
@@ -58,6 +55,7 @@
 .main-container{
     grid-area: MainContent;
     overflow: scroll;
+    scrollbar-width: none;
 }
 
 h3 {
@@ -86,27 +84,22 @@ h3 {
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    transition: all 0.3s ease;
     font-size: 13px;
     font-weight: 500;
 }
 
 .span-element-icon:hover {
     background: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .span-element-icon img {
     width: 24px;
     height: 24px;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
-    transition: all 0.3s ease;
 }
 
 .span-element-icon:hover img {
     transform: scale(1.1);
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
 }
 
 /* Light Theme para span-element-icon */
@@ -118,5 +111,4 @@ body.lightTheme .span-element-icon {
 
 body.lightTheme .span-element-icon:hover {
     background: rgba(0, 0, 0, 0.1);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }

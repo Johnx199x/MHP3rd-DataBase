@@ -31,7 +31,7 @@ export default function MonstersPage () {
 
   return (
     <div className='monsters-container'>
-        <header style={{padding:"0", display:'flex' , flexDirection:"column", width:"100%"}}>
+        <header style={{padding:"0", display:'flex' , flexDirection:"column", width:"100%",color:"#eee"}}>
         <MonsterTypeSelector 
             isSearching={searchValue && searchValue.trim() !== ""}
             monsterType={monsterType}

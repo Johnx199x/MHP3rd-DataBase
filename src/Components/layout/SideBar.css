@@ -2,7 +2,7 @@
 .side-menu {
     grid-area: sideBar;
     backdrop-filter: blur(2px);
-    padding: 2rem 0;
+   
     box-shadow: 4px 0 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -81,6 +81,7 @@
         background: var(--sideBar-background-color-light);
         z-index: 99;
         border: none;
+        padding: 4rem 0;
     }
 
     .side-menu.show {

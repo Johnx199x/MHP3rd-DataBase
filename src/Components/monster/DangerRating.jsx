@@ -1,13 +1,19 @@
 import './DangerRating.css'
 
-
 export const DangerRating = ({ danger }) => {
-    const dangerStar = "★";
+    const maxStars = 8;
+    const filledStar = "★";
+    const emptyStar = "☆";
     return (
         <span className="danger-rating-container">
             <span className="danger-rating">
-                {Array.from({ length: danger || 0 }).map((_, index) => (
-                    <span key={index} className="danger-star">{dangerStar}</span>
+                {Array.from({ length: maxStars }).map((_, index) => (
+                    <span
+                        key={index}
+                        className={index < (danger || 0) ? "danger-star filled" : "danger-star empty"}
+                    >
+                        {index < (danger || 0) ? filledStar : emptyStar}
+                    </span>
                 ))}
             </span>
         </span>

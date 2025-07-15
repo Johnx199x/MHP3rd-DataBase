@@ -16,15 +16,11 @@
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
     border-radius: 16px;
     overflow: hidden;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid rgba(79, 209, 199, 0.1);
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .quest.search-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(79, 209, 199, 0.15);
     border-color: rgba(79, 209, 199, 0.3);
 }
 
@@ -40,7 +36,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    transition: all 0.3s ease;
 }
 
 .monsters-info-tag.key-quest {
@@ -59,7 +54,6 @@
 /* Quest Description Container */
 .quest-item-desc {
     max-height: 1000px;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.01) 100%);
     padding: 2rem;
 }
@@ -80,14 +74,12 @@
     background: rgba(255, 255, 255, 0.03);
     border-radius: 12px;
     border-left: 4px solid rgba(79, 209, 199, 0.3);
-    transition: all 0.3s ease;
     flex-direction: column;
 }
 
 .list-item:hover {
     background: rgba(79, 209, 199, 0.08);
     border-left-color: #4fd1c7;
-    transform: translateX(4px);
 }
 
 /* Item Tags */
@@ -132,14 +124,11 @@
     border: 3px solid rgba(79, 209, 199, 0.3);
     padding: 4px;
     background: rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .list-item-monster-icon img:hover {
-    transform: scale(1.1);
     border-color: #4fd1c7;
-    box-shadow: 0 0 20px rgba(79, 209, 199, 0.4);
 }
 
 /* Responsive Design */
@@ -212,11 +201,9 @@
 body.lightTheme .quest.search-item {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(247, 250, 252, 0.8) 100%);
     border-color: rgba(32, 178, 170, 0.2);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 body.lightTheme .quest.search-item:hover {
-    box-shadow: 0 8px 30px rgba(32, 178, 170, 0.2);
     border-color: rgba(32, 178, 170, 0.4);
 }
 
